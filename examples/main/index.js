@@ -66,6 +66,13 @@ registerMicroApps(
       loader,
       activeRule: '/vue3',
     },
+    {
+      name: 'crystal',
+      entry: '//localhost:4200',
+      container: '#subapp-viewport',
+      loader,
+      activeRule: '/crystal',
+    },
   ],
   {
     beforeLoad: [
