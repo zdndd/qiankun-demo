@@ -1,0 +1,89 @@
+<crystal-slider [userInfo]="userInfo"></crystal-slider>
+
+<div class="topbar">
+  <div class="logo-img">
+    <img [src]="logoImg" />
+    <img [src]="'/img/logo.png' | assetUrl" />
+  </div>
+  <div class="right">
+    <div class="changelog" *ngIf="isShowReview">
+      <a
+        class="hover-icon"
+        nzTitle="{{ 'User Guide' }}"
+        nzPlacement="bottom"
+        nz-tooltip
+        (click)="reviewPdf()"
+      >
+        <i class="icon-ic_UserManual"> </i>
+      </a>
+    </div>
+
+    <div class="changelog">
+      <a
+        class="hover-icon"
+        nzTitle="{{ 'ChangeLog' }}"
+        nzPlacement="bottom"
+        nz-tooltip
+        routerLink="/changelog"
+      >
+        <i class="icon-ic_selectall"> </i>
+      </a>
+    </div>
+    <div class="language">
+      <!-- <a class="hover-icon" nz-dropdown [nzDropdownMenu]="menu">
+                <i class="icon-ic_language"> </i>
+            </a>
+            <nz-dropdown-menu #menu='nzDropdownMenu'>
+                <ul nz-menu nzSelectable>
+                    <li nz-menu-item>
+                        <a (click)="changeLanguage('zh-CN')">简体中文</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a (click)="changeLanguage('en')">English</a>
+                    </li>
+                </ul>
+            </nz-dropdown-menu> -->
+
+      <a nz-dropdown [nzDropdownMenu]="menu">
+        <i class="icon-ic_language"> </i>
+      </a>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>
+            <a (click)="changeLanguage('zh-CN')">简体中文</a>
+          </li>
+          <li nz-menu-item>
+            <a (click)="changeLanguage('en')">English</a>
+          </li>
+        </ul>
+      </nz-dropdown-menu>
+    </div>
+    <div class="profile">
+      <a class="profile-btn" nz-dropdown [nzDropdownMenu]="menu2">
+        <!-- <img src="./assets/img/default-avatar@2x.png" /> -->
+        <img [src]="'/img/default-avatar@2x.png' | assetUrl" />
+        <i nz-icon nzType="caret-down" class="before-icon"></i>
+        <i nz-icon nzType="caret-up" class="after-icon"></i>
+      </a>
+      <nz-dropdown-menu #menu2="nzDropdownMenu">
+        <ul nz-menu class="profile-menu">
+          <li *ngIf="cmsNodesIndex >= 0 && !isCms" nz-menu-item>
+            <a routerLink="/cms">{{ "Backstage Management" }}</a>
+          </li>
+          <li nz-menu-item>
+            <a (click)="openPhotoCroppieDialog()">{{ "Modify the picture" }}</a>
+          </li>
+          <li nz-menu-item>
+            <a (click)="popupPassword()">{{ "Modify Password" }}</a>
+          </li>
+          <li nz-menu-item>
+            <a (click)="logout()">{{ "Logout" }}</a>
+          </li>
+        </ul>
+      </nz-dropdown-menu>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper">
+  <router-outlet></router-outlet>
+</div>

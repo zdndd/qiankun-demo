@@ -1,0 +1,83 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": {
+    "emplist": {
+      "totalcount": 0,
+      "totalpages": 0,
+      "list": [
+        {
+          "relationship1": [
+            {
+              "id": 1,
+              "empcode": "string",
+              "empname": "string",
+              "positionid": "string",
+              "orgid": "string",
+              "positionname": "string",
+              "orgname": "string",
+              "emial": "string"
+            },
+            {
+              "id": 12,
+              "empcode": "string",
+              "empname": "string",
+              "positionid": "string",
+              "orgid": "string",
+              "positionname": "string",
+              "orgname": "string1",
+              "emial": "string"
+            }
+          ],
+          "relationship2": [
+            {
+              "id": 2,
+              "empcode": "string",
+              "empname": "string",
+              "positionid": "string",
+              "orgid": "string",
+              "positionname": "string",
+              "orgname": "间接上级",
+              "emial": "string"
+            }
+          ],
+          "relationship3": [
+            {
+              "id": 3,
+              "empcode": "string",
+              "empname": "string",
+              "positionid": "string",
+              "orgid": "string",
+              "positionname": "string",
+              "orgname": "平级",
+              "emial": "string"
+            }
+          ],
+          "relationship4": [
+            {
+              "id": 4,
+              "empcode": "string",
+              "empname": "string",
+              "positionid": "string",
+              "orgid": "string",
+              "positionname": "string",
+              "orgname": "下级",
+              "emial": "string"
+            }
+          ],
+          "id": 0,
+          "empcode": "string",
+          "empname": "string",
+          "positionid": "string",
+          "orgid": "string",
+          "positionname": "string",
+          "orgname": "string",
+          "emial": "string"
+        }
+      ]
+    },
+    "showcolumn": [
+      1,2,3,4
+    ]
+  }
+}

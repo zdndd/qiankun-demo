@@ -1,0 +1,72 @@
+﻿[
+    {
+        "typename": 0,
+        "typeid": 0,
+        "abilityid": 0,
+        "abilityname": "战略策划",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 0,
+        "abilityid": 0,
+        "abilityname": "激励下属",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 0,
+        "abilityid": 0,
+        "abilityname": "风险管理",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 0,
+        "abilityid": 0,
+        "abilityname": "经验提炼",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 1,
+        "abilityid": 0,
+        "abilityname": "风险管理",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 1,
+        "abilityid": 0,
+        "abilityname": "经验提炼",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 2,
+        "abilityid": 0,
+        "abilityname": "风险管理",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 3,
+        "abilityid": 0,
+        "abilityname": "经验提炼",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 2,
+        "abilityid": 0,
+        "abilityname": "风险管理",
+        "proportion": 0
+    },
+    {
+        "typename": 0,
+        "typeid": 3,
+        "abilityid": 0,
+        "abilityname": "经验提炼",
+        "proportion": 0
+    }
+]

@@ -1,0 +1,57 @@
+<div class="operate-btn">
+    <button nz-button nztype="default" class="ant-btn ant-btn-default add-course-class" (click)="editModule('add','')">
+        <span><i class="icon-ic_add"></i>{{ 'Add New' | translate }} </span>
+    </button>
+</div>
+
+<ng-template #other>
+    <div class="table-wrap">
+        <div class="loading" *ngIf="pageState == 1">
+            <nz-spin></nz-spin>
+        </div>
+        <div class="empty-data" *ngIf="pageState == 2">
+            <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+            <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+        </div>
+    </div>
+</ng-template>
+
+<div *ngIf="pageState === 3; else other" class="table-wrap">
+    <div class="table-content">
+        <nz-table #basicTable pretty-table nzBordered [nzData]="listOfData" class="theme_default"
+            [nzShowPagination]="false" [nzPageSize]="20">
+            <thead>
+                <tr>
+                    <th nzWidth="60px">{{ 'No.' | translate }}</th>
+                    <th nzWidth="300px">{{ 'Dictionary' | translate }}</th>
+                    <th nzWidth="300px">{{ 'Dictionary Name' | translate }}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of basicTable.data index as i ">
+                    <td>{{ data.rowIndex }}</td>
+                    <td>{{ data.qualityTypeName }}</td>
+                    <td>
+                        <a
+                            routerLink="/agile-modeling/ability-dictionary-detail/{{ data.id }}">{{ data.dictionaryName }}</a>
+                    </td>
+                    <td [nzAlign]="'center'">
+                        <a class="a_download" href="javascript:void(0)" (click)="editModule('edit',data)"><i
+                                class="icon-ic_xm_edit"></i></a>
+                        <!-- <a *ngIf="data.dictionaryType===2" class="a_download" href="javascript:void(0)"
+                            (click)="deleteDictionary(data.id)"><i class="icon-ic_del"></i></a> -->
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+
+    <div class="sv-panel-footer">
+        <sv-pagination [nzPageSize]="pagesize" [nzPageIndex]="pageindex" (nzPageIndexChange)="pageIndexChange($event)"
+            [nzTotal]="totalcount" [nzShowTotal]="totalTemplate"></sv-pagination>
+        <ng-template #totalTemplate let-total>
+            {{ 'Page Total' | translate: { field: pageCount, total: totalcount } }}
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": {
+        "data": [
+            {
+                "key": "org001",
+                "title": "人力资源部"
+            },
+            {
+                "key": "org002",
+                "title": "产品部"
+            },
+            {
+                "key": "org003",
+                "title": "市场部"
+            },
+            {
+                "key": "org004",
+                "title": "研发部"
+            },
+            {
+                "key": "org005",
+                "title": "客服部"
+            }
+        ]
+    }
+}

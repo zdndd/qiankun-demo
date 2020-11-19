@@ -1,0 +1,15 @@
+﻿{
+    "id": 32,
+    "modelname": "string",
+    "remark": "string",
+    "userlist": [
+        {
+            "username": "Bella",
+            "userid": 31
+        },
+        {
+            "username": null,
+            "userid": 0
+        }
+    ]
+}

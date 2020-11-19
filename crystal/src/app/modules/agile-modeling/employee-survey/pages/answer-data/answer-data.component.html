@@ -1,0 +1,75 @@
+<div class="operator-btns">
+    <!-- <button nz-button (click)="importHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导入' | translate }}
+    </button> -->
+    <!-- <button nz-button (click)="exportHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导出' | translate }}
+    </button> -->
+</div>
+<div class="table-content">
+    <nz-table
+        #headerTable
+        pretty-table
+        class="theme_simple"
+        [nzBordered]="true"
+        [nzBordered]="false"
+        [nzLoading]="loading"
+        [nzData]="tableData"
+        [nzShowPagination]="false"
+    >
+        <thead>
+            <tr>
+                <th>
+                    <div class="first-column"></div>
+                </th>
+                <th>
+                    <div class="second-column"></div>
+                </th>
+                <ng-container *ngFor="let item of columns; let i = index">
+                    <th class="column-th" title="{{ item }}">
+                        <div class="second-column">{{ item }}</div>
+                    </th>
+                </ng-container>
+            </tr>
+        </thead>
+        <tbody #tableBody>
+            <tr
+                *ngFor="let item of tableData; let i = index"
+                (mouseover)="showRowRemoveOverlay(i)"
+                (mouseout)="startRemoveBtnCloseTimeout(i)"
+            >
+                <ng-container *ngIf="i % 2 == 0">
+                    <td rowspan="2">
+                        <div class="first-column">{{ item.employeename }}</div>
+                    </td>
+                    <td>
+                        <div class="second-column">{{ 'frequency' | translate }}</div>
+                    </td>
+                    <td *ngFor="let value of item.surveydata">
+                        <div class="second-column">{{ value }}</div>
+                    </td>
+                </ng-container>
+                <ng-container *ngIf="i % 2 != 0">
+                    <td style="border-left: 0px !important;">
+                        <div class="second-column">{{ 'impact' | translate }}</div>
+                    </td>
+                    <td *ngFor="let value of item.surveydata">
+                        <div class="second-column">{{ value }}</div>
+                    </td>
+                </ng-container>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>
+<ng-template cdk-portal #rowRemoveTemplate="cdkPortal">
+    <div
+        class="row-remove-overlay"
+        (click)="deleteRow()"
+        (mouseenter)="removeBtnMouseEnter()"
+        (mouseleave)="removeBtnMouseLeave()"
+    >
+        <span>
+            <i class="icon-ic_del"></i>
+        </span>
+    </div>
+</ng-template>

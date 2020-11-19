@@ -1,0 +1,16 @@
+[
+    { "name": "人才绩效年度环比绩效分析", "type": -1, "ison": true, "charttype": 9 },
+    { "name": "个人信息", "type": -1, "ison": true, "charttype": 1 },
+    { "name": "教育信息", "type": -1, "ison": true, "charttype": 2 },
+    { "name": "工作经历", "type": -1, "ison": true, "charttype": 3 },
+    { "name": "人才九宫格（部门)", "type": 2, "ison": true, "charttype": 4 },
+    { "name": "人才九宫格（岗位序列）", "type": 1, "ison": true, "charttype": 4 },
+    { "name": "人才九宫格（公司）", "type": 0, "ison": true, "charttype": 4 },
+    { "name": "能力分析（部门）", "type": -1, "ison": true, "charttype": 5 },
+    { "name": "动力分析（部门）", "type": 2, "ison": true, "charttype": 6 },
+    { "name": "动力分析（岗位序列）", "type": 1, "ison": true, "charttype": 6 },
+    { "name": "动力分析（公司）", "type": 0, "ison": true, "charttype": 6 },
+    { "name": "潜力分析（部门）", "type": 2, "ison": true, "charttype": 7 },
+    { "name": "潜力分析（岗位序列）", "type": 1, "ison": true, "charttype": 7 },
+    { "name": "潜力分析（公司）", "type": 0, "ison": true, "charttype": 7 }
+]

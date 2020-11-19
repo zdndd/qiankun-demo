@@ -1,0 +1,6 @@
+<div class="title" [ngClass]="{ green: color == 'green' }">
+    <div class="total-title">{{ title }}</div>
+    <!--    <ng-content select=".total-title"></ng-content>-->
+    <div class="line"></div>
+</div>
+<ng-content></ng-content>

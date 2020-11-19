@@ -1,0 +1,2194 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": [
+        {
+            "id": 2032,
+            "qualitytype": 1,
+            "dictionaryname": "肯家素质字典-能力篇（1）",
+            "dictionarytype": 2,
+            "maxlevelindex": 4,
+            "ismodelused": false,
+            "abilitydictionary": [
+                {
+                    "id": 1369,
+                    "abilityname": "概念能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1370,
+                            "abilityname": "问题分析",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10098,
+                                    "description": "●  将整体分解为部分，进行因果关系分析，重要性排序，方案判断和选择。"
+                                },
+                                {
+                                    "id": 10099,
+                                    "description": "●  将问题分解为各项独立的互不联系的任务或活动，并罗列出来。"
+                                },
+                                {
+                                    "id": 10100,
+                                    "description": "●  将问题分解为简单关联的若干部分，认识到简单直接的因果关系（单因单果），进行黑白分明的选择（支持或反对，接受或拒绝等）。"
+                                },
+                                {
+                                    "id": 10101,
+                                    "description": "●  将问题或事物分解成相互关联的若干部分，认识到简单的多重因果关系（一因多果，多因一果的简单因果链）。"
+                                },
+                                {
+                                    "id": 10102,
+                                    "description": "●  将问题或事物分解成相互关联且重要性不等的若干部分，认识到复杂因果链。"
+                                },
+                                {
+                                    "id": 10103,
+                                    "description": "●  能够对某种原因或结果的可能性和重要性进行分析，衡量不同行动方法的价值。"
+                                },
+                                { "id": 10104, "description": "●  预测可能的障碍，并事先设想接下来解决问题的步骤。" },
+                                {
+                                    "id": 10105,
+                                    "description": "●  能事先想出几个解决问题的方案，在权衡轻重、利弊和可能性的基础上，对不同方案进行判断和选择。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [
+                                {
+                                    "id": 1438,
+                                    "abilityname": "ABC",
+                                    "parent_id": 1370,
+                                    "defaultdescription": null,
+                                    "descriptionlist": [{ "id": 10106, "description": "爱吃" }],
+                                    "rowindex": "",
+                                    "targetscore": null,
+                                    "maxtargetscore": null,
+                                    "children": [
+                                        {
+                                            "id": 1439,
+                                            "abilityname": "333",
+                                            "parent_id": 1438,
+                                            "defaultdescription": null,
+                                            "descriptionlist": [{ "id": 10107, "description": "222" }],
+                                            "rowindex": "",
+                                            "targetscore": null,
+                                            "maxtargetscore": null,
+                                            "children": [],
+                                            "modeldicdimensionid": 0,
+                                            "weight": 0.0
+                                        }
+                                    ],
+                                    "modeldicdimensionid": 0,
+                                    "weight": 0.0
+                                }
+                            ],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1371,
+                            "abilityname": "创新思维",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10108,
+                                    "description": "●  借用其它领域的方法：创立或引进新的观念或程序：参照系统以外的观点与方式。"
+                                },
+                                { "id": 10109, "description": "●  在工作中能偶尔有创新。" },
+                                {
+                                    "id": 10110,
+                                    "description": "●  打破腐朽：建设性地促进不断进步，而不受当前的问题的影响。"
+                                },
+                                { "id": 10111, "description": "●  能清楚地看到企业中的效率的环节，并能将它完善。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1372,
+                            "abilityname": "系统思考",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10112,
+                                    "description": "●  能够运用浅显的规律（经验法则）和普通常识确定问题所在。"
+                                },
+                                {
+                                    "id": 10113,
+                                    "description": "●  当所面临的情况与以前经历过的情况相同时，能够识别出共同之处并应用以前的经验。"
+                                },
+                                {
+                                    "id": 10114,
+                                    "description": "●  面对不完全相同的现象和问题时，可以认识到不同事物（如所面临的情况与以前经历过的情况）之间的相似之处。"
+                                },
+                                {
+                                    "id": 10115,
+                                    "description": "●  利用学习到的理论知识，以及在处理其它问题时取得的经验，对现有问题进行整体分析和处理。"
+                                },
+                                {
+                                    "id": 10116,
+                                    "description": "●  面对复杂的情况时，能将各种观点、问题和搜索到的数据归纳提炼出核心的观点或简洁的结论。"
+                                },
+                                {
+                                    "id": 10117,
+                                    "description": "●  在处理问题时，能够用自己创造的概念来反映各个事物间的内在联系并指导问题的解决。"
+                                },
+                                {
+                                    "id": 10118,
+                                    "description": "●  在处理问题中能够发现别人没有发现的关键点，透过表面，深入问题的本质，总结出规律。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1373,
+                            "abilityname": "有效决策",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10119, "description": "●  面对有竞争性的方案做出抉择：及时不拖延地做出决定。" },
+                                { "id": 10120, "description": "●  在本工作领域内，能客观分析形势，并作出初步判断。" },
+                                {
+                                    "id": 10121,
+                                    "description": "●  能够根据相关程序，在上级及相关资源的指导下，对日常的，一般性的问题作出决定，并采取行动。"
+                                },
+                                {
+                                    "id": 10122,
+                                    "description": "●  做出有冒险性的决定：当决策会带来一定的风险时，及时做出抉择。要衡量潜在的收益。"
+                                },
+                                {
+                                    "id": 10123,
+                                    "description": "●  能分析较广泛领域内的复杂情况，对决策可能产生的影响有清晰的认识。"
+                                },
+                                {
+                                    "id": 10124,
+                                    "description": "●  能依据已有数据、知识和经验，作出对公司有着一定程度影响的决策，并付诸实施。"
+                                },
+                                {
+                                    "id": 10125,
+                                    "description": "●  做出有长期影响的决策：在复杂，模糊风险很高的形势下，毫不犹豫地做出决策。"
+                                },
+                                {
+                                    "id": 10126,
+                                    "description": "●  需要对多种领域内的各种信息进行深度分析，在缺乏指导原则和经验的基础上，及时进行判断，并在重大领域内进行战略性决策。"
+                                },
+                                {
+                                    "id": 10127,
+                                    "description": "●  考虑多种不同的被选方案，避免任何个人偏见，认真评估风险。"
+                                },
+                                { "id": 10128, "description": "●  考虑不同的意见、选择，不带偏见。" },
+                                { "id": 10129, "description": "●  在多方利益发生冲突时，仍能保持客观。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1374,
+                            "abilityname": "战略规划",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10130,
+                                    "description": "●  在组织整体战略的大范围内，根据局部区域的特点和条件，设计落实管辖范围内的工作战略。"
+                                },
+                                {
+                                    "id": 10131,
+                                    "description": "●  了解分析社会市场大环境条件的变化和长远发展目标的要求对日常工作可能产生的影响，检讨当前的战略和工作部署。"
+                                },
+                                {
+                                    "id": 10132,
+                                    "description": "●  在当前具体工作安排时要分析短期目标是否有助于实现长期规划，从宏观和整体进行考虑，做出有利于组织长远发展的工作决策。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1375,
+                            "abilityname": "战略执行",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10133,
+                                    "description": "●  认识到自己的日常工作与组织战略（由他人制定）的联系，了解短期利益与长远目标间的关系，清楚自己管辖范围内的工作在组织整体发展中的位置和作用。"
+                                },
+                                {
+                                    "id": 10134,
+                                    "description": "●  按照外部或组织战略的要求安排工作的轻重缓急和优先次序，在资源分配方面，向战略发展的重点方向倾斜，不因为短期业绩压力，忽略长期发展战略的要求。"
+                                },
+                                {
+                                    "id": 10135,
+                                    "description": "●  设定自己管辖范围内工作的具体目标并推动相应的落实措施。"
+                                },
+                                { "id": 10136, "description": "●  能够有效抵制与组织战略方向不统一的工作行为。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1376,
+                            "abilityname": "计划执行",
+                            "parent_id": 1369,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10137,
+                                    "description": "●  工作中能够迅速理解上级意图，形成目标并制定出具体可操作的行动方案，通过有效组织各类资源，和对任务优先顺序的安排，保证计划的高效、顺利实施，并努力完成工作目标的能力。"
+                                },
+                                {
+                                    "id": 10138,
+                                    "description": "●  能够根据公司或上级的明确要求，结合本岗位的职责，确定自己工作的短期目标。"
+                                },
+                                {
+                                    "id": 10139,
+                                    "description": "●  根据具体目标，将工作分解为若干的关键可操作性步骤，设立优先次序，形成任务时间进度表。"
+                                },
+                                {
+                                    "id": 10140,
+                                    "description": "●  能够准确评估实现工作目标所需的人、财、物等资源，并做出资源配置的可行性方案。"
+                                },
+                                {
+                                    "id": 10141,
+                                    "description": "●  建立监控和反馈机制，能够从整体上把握计划实施的进程。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                },
+                {
+                    "id": 1377,
+                    "abilityname": "领导能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1378,
+                            "abilityname": "创新管理",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10142,
+                                    "description": "●  培养创新性：承认并鼓励别人的创新性。允许他人实验，尝试新事物。帮助引进新的观念、方式与程序。"
+                                },
+                                { "id": 10143, "description": "●  能激励他人，引导他人创新。" },
+                                {
+                                    "id": 10144,
+                                    "description": "●  创造利于培养创新的环境：承认并奖励那些有创造性的人；与他人开诚布公地讨论问题。"
+                                },
+                                { "id": 10145, "description": "●  创造学习型组织的企业文化，塑造新型的团队管理理念。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1379,
+                            "abilityname": "发展下属",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10146,
+                                    "description": "●  提供直接指导：给予具体的指导、建议以及工作示范。提供必要的工具支持他人的发展。"
+                                },
+                                {
+                                    "id": 10147,
+                                    "description": "●  提供随时的辅导：识别组员的长项与发展需要，提供及时的反馈与强化。挫折之后，重新确认并鼓励他人。"
+                                },
+                                {
+                                    "id": 10148,
+                                    "description": "●  创造发展机会：安排并开发恰当的任务、正规的培训，促进个人的学习与发展。"
+                                },
+                                {
+                                    "id": 10149,
+                                    "description": "●  在工作中有意识的帮助他人，为他人制造学习机会，并随时对他人进行鼓励，激励他人保持良好的学习期望。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1380,
+                            "abilityname": "辅导下属",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10150,
+                                    "description": "●  相信他人有主动性，并且有能力学会或改进工作，对他人取得的正面成绩或进步行为表示公开赞扬。"
+                                },
+                                {
+                                    "id": 10151,
+                                    "description": "●  对下属目前特点、优势以及成熟度有比较深入的了解，对蕴涵在其身上的潜能和未来前途有肯定的预测和评价。"
+                                },
+                                {
+                                    "id": 10152,
+                                    "description": "●  进行详细的指示或是给予示范，告诉别人如何完成某项任务的具体步骤，提出明确有用的建议。"
+                                },
+                                {
+                                    "id": 10153,
+                                    "description": "●  通常能够针对个体不同的特点，采用不同的指导方式，使其掌握完成任务的具体方法。"
+                                },
+                                {
+                                    "id": 10154,
+                                    "description": "●  在做指示或示范时，愿意与他人分享成败的经验，提供为什么要采用某种做法的道理，帮助他人理解以强化培训效果，并利用提问题、测验或其它的方法来判断他人是否理解，以协助其顺利完成任务。"
+                                },
+                                {
+                                    "id": 10155,
+                                    "description": "●  为下属的工作提供具体的支持和帮助（例如主动提供有用的工具、有价值信息和资源条件支持等）。"
+                                },
+                                {
+                                    "id": 10156,
+                                    "description": "●  对他人的工作表现及时给予客观的、有针对性的反馈意见，从而帮助其认识到需要改进的地方或取得进步的方面。"
+                                },
+                                {
+                                    "id": 10157,
+                                    "description": "●  在他人遇到挫折时给予支持和鼓励，针对行为而非个人给予反馈，并对其未来的表现表达出正面期待或给予个别化的改进建议。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1381,
+                            "abilityname": "激励下属",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10158,
+                                    "description": "●  能与下属就其工作表现进行沟通，并给予反馈和适当地引导。"
+                                },
+                                { "id": 10159, "description": "●  当下属遇到问题时，能提供帮助，解决难题。" },
+                                {
+                                    "id": 10160,
+                                    "description": "●  了解下属的发展需求，并为其选择合适的培训课程。为下属的工作及时地提供正确的反馈与指导。"
+                                },
+                                {
+                                    "id": 10161,
+                                    "description": "●  对下属的能力与技能水平有准确的判断，根据下属的不同特点，为其制定发展计划。"
+                                },
+                                {
+                                    "id": 10162,
+                                    "description": "●  针对不同的情况，灵活采取不同的激励手段，激发下属的热情。"
+                                },
+                                {
+                                    "id": 10163,
+                                    "description": "●  善于描绘激动人心的使命和目标，使下属充满热情和希望。"
+                                },
+                                {
+                                    "id": 10164,
+                                    "description": "●  采用各种方式来提高团队的士气，如迅速解雇绩效不佳者，对工作流程进行科学、合理的调整等，以改进团队的工作效率，加强集体向心力。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1382,
+                            "abilityname": "凝聚团队",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10165,
+                                    "description": "●  主动向团队成员传达某项决定的内容或工作任务的要求，清晰地表明工作的原则和权限范围，明确要完成的目标。"
+                                },
+                                {
+                                    "id": 10166,
+                                    "description": "●  以正式的渠道公告授权内容，向团队成员解释其中的过程或原因，确保他们了解必要的信息，帮助他们获得配合和减少冲突。"
+                                },
+                                {
+                                    "id": 10167,
+                                    "description": "●  确保团队的合理需要得到满足，并为团队成员的工作开展争取所需要的各种信息、资源。"
+                                },
+                                {
+                                    "id": 10168,
+                                    "description": "●  保护自己领导的团队及其声誉，采取各类实质性的举措让团队成员感受到自己对团队利益的重视。"
+                                },
+                                {
+                                    "id": 10169,
+                                    "description": "●  鼓励团队成员之间互相帮助，创造坦率、温暖、合作的团队氛围。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1383,
+                            "abilityname": "非职权影响",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10170,
+                                    "description": "●  采用两种以上的步骤，或准备多种论据进行说服，但仍然是按照自己的想法进行，没有表现出有意识地针对被影响对象设计影响方式。"
+                                },
+                                {
+                                    "id": 10171,
+                                    "description": "●  善于换位思考，能够根据对方的关注点（如：兴趣、爱好、利益、声誉、顾虑等），把握恰当时机，灵活选择适合对方的说服影响方式，或调整影响的内容和形式。"
+                                },
+                                {
+                                    "id": 10172,
+                                    "description": "●  预先考虑到不同对象的可能反应，提前做出准备或预备方案，期待并准备应付别人可能会产生的反应。"
+                                },
+                                {
+                                    "id": 10173,
+                                    "description": "●  寻找支持自己观点并能对别人真正产生影响的人物，使用连环套的方式对目标施加影响，如：借助上级力量，游说关键性人物，利用人际关系网络进行间接影响等。"
+                                },
+                                {
+                                    "id": 10174,
+                                    "description": "●  能够根据情况设计复杂的影响策略，与关键人物结成政治或利益联盟，采用幕后交易的方式获得他们的支持。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1384,
+                            "abilityname": "组织协调",
+                            "parent_id": 1377,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10175,
+                                    "description": "●  了解组织中的资源现状，能基本保证完成工作任务所需的资源按时到位。"
+                                },
+                                {
+                                    "id": 10176,
+                                    "description": "●  组织各种工作时考虑周到，能根据任务的重要紧急程度，提前分配或调动各种资源。"
+                                },
+                                {
+                                    "id": 10177,
+                                    "description": "●  有一定的组织活动能力，愿意与人建立联系，但缺乏足够的创意方法，对参与者缺乏吸引力和控制力。"
+                                },
+                                {
+                                    "id": 10178,
+                                    "description": "●  组织中出现冲突时具有一定的调解技巧，必要时借助上级或其他力量以保证工作继续开展。"
+                                },
+                                {
+                                    "id": 10179,
+                                    "description": "●  善于同各方面保持融洽的关系，在兼顾对方利益的基础上促进相互理解、共同合作，保证工作顺利开展。"
+                                },
+                                {
+                                    "id": 10180,
+                                    "description": "●  通过及时有效的分配和调动资源，克服由于他人原因引起的延误，圆满解决超出自己控制范围的问题。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                },
+                {
+                    "id": 1385,
+                    "abilityname": "人际能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1386,
+                            "abilityname": "建立信任",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10181,
+                                    "description": "●  实现承诺：追随公司的标准、政策以及与自己工作相关的目标。只有能够实现时才能做出允诺。"
+                                },
+                                {
+                                    "id": 10182,
+                                    "description": "●  表里如一：少说多做；行为与信仰保持一致。对别人尊重、公平、守信用。"
+                                },
+                                {
+                                    "id": 10183,
+                                    "description": "●  处事客观，没有以公报私现象，能正确对待他人对自己的批评。"
+                                },
+                                {
+                                    "id": 10184,
+                                    "description": "●  在多元的环境中展示你的品德修养：报忧也报喜。危机时刻保持远见。反对走捷径行为。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1387,
+                            "abilityname": "有效沟通",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10185, "description": "●  能以开放、真诚的方式接收和传递信息。" },
+                                {
+                                    "id": 10186,
+                                    "description": "●  知道交流的重点，并能通过书面或口头的形式表达主要观点。"
+                                },
+                                { "id": 10187, "description": "●  尊重他人，能倾听别人的意见、观点。 " },
+                                { "id": 10188, "description": "●  能用清楚的理由和事实支持自己的观点。" },
+                                {
+                                    "id": 10189,
+                                    "description": "●  身体力行，通过自己的行为与言谈的一致来沟通相关信息。"
+                                },
+                                {
+                                    "id": 10190,
+                                    "description": "●  善于倾听，适当提问以获得对信息的准确理解，并适时地给予反馈。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1388,
+                            "abilityname": "横向协同",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10191,
+                                    "description": "●  利用自己组织内有影响力的人(对决策者有重大影响的人物)来实现目标，完成任务。"
+                                },
+                                {
+                                    "id": 10192,
+                                    "description": "●  利用其它组织内有影响力的人(对决策者有重大影响的人物)来实现目标，完成任务。"
+                                },
+                                {
+                                    "id": 10193,
+                                    "description": "●  利用客户组织内有影响力的人(对决策者有重大影响的人物)来实现目标，完成任务。"
+                                },
+                                {
+                                    "id": 10194,
+                                    "description": "●  计划行为和计划时，体现对不同文化（如种族、民族、地域等）的认识，体现对各职能部门（如工程部、财务部等）文化的认识。"
+                                },
+                                { "id": 10195, "description": "●  对潜在的文化和政治因素/事件有识别，以免遭遇困惑。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1389,
+                            "abilityname": "客户管理",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10196,
+                                    "description": "●  耐心倾听客户的咨询、要求和抱怨，及时回应客户的要求，解决常规性的客户问题。"
+                                },
+                                {
+                                    "id": 10197,
+                                    "description": "●  与客户保持沟通，当客户需要帮助的时候可以随时取得联系，关注客户的满意度，提供对客户有帮助的信息。"
+                                },
+                                {
+                                    "id": 10198,
+                                    "description": "●  把客户的明确需求看成是自己的工作任务，为此投入时间和精力去做工作。"
+                                },
+                                {
+                                    "id": 10199,
+                                    "description": "●  当常规产品和服务不能满足客户需要时，为客户提供个性化的产品和服务，尽可能快速准确的解决客户问题。"
+                                },
+                                {
+                                    "id": 10200,
+                                    "description": "●  关注和了解客户的潜在需求，致力于开发符合客户需求的产品和服务。"
+                                },
+                                {
+                                    "id": 10201,
+                                    "description": "●  担任客户的顾问角色，针对客户的需求、问题提出自己独立的观点，并采取行动解决问题，积极参与帮助客户进行决策。"
+                                },
+                                {
+                                    "id": 10202,
+                                    "description": "●  为客户寻找长期利益，能够采取具体的措施为客户提供增值服务，并借此成功取信于客户。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1390,
+                            "abilityname": "团队合作",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10203, "description": "●  愿意与他人合作开展工作，自愿参与和支持团队的决定。" },
+                                {
+                                    "id": 10204,
+                                    "description": "●  能与群体中的其他成员共同交流，分享有用的信息和资源。"
+                                },
+                                { "id": 10205, "description": "●  尊重他人的意见和专业知识，愿意向他人学习。" },
+                                { "id": 10206, "description": "●  在做决策时，诚恳地征求团队他人的意见、创意和经验。" },
+                                {
+                                    "id": 10207,
+                                    "description": "●  用正面字眼看待和谈论团队的成员，表达出对他人才智的尊重，对其他团队成员的能力和贡献给予公开赞赏和鼓励。"
+                                },
+                                {
+                                    "id": 10208,
+                                    "description": "●  在危机或关键时刻愿意站出来帮助其他的团队成员解决难题。"
+                                },
+                                {
+                                    "id": 10209,
+                                    "description": "●  在团队中建立起饱满的士气，统一的行为标准和价值观以及健康的合作氛围，提升团队凝聚力。"
+                                },
+                                {
+                                    "id": 10210,
+                                    "description": "●  不会隐藏和回避团队中的冲突，开诚布公地处理团队内部矛盾，并积极寻求有利的冲突解决方案。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1391,
+                            "abilityname": "关系经营",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10211, "description": "●  与他人保持工作相关的接触，维持正式的工作关系。" },
+                                {
+                                    "id": 10212,
+                                    "description": "●  能够接受他人邀请参加社交活动，从而建立工作关系，但不扩大邀请或是刻意建立工作关系。"
+                                },
+                                {
+                                    "id": 10213,
+                                    "description": "●  能敏感地把握他人的性格特点和利益需求，为今后的交往奠定基础。"
+                                },
+                                { "id": 10214, "description": "●  偶尔在工作中开始以非正式的方式与别人交流。" },
+                                {
+                                    "id": 10215,
+                                    "description": "●  积极创造与他人接触的机会，主动联络对方，利用非正式接触建立融洽关系。"
+                                },
+                                {
+                                    "id": 10216,
+                                    "description": "●  在交往场合，能够调动大家的交流情绪，营造使大家可以轻松交流的气氛。"
+                                },
+                                {
+                                    "id": 10217,
+                                    "description": "●  经常在工作外的集会、活动上，继续与同事或客户及其他相关人员保持友善关系。"
+                                },
+                                { "id": 10218, "description": "●  利用他人间接的关系，扩大人际网络范围。" },
+                                {
+                                    "id": 10219,
+                                    "description": "●  与他人建立长期稳定的亲密私人友谊，相互之间可以坦率地交流，谈论敏感问题和私事。对方在对与自己有重要关系的问题上，能够主动地通风报信。"
+                                },
+                                { "id": 10220, "description": "●  能够利用私人友谊扩展业务网络。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1392,
+                            "abilityname": "情绪管理",
+                            "parent_id": 1385,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10221, "description": "●  有能力抵制可能的诱惑，不会采取不恰当和冲动的行为。" },
+                                {
+                                    "id": 10222,
+                                    "description": "●  在感觉到强烈的感情（例如：发怒、极其沮丧或高度压力）时，能抑制其表现出来。"
+                                },
+                                {
+                                    "id": 10223,
+                                    "description": "●  当感觉到强烈情绪时（如发怒、极其沮丧或高度压力）时，不仅能抑制其表现出来，而且能继续平静地进行谈话或开展工作。"
+                                },
+                                {
+                                    "id": 10224,
+                                    "description": "●  能够长时间的抑制感情或抵抗压力，在持续的压力状况下以一贯的正常状态推进工作。"
+                                },
+                                {
+                                    "id": 10225,
+                                    "description": "●  感觉到强烈的感情或其他压力，抑制住它们并以建设性的方法回应压力和不良情绪，冷静分析问题来源，甚至能总结避免今后出现类似情况的预防措施和应对方法。"
+                                },
+                                {
+                                    "id": 10226,
+                                    "description": "●  在群体人员都受到强烈冲击时，不仅能够控制自己的情绪，也能鼓励别人也冷静下来，保持良好心态。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                },
+                {
+                    "id": 1393,
+                    "abilityname": "专业能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1394,
+                            "abilityname": "目标管理",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10227,
+                                    "description": "●  为自己制定衡量进步的具体的客观标准（譬如自己要把工作成绩做到前十名或者像某个榜样那样）。"
+                                },
+                                {
+                                    "id": 10228,
+                                    "description": "●  根据所制定的进步标准，对现有的工作方法和内容进行改进，以提高工作绩效。"
+                                },
+                                {
+                                    "id": 10229,
+                                    "description": "●  为自己制定具有挑战性的目标并采取具体行动去实现目标（“挑战性”是指尽了很大的努力后，成功的可能性为80％左右的目标，如同类人员中的优秀标准）。"
+                                },
+                                {
+                                    "id": 10230,
+                                    "description": "●  注重对自己的工作进行检查，以核实提供的资料和信息的真实性。"
+                                },
+                                {
+                                    "id": 10231,
+                                    "description": "●  通过提前一个月采取独特和额外的行动来创造机会或降低问题发生的可能性（如设立新的项目或机构，进行有针对性的巡视等）。"
+                                },
+                                {
+                                    "id": 10232,
+                                    "description": "●  预测三个月范围内其他人并未意识到的某个机会或问题，并采取相应的准备行动。"
+                                },
+                                { "id": 10233, "description": "●  提前三个月采取行动以避免可能出现的危机。" },
+                                { "id": 10234, "description": "●  能够预期到半年，或更多年以后可能发生的情况。" },
+                                {
+                                    "id": 10235,
+                                    "description": "●  提前半年以上采取行动以创造机会或避免问题，这些机会或问题通常不被其他人所意识到。"
+                                },
+                                {
+                                    "id": 10236,
+                                    "description": "●  设立优秀绩效标准，努力实现这些意义重大又决非不可能实现的目标。"
+                                },
+                                {
+                                    "id": 10237,
+                                    "description": "●  获得优于已定期望的结果，承担比以前更复杂更困难的目标。"
+                                },
+                                {
+                                    "id": 10238,
+                                    "description": "●  为自己或别人设定界定出清晰、长期成功的目标和推动业务发展的目标。"
+                                },
+                                {
+                                    "id": 10239,
+                                    "description": "●  识别部门或组织的未来机遇，将其转化为新的目标和行动。"
+                                },
+                                {
+                                    "id": 10240,
+                                    "description": "●  识别高利润产品/方案/服务，使其与新的或现有客户的需要结合起来，将可能性最大化。"
+                                },
+                                {
+                                    "id": 10241,
+                                    "description": "●  调整个人与部门的目标以适应其它组织，实现一个更为强大、更广泛的战略。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1395,
+                            "abilityname": "变更管理",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10242,
+                                    "description": "●  随机应变，在工作及周围的环境发生变化时，能依照情况需求改变自己的工作方法或处事方式，并在组织或工作要求上有所改变或能容易接受改变。"
+                                },
+                                {
+                                    "id": 10243,
+                                    "description": "●  能客观地看到情况的变化，面对新的、不同的环境或条件时，表示愿意调整。"
+                                },
+                                {
+                                    "id": 10244,
+                                    "description": "●  面对不同的证据和信息，有改变自己看法的意愿，不固执己见。"
+                                },
+                                { "id": 10245, "description": "●  能够分析周围环境的变化情况，判断自己需要怎样调整。" },
+                                {
+                                    "id": 10246,
+                                    "description": "●  为了完成任务或达到组织目标，适当地对正常的工作程序或规章制度做临时调整以适应某种特殊情况。"
+                                },
+                                {
+                                    "id": 10247,
+                                    "description": "●  针对情况或他人的反应，改变自己的策略、目标或计划，以适应个人情况和客观环境。"
+                                },
+                                {
+                                    "id": 10248,
+                                    "description": "●  在自己的组织内部提倡或进行小规模或短期的调整，以应情况所需。"
+                                },
+                                {
+                                    "id": 10249,
+                                    "description": "●  在自己组织内部对工作计划、行动方案、预期目标等进行较大规模的全面及长期的调整以适应具体环境的要求。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1396,
+                            "abilityname": "成本控制",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10250,
+                                    "description": "●  在保证正常工作状态和产品质量的前提下，通过控制成本、增加产出、优化流程等手段，使利润最大化。"
+                                },
+                                { "id": 10251, "description": "●  能够运用预算工具对工作中可能的成本进行合理估算。" },
+                                {
+                                    "id": 10252,
+                                    "description": "●  贯彻公司的财务制度，在保证工作质量的前提下，定期监督工作支出状况，将费用控制在预算内。"
+                                },
+                                { "id": 10253, "description": "●  对他人的浪费行为，能够进行提醒或劝阻。" },
+                                { "id": 10254, "description": "●  敢于挑战并尽量避免可能会使成本增加的一些官僚做法。" },
+                                {
+                                    "id": 10255,
+                                    "description": "●  总是能够想方设法，积极地以灵活、创新的方式（如优化流程等）改善工作，从而节省成本。"
+                                },
+                                {
+                                    "id": 10256,
+                                    "description": "●  能够进行投入和产出分析，在控制成本的基础上，通过尝试识别新的高产出机会，增加有效投入，以实现公司利益的最大化。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1397,
+                            "abilityname": "信息管理",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10257,
+                                    "description": "●  面临困难任务时，想到要尽可能收集多方面的信息来解决问题。"
+                                },
+                                {
+                                    "id": 10258,
+                                    "description": "●  直接询问相关知情人员，获得现成的信息来源，并花时间汇集资料。"
+                                },
+                                {
+                                    "id": 10259,
+                                    "description": "●  亲自去现场对情况进行观察，询问相关人员，收集有用的信息。"
+                                },
+                                {
+                                    "id": 10260,
+                                    "description": "●  接触其他尽可能多的渠道或对象，获得他们的观点、背景资料及经验等各种相关或潜在相关的信息。"
+                                },
+                                {
+                                    "id": 10261,
+                                    "description": "●  不满足于表面信息的获得，能深入询问，挖掘问题的核心和真相。"
+                                },
+                                {
+                                    "id": 10262,
+                                    "description": "●  建立相关的信息收集系统，通过系统的正式研究渠道（如报纸、杂志等）来获取信息。"
+                                },
+                                {
+                                    "id": 10263,
+                                    "description": "●  对收集到的信息进行系统分类、整理和保存等方面的管理。"
+                                },
+                                {
+                                    "id": 10264,
+                                    "description": "●  形成收集信息的习惯，建立起能够长期运作的信息收集系统。"
+                                },
+                                {
+                                    "id": 10265,
+                                    "description": "●  长期不间断地使用自己的系统方法收集信息，并不断挖掘未来可能的潜在信息和信息收集途径。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1398,
+                            "abilityname": "项目管理",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10266,
+                                    "description": "●  管理短期目标，为自己及别人开发并执行预测未来短期的、逐周的计划。"
+                                },
+                                { "id": 10267, "description": "●  确保计划有清晰的目标与里程碑。" },
+                                { "id": 10268, "description": "●  利用程序、系统有效管理项目。" },
+                                {
+                                    "id": 10269,
+                                    "description": "●  开发与执行计划，逐月预测未来的中期目标。确保每组计划得以完成。"
+                                },
+                                { "id": 10270, "description": "●  将商业战略转化为可操作的目标。" },
+                                { "id": 10271, "description": "●  在计划阶段确定并考虑到彼此任务间的相互依赖。" },
+                                { "id": 10272, "description": "●  确保每个组织成员实现目标计划和完成工作。" },
+                                {
+                                    "id": 10273,
+                                    "description": "●  开发执行包括影响组织其它部门的行动计划。为可能影响组织战略的突发事件准备对策。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1399,
+                            "abilityname": "学习迁移",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10274, "description": "●  将别人明确表述的经验和做法，应用到工作中。" },
+                                {
+                                    "id": 10275,
+                                    "description": "●  对别人明确表述的经验和做法加以调整修改，运用于解决不同的问题。"
+                                },
+                                {
+                                    "id": 10276,
+                                    "description": "●  将各方面知识的精髓融为一体，得到处理不同问题的通则或经验方法，并将之变成为自己的东西，用它来分析现实中的工作问题，提出有效的解决办法。"
+                                },
+                                {
+                                    "id": 10277,
+                                    "description": "●  从经历的偶发体验或事件中，亲自总结出解决问题的方法并加以运用。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1400,
+                            "abilityname": "专业提升",
+                            "parent_id": 1393,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10278, "description": "●   了解专业领域的最新发展情况并思考怎样运用。" },
+                                { "id": 10279, "description": "●  用技术/专业经验证实项目是否可实现。" },
+                                { "id": 10280, "description": "●  运用技术与专业能力促进项目与局面的拓宽。" },
+                                { "id": 10281, "description": "●  利用本专业范围外知识来提升业务。" },
+                                {
+                                    "id": 10282,
+                                    "description": "●  利用本专业内能促进其它领域工作或项目的专业知识提高其他部门的效率。"
+                                },
+                                { "id": 10283, "description": "●  寻找能利用专业知识促进别人项目发展的机会。" },
+                                {
+                                    "id": 10284,
+                                    "description": "●  在公司工作范围外寻找机会以提高自己新知识的水平，并通过在专业杂志上出版自己的文章来展现自己这方面的能力。"
+                                },
+                                { "id": 10285, "description": "●  充当起最新技术的倡导者与传教士的角色。" },
+                                { "id": 10286, "description": "●  抓住机会了解外部公司的技术/进展。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                }
+            ]
+        },
+        {
+            "id": 2052,
+            "qualitytype": 1,
+            "dictionaryname": "KNX水晶球能力字典111",
+            "dictionarytype": 2,
+            "maxlevelindex": 2,
+            "ismodelused": false,
+            "abilitydictionary": [
+                {
+                    "id": 1763,
+                    "abilityname": "概念能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1764,
+                            "abilityname": "问题分析",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10556,
+                                    "description": "●  将整体分解为部分，进行因果关系分析，重要性排序，方案判断和选择。"
+                                },
+                                {
+                                    "id": 10557,
+                                    "description": "●  将问题分解为各项独立的互不联系的任务或活动，并罗列出来。"
+                                },
+                                {
+                                    "id": 10558,
+                                    "description": "●  将问题分解为简单关联的若干部分，认识到简单直接的因果关系（单因单果），进行黑白分明的选择（支持或反对，接受或拒绝等）。"
+                                },
+                                {
+                                    "id": 10559,
+                                    "description": "●  将问题或事物分解成相互关联的若干部分，认识到简单的多重因果关系（一因多果，多因一果的简单因果链）。"
+                                },
+                                {
+                                    "id": 10560,
+                                    "description": "●  将问题或事物分解成相互关联且重要性不等的若干部分，认识到复杂因果链。"
+                                },
+                                {
+                                    "id": 10561,
+                                    "description": "●  能够对某种原因或结果的可能性和重要性进行分析，衡量不同行动方法的价值。"
+                                },
+                                { "id": 10562, "description": "●  预测可能的障碍，并事先设想接下来解决问题的步骤。" },
+                                {
+                                    "id": 10563,
+                                    "description": "●  能事先想出几个解决问题的方案，在权衡轻重、利弊和可能性的基础上，对不同方案进行判断和选择。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1765,
+                            "abilityname": "创新思维",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10564,
+                                    "description": "●  借用其它领域的方法：创立或引进新的观念或程序：参照系统以外的观点与方式。"
+                                },
+                                { "id": 10565, "description": "●  在工作中能偶尔有创新。" },
+                                {
+                                    "id": 10566,
+                                    "description": "●  打破腐朽：建设性地促进不断进步，而不受当前的问题的影响。"
+                                },
+                                { "id": 10567, "description": "●  能清楚地看到企业中的效率的环节，并能将它完善。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1766,
+                            "abilityname": "系统思考",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10568,
+                                    "description": "●  能够运用浅显的规律（经验法则）和普通常识确定问题所在。"
+                                },
+                                {
+                                    "id": 10569,
+                                    "description": "●  当所面临的情况与以前经历过的情况相同时，能够识别出共同之处并应用以前的经验。"
+                                },
+                                {
+                                    "id": 10570,
+                                    "description": "●  面对不完全相同的现象和问题时，可以认识到不同事物（如所面临的情况与以前经历过的情况）之间的相似之处。"
+                                },
+                                {
+                                    "id": 10571,
+                                    "description": "●  利用学习到的理论知识，以及在处理其它问题时取得的经验，对现有问题进行整体分析和处理。"
+                                },
+                                {
+                                    "id": 10572,
+                                    "description": "●  面对复杂的情况时，能将各种观点、问题和搜索到的数据归纳提炼出核心的观点或简洁的结论。"
+                                },
+                                {
+                                    "id": 10573,
+                                    "description": "●  在处理问题时，能够用自己创造的概念来反映各个事物间的内在联系并指导问题的解决。"
+                                },
+                                {
+                                    "id": 10574,
+                                    "description": "●  在处理问题中能够发现别人没有发现的关键点，透过表面，深入问题的本质，总结出规律。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1767,
+                            "abilityname": "有效决策",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10575, "description": "●  面对有竞争性的方案做出抉择：及时不拖延地做出决定。" },
+                                { "id": 10576, "description": "●  在本工作领域内，能客观分析形势，并作出初步判断。" },
+                                {
+                                    "id": 10577,
+                                    "description": "●  能够根据相关程序，在上级及相关资源的指导下，对日常的，一般性的问题作出决定，并采取行动。"
+                                },
+                                {
+                                    "id": 10578,
+                                    "description": "●  做出有冒险性的决定：当决策会带来一定的风险时，及时做出抉择。要衡量潜在的收益。"
+                                },
+                                {
+                                    "id": 10579,
+                                    "description": "●  能分析较广泛领域内的复杂情况，对决策可能产生的影响有清晰的认识。"
+                                },
+                                {
+                                    "id": 10580,
+                                    "description": "●  能依据已有数据、知识和经验，作出对公司有着一定程度影响的决策，并付诸实施。"
+                                },
+                                {
+                                    "id": 10581,
+                                    "description": "●  做出有长期影响的决策：在复杂，模糊风险很高的形势下，毫不犹豫地做出决策。"
+                                },
+                                {
+                                    "id": 10582,
+                                    "description": "●  需要对多种领域内的各种信息进行深度分析，在缺乏指导原则和经验的基础上，及时进行判断，并在重大领域内进行战略性决策。"
+                                },
+                                {
+                                    "id": 10583,
+                                    "description": "●  考虑多种不同的被选方案，避免任何个人偏见，认真评估风险。"
+                                },
+                                { "id": 10584, "description": "●  考虑不同的意见、选择，不带偏见。" },
+                                { "id": 10585, "description": "●  在多方利益发生冲突时，仍能保持客观。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1768,
+                            "abilityname": "战略规划",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10586,
+                                    "description": "●  在组织整体战略的大范围内，根据局部区域的特点和条件，设计落实管辖范围内的工作战略。"
+                                },
+                                {
+                                    "id": 10587,
+                                    "description": "●  了解分析社会市场大环境条件的变化和长远发展目标的要求对日常工作可能产生的影响，检讨当前的战略和工作部署。"
+                                },
+                                {
+                                    "id": 10588,
+                                    "description": "●  在当前具体工作安排时要分析短期目标是否有助于实现长期规划，从宏观和整体进行考虑，做出有利于组织长远发展的工作决策。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1769,
+                            "abilityname": "战略执行",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10589,
+                                    "description": "●  认识到自己的日常工作与组织战略（由他人制定）的联系，了解短期利益与长远目标间的关系，清楚自己管辖范围内的工作在组织整体发展中的位置和作用。"
+                                },
+                                {
+                                    "id": 10590,
+                                    "description": "●  按照外部或组织战略的要求安排工作的轻重缓急和优先次序，在资源分配方面，向战略发展的重点方向倾斜，不因为短期业绩压力，忽略长期发展战略的要求。"
+                                },
+                                {
+                                    "id": 10591,
+                                    "description": "●  设定自己管辖范围内工作的具体目标并推动相应的落实措施。"
+                                },
+                                { "id": 10592, "description": "●  能够有效抵制与组织战略方向不统一的工作行为。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1770,
+                            "abilityname": "计划执行",
+                            "parent_id": 1763,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10593,
+                                    "description": "●  工作中能够迅速理解上级意图，形成目标并制定出具体可操作的行动方案，通过有效组织各类资源，和对任务优先顺序的安排，保证计划的高效、顺利实施，并努力完成工作目标的能力。"
+                                },
+                                {
+                                    "id": 10594,
+                                    "description": "●  能够根据公司或上级的明确要求，结合本岗位的职责，确定自己工作的短期目标。"
+                                },
+                                {
+                                    "id": 10595,
+                                    "description": "●  根据具体目标，将工作分解为若干的关键可操作性步骤，设立优先次序，形成任务时间进度表。"
+                                },
+                                {
+                                    "id": 10596,
+                                    "description": "●  能够准确评估实现工作目标所需的人、财、物等资源，并做出资源配置的可行性方案。"
+                                },
+                                {
+                                    "id": 10597,
+                                    "description": "●  建立监控和反馈机制，能够从整体上把握计划实施的进程。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                },
+                {
+                    "id": 1771,
+                    "abilityname": "领导能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1772,
+                            "abilityname": "创新管理",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10598,
+                                    "description": "●  培养创新性：承认并鼓励别人的创新性。允许他人实验，尝试新事物。帮助引进新的观念、方式与程序。"
+                                },
+                                { "id": 10599, "description": "●  能激励他人，引导他人创新。" },
+                                {
+                                    "id": 10600,
+                                    "description": "●  创造利于培养创新的环境：承认并奖励那些有创造性的人；与他人开诚布公地讨论问题。"
+                                },
+                                { "id": 10601, "description": "●  创造学习型组织的企业文化，塑造新型的团队管理理念。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1773,
+                            "abilityname": "发展下属",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10602,
+                                    "description": "●  提供直接指导：给予具体的指导、建议以及工作示范。提供必要的工具支持他人的发展。"
+                                },
+                                {
+                                    "id": 10603,
+                                    "description": "●  提供随时的辅导：识别组员的长项与发展需要，提供及时的反馈与强化。挫折之后，重新确认并鼓励他人。"
+                                },
+                                {
+                                    "id": 10604,
+                                    "description": "●  创造发展机会：安排并开发恰当的任务、正规的培训，促进个人的学习与发展。"
+                                },
+                                {
+                                    "id": 10605,
+                                    "description": "●  在工作中有意识的帮助他人，为他人制造学习机会，并随时对他人进行鼓励，激励他人保持良好的学习期望。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1774,
+                            "abilityname": "辅导下属",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10606,
+                                    "description": "●  相信他人有主动性，并且有能力学会或改进工作，对他人取得的正面成绩或进步行为表示公开赞扬。"
+                                },
+                                {
+                                    "id": 10607,
+                                    "description": "●  对下属目前特点、优势以及成熟度有比较深入的了解，对蕴涵在其身上的潜能和未来前途有肯定的预测和评价。"
+                                },
+                                {
+                                    "id": 10608,
+                                    "description": "●  进行详细的指示或是给予示范，告诉别人如何完成某项任务的具体步骤，提出明确有用的建议。"
+                                },
+                                {
+                                    "id": 10609,
+                                    "description": "●  通常能够针对个体不同的特点，采用不同的指导方式，使其掌握完成任务的具体方法。"
+                                },
+                                {
+                                    "id": 10610,
+                                    "description": "●  在做指示或示范时，愿意与他人分享成败的经验，提供为什么要采用某种做法的道理，帮助他人理解以强化培训效果，并利用提问题、测验或其它的方法来判断他人是否理解，以协助其顺利完成任务。"
+                                },
+                                {
+                                    "id": 10611,
+                                    "description": "●  为下属的工作提供具体的支持和帮助（例如主动提供有用的工具、有价值信息和资源条件支持等）。"
+                                },
+                                {
+                                    "id": 10612,
+                                    "description": "●  对他人的工作表现及时给予客观的、有针对性的反馈意见，从而帮助其认识到需要改进的地方或取得进步的方面。"
+                                },
+                                {
+                                    "id": 10613,
+                                    "description": "●  在他人遇到挫折时给予支持和鼓励，针对行为而非个人给予反馈，并对其未来的表现表达出正面期待或给予个别化的改进建议。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1775,
+                            "abilityname": "激励下属",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10614,
+                                    "description": "●  能与下属就其工作表现进行沟通，并给予反馈和适当地引导。"
+                                },
+                                { "id": 10615, "description": "●  当下属遇到问题时，能提供帮助，解决难题。" },
+                                {
+                                    "id": 10616,
+                                    "description": "●  了解下属的发展需求，并为其选择合适的培训课程。为下属的工作及时地提供正确的反馈与指导。"
+                                },
+                                {
+                                    "id": 10617,
+                                    "description": "●  对下属的能力与技能水平有准确的判断，根据下属的不同特点，为其制定发展计划。"
+                                },
+                                {
+                                    "id": 10618,
+                                    "description": "●  针对不同的情况，灵活采取不同的激励手段，激发下属的热情。"
+                                },
+                                {
+                                    "id": 10619,
+                                    "description": "●  善于描绘激动人心的使命和目标，使下属充满热情和希望。"
+                                },
+                                {
+                                    "id": 10620,
+                                    "description": "●  采用各种方式来提高团队的士气，如迅速解雇绩效不佳者，对工作流程进行科学、合理的调整等，以改进团队的工作效率，加强集体向心力。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1776,
+                            "abilityname": "凝聚团队",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10621,
+                                    "description": "●  主动向团队成员传达某项决定的内容或工作任务的要求，清晰地表明工作的原则和权限范围，明确要完成的目标。"
+                                },
+                                {
+                                    "id": 10622,
+                                    "description": "●  以正式的渠道公告授权内容，向团队成员解释其中的过程或原因，确保他们了解必要的信息，帮助他们获得配合和减少冲突。"
+                                },
+                                {
+                                    "id": 10623,
+                                    "description": "●  确保团队的合理需要得到满足，并为团队成员的工作开展争取所需要的各种信息、资源。"
+                                },
+                                {
+                                    "id": 10624,
+                                    "description": "●  保护自己领导的团队及其声誉，采取各类实质性的举措让团队成员感受到自己对团队利益的重视。"
+                                },
+                                {
+                                    "id": 10625,
+                                    "description": "●  鼓励团队成员之间互相帮助，创造坦率、温暖、合作的团队氛围。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1777,
+                            "abilityname": "非职权影响",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10626,
+                                    "description": "●  采用两种以上的步骤，或准备多种论据进行说服，但仍然是按照自己的想法进行，没有表现出有意识地针对被影响对象设计影响方式。"
+                                },
+                                {
+                                    "id": 10627,
+                                    "description": "●  善于换位思考，能够根据对方的关注点（如：兴趣、爱好、利益、声誉、顾虑等），把握恰当时机，灵活选择适合对方的说服影响方式，或调整影响的内容和形式。"
+                                },
+                                {
+                                    "id": 10628,
+                                    "description": "●  预先考虑到不同对象的可能反应，提前做出准备或预备方案，期待并准备应付别人可能会产生的反应。"
+                                },
+                                {
+                                    "id": 10629,
+                                    "description": "●  寻找支持自己观点并能对别人真正产生影响的人物，使用连环套的方式对目标施加影响，如：借助上级力量，游说关键性人物，利用人际关系网络进行间接影响等。"
+                                },
+                                {
+                                    "id": 10630,
+                                    "description": "●  能够根据情况设计复杂的影响策略，与关键人物结成政治或利益联盟，采用幕后交易的方式获得他们的支持。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1778,
+                            "abilityname": "组织协调",
+                            "parent_id": 1771,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10631,
+                                    "description": "●  了解组织中的资源现状，能基本保证完成工作任务所需的资源按时到位。"
+                                },
+                                {
+                                    "id": 10632,
+                                    "description": "●  组织各种工作时考虑周到，能根据任务的重要紧急程度，提前分配或调动各种资源。"
+                                },
+                                {
+                                    "id": 10633,
+                                    "description": "●  有一定的组织活动能力，愿意与人建立联系，但缺乏足够的创意方法，对参与者缺乏吸引力和控制力。"
+                                },
+                                {
+                                    "id": 10634,
+                                    "description": "●  组织中出现冲突时具有一定的调解技巧，必要时借助上级或其他力量以保证工作继续开展。"
+                                },
+                                {
+                                    "id": 10635,
+                                    "description": "●  善于同各方面保持融洽的关系，在兼顾对方利益的基础上促进相互理解、共同合作，保证工作顺利开展。"
+                                },
+                                {
+                                    "id": 10636,
+                                    "description": "●  通过及时有效的分配和调动资源，克服由于他人原因引起的延误，圆满解决超出自己控制范围的问题。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                },
+                {
+                    "id": 1779,
+                    "abilityname": "人际能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1780,
+                            "abilityname": "建立信任",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10637,
+                                    "description": "●  实现承诺：追随公司的标准、政策以及与自己工作相关的目标。只有能够实现时才能做出允诺。"
+                                },
+                                {
+                                    "id": 10638,
+                                    "description": "●  表里如一：少说多做；行为与信仰保持一致。对别人尊重、公平、守信用。"
+                                },
+                                {
+                                    "id": 10639,
+                                    "description": "●  处事客观，没有以公报私现象，能正确对待他人对自己的批评。"
+                                },
+                                {
+                                    "id": 10640,
+                                    "description": "●  在多元的环境中展示你的品德修养：报忧也报喜。危机时刻保持远见。反对走捷径行为。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1781,
+                            "abilityname": "有效沟通",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10641, "description": "●  能以开放、真诚的方式接收和传递信息。" },
+                                {
+                                    "id": 10642,
+                                    "description": "●  知道交流的重点，并能通过书面或口头的形式表达主要观点。"
+                                },
+                                { "id": 10643, "description": "●  尊重他人，能倾听别人的意见、观点。 " },
+                                { "id": 10644, "description": "●  能用清楚的理由和事实支持自己的观点。" },
+                                {
+                                    "id": 10645,
+                                    "description": "●  身体力行，通过自己的行为与言谈的一致来沟通相关信息。"
+                                },
+                                {
+                                    "id": 10646,
+                                    "description": "●  善于倾听，适当提问以获得对信息的准确理解，并适时地给予反馈。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1782,
+                            "abilityname": "横向协同",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10647,
+                                    "description": "●  利用自己组织内有影响力的人(对决策者有重大影响的人物)来实现目标，完成任务。"
+                                },
+                                {
+                                    "id": 10648,
+                                    "description": "●  利用其它组织内有影响力的人(对决策者有重大影响的人物)来实现目标，完成任务。"
+                                },
+                                {
+                                    "id": 10649,
+                                    "description": "●  利用客户组织内有影响力的人(对决策者有重大影响的人物)来实现目标，完成任务。"
+                                },
+                                {
+                                    "id": 10650,
+                                    "description": "●  计划行为和计划时，体现对不同文化（如种族、民族、地域等）的认识，体现对各职能部门（如工程部、财务部等）文化的认识。"
+                                },
+                                { "id": 10651, "description": "●  对潜在的文化和政治因素/事件有识别，以免遭遇困惑。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1783,
+                            "abilityname": "客户管理",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10652,
+                                    "description": "●  耐心倾听客户的咨询、要求和抱怨，及时回应客户的要求，解决常规性的客户问题。"
+                                },
+                                {
+                                    "id": 10653,
+                                    "description": "●  与客户保持沟通，当客户需要帮助的时候可以随时取得联系，关注客户的满意度，提供对客户有帮助的信息。"
+                                },
+                                {
+                                    "id": 10654,
+                                    "description": "●  把客户的明确需求看成是自己的工作任务，为此投入时间和精力去做工作。"
+                                },
+                                {
+                                    "id": 10655,
+                                    "description": "●  当常规产品和服务不能满足客户需要时，为客户提供个性化的产品和服务，尽可能快速准确的解决客户问题。"
+                                },
+                                {
+                                    "id": 10656,
+                                    "description": "●  关注和了解客户的潜在需求，致力于开发符合客户需求的产品和服务。"
+                                },
+                                {
+                                    "id": 10657,
+                                    "description": "●  担任客户的顾问角色，针对客户的需求、问题提出自己独立的观点，并采取行动解决问题，积极参与帮助客户进行决策。"
+                                },
+                                {
+                                    "id": 10658,
+                                    "description": "●  为客户寻找长期利益，能够采取具体的措施为客户提供增值服务，并借此成功取信于客户。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1784,
+                            "abilityname": "团队合作",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10659, "description": "●  愿意与他人合作开展工作，自愿参与和支持团队的决定。" },
+                                {
+                                    "id": 10660,
+                                    "description": "●  能与群体中的其他成员共同交流，分享有用的信息和资源。"
+                                },
+                                { "id": 10661, "description": "●  尊重他人的意见和专业知识，愿意向他人学习。" },
+                                { "id": 10662, "description": "●  在做决策时，诚恳地征求团队他人的意见、创意和经验。" },
+                                {
+                                    "id": 10663,
+                                    "description": "●  用正面字眼看待和谈论团队的成员，表达出对他人才智的尊重，对其他团队成员的能力和贡献给予公开赞赏和鼓励。"
+                                },
+                                {
+                                    "id": 10664,
+                                    "description": "●  在危机或关键时刻愿意站出来帮助其他的团队成员解决难题。"
+                                },
+                                {
+                                    "id": 10665,
+                                    "description": "●  在团队中建立起饱满的士气，统一的行为标准和价值观以及健康的合作氛围，提升团队凝聚力。"
+                                },
+                                {
+                                    "id": 10666,
+                                    "description": "●  不会隐藏和回避团队中的冲突，开诚布公地处理团队内部矛盾，并积极寻求有利的冲突解决方案。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1785,
+                            "abilityname": "关系经营",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10667, "description": "●  与他人保持工作相关的接触，维持正式的工作关系。" },
+                                {
+                                    "id": 10668,
+                                    "description": "●  能够接受他人邀请参加社交活动，从而建立工作关系，但不扩大邀请或是刻意建立工作关系。"
+                                },
+                                {
+                                    "id": 10669,
+                                    "description": "●  能敏感地把握他人的性格特点和利益需求，为今后的交往奠定基础。"
+                                },
+                                { "id": 10670, "description": "●  偶尔在工作中开始以非正式的方式与别人交流。" },
+                                {
+                                    "id": 10671,
+                                    "description": "●  积极创造与他人接触的机会，主动联络对方，利用非正式接触建立融洽关系。"
+                                },
+                                {
+                                    "id": 10672,
+                                    "description": "●  在交往场合，能够调动大家的交流情绪，营造使大家可以轻松交流的气氛。"
+                                },
+                                {
+                                    "id": 10673,
+                                    "description": "●  经常在工作外的集会、活动上，继续与同事或客户及其他相关人员保持友善关系。"
+                                },
+                                { "id": 10674, "description": "●  利用他人间接的关系，扩大人际网络范围。" },
+                                {
+                                    "id": 10675,
+                                    "description": "●  与他人建立长期稳定的亲密私人友谊，相互之间可以坦率地交流，谈论敏感问题和私事。对方在对与自己有重要关系的问题上，能够主动地通风报信。"
+                                },
+                                { "id": 10676, "description": "●  能够利用私人友谊扩展业务网络。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1786,
+                            "abilityname": "情绪管理",
+                            "parent_id": 1779,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10677, "description": "●  有能力抵制可能的诱惑，不会采取不恰当和冲动的行为。" },
+                                {
+                                    "id": 10678,
+                                    "description": "●  在感觉到强烈的感情（例如：发怒、极其沮丧或高度压力）时，能抑制其表现出来。"
+                                },
+                                {
+                                    "id": 10679,
+                                    "description": "●  当感觉到强烈情绪时（如发怒、极其沮丧或高度压力）时，不仅能抑制其表现出来，而且能继续平静地进行谈话或开展工作。"
+                                },
+                                {
+                                    "id": 10680,
+                                    "description": "●  能够长时间的抑制感情或抵抗压力，在持续的压力状况下以一贯的正常状态推进工作。"
+                                },
+                                {
+                                    "id": 10681,
+                                    "description": "●  感觉到强烈的感情或其他压力，抑制住它们并以建设性的方法回应压力和不良情绪，冷静分析问题来源，甚至能总结避免今后出现类似情况的预防措施和应对方法。"
+                                },
+                                {
+                                    "id": 10682,
+                                    "description": "●  在群体人员都受到强烈冲击时，不仅能够控制自己的情绪，也能鼓励别人也冷静下来，保持良好心态。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                },
+                {
+                    "id": 1787,
+                    "abilityname": "专业能力",
+                    "parent_id": -1,
+                    "defaultdescription": null,
+                    "descriptionlist": [],
+                    "rowindex": "",
+                    "targetscore": null,
+                    "maxtargetscore": null,
+                    "children": [
+                        {
+                            "id": 1788,
+                            "abilityname": "目标管理",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10683,
+                                    "description": "●  为自己制定衡量进步的具体的客观标准（譬如自己要把工作成绩做到前十名或者像某个榜样那样）。"
+                                },
+                                {
+                                    "id": 10684,
+                                    "description": "●  根据所制定的进步标准，对现有的工作方法和内容进行改进，以提高工作绩效。"
+                                },
+                                {
+                                    "id": 10685,
+                                    "description": "●  为自己制定具有挑战性的目标并采取具体行动去实现目标（“挑战性”是指尽了很大的努力后，成功的可能性为80％左右的目标，如同类人员中的优秀标准）。"
+                                },
+                                {
+                                    "id": 10686,
+                                    "description": "●  注重对自己的工作进行检查，以核实提供的资料和信息的真实性。"
+                                },
+                                {
+                                    "id": 10687,
+                                    "description": "●  通过提前一个月采取独特和额外的行动来创造机会或降低问题发生的可能性（如设立新的项目或机构，进行有针对性的巡视等）。"
+                                },
+                                {
+                                    "id": 10688,
+                                    "description": "●  预测三个月范围内其他人并未意识到的某个机会或问题，并采取相应的准备行动。"
+                                },
+                                { "id": 10689, "description": "●  提前三个月采取行动以避免可能出现的危机。" },
+                                { "id": 10690, "description": "●  能够预期到半年，或更多年以后可能发生的情况。" },
+                                {
+                                    "id": 10691,
+                                    "description": "●  提前半年以上采取行动以创造机会或避免问题，这些机会或问题通常不被其他人所意识到。"
+                                },
+                                {
+                                    "id": 10692,
+                                    "description": "●  设立优秀绩效标准，努力实现这些意义重大又决非不可能实现的目标。"
+                                },
+                                {
+                                    "id": 10693,
+                                    "description": "●  获得优于已定期望的结果，承担比以前更复杂更困难的目标。"
+                                },
+                                {
+                                    "id": 10694,
+                                    "description": "●  为自己或别人设定界定出清晰、长期成功的目标和推动业务发展的目标。"
+                                },
+                                {
+                                    "id": 10695,
+                                    "description": "●  识别部门或组织的未来机遇，将其转化为新的目标和行动。"
+                                },
+                                {
+                                    "id": 10696,
+                                    "description": "●  识别高利润产品/方案/服务，使其与新的或现有客户的需要结合起来，将可能性最大化。"
+                                },
+                                {
+                                    "id": 10697,
+                                    "description": "●  调整个人与部门的目标以适应其它组织，实现一个更为强大、更广泛的战略。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1789,
+                            "abilityname": "变更管理",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10698,
+                                    "description": "●  随机应变，在工作及周围的环境发生变化时，能依照情况需求改变自己的工作方法或处事方式，并在组织或工作要求上有所改变或能容易接受改变。"
+                                },
+                                {
+                                    "id": 10699,
+                                    "description": "●  能客观地看到情况的变化，面对新的、不同的环境或条件时，表示愿意调整。"
+                                },
+                                {
+                                    "id": 10700,
+                                    "description": "●  面对不同的证据和信息，有改变自己看法的意愿，不固执己见。"
+                                },
+                                { "id": 10701, "description": "●  能够分析周围环境的变化情况，判断自己需要怎样调整。" },
+                                {
+                                    "id": 10702,
+                                    "description": "●  为了完成任务或达到组织目标，适当地对正常的工作程序或规章制度做临时调整以适应某种特殊情况。"
+                                },
+                                {
+                                    "id": 10703,
+                                    "description": "●  针对情况或他人的反应，改变自己的策略、目标或计划，以适应个人情况和客观环境。"
+                                },
+                                {
+                                    "id": 10704,
+                                    "description": "●  在自己的组织内部提倡或进行小规模或短期的调整，以应情况所需。"
+                                },
+                                {
+                                    "id": 10705,
+                                    "description": "●  在自己组织内部对工作计划、行动方案、预期目标等进行较大规模的全面及长期的调整以适应具体环境的要求。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1790,
+                            "abilityname": "成本控制",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10706,
+                                    "description": "●  在保证正常工作状态和产品质量的前提下，通过控制成本、增加产出、优化流程等手段，使利润最大化。"
+                                },
+                                { "id": 10707, "description": "●  能够运用预算工具对工作中可能的成本进行合理估算。" },
+                                {
+                                    "id": 10708,
+                                    "description": "●  贯彻公司的财务制度，在保证工作质量的前提下，定期监督工作支出状况，将费用控制在预算内。"
+                                },
+                                { "id": 10709, "description": "●  对他人的浪费行为，能够进行提醒或劝阻。" },
+                                { "id": 10710, "description": "●  敢于挑战并尽量避免可能会使成本增加的一些官僚做法。" },
+                                {
+                                    "id": 10711,
+                                    "description": "●  总是能够想方设法，积极地以灵活、创新的方式（如优化流程等）改善工作，从而节省成本。"
+                                },
+                                {
+                                    "id": 10712,
+                                    "description": "●  能够进行投入和产出分析，在控制成本的基础上，通过尝试识别新的高产出机会，增加有效投入，以实现公司利益的最大化。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1791,
+                            "abilityname": "信息管理",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10713,
+                                    "description": "●  面临困难任务时，想到要尽可能收集多方面的信息来解决问题。"
+                                },
+                                {
+                                    "id": 10714,
+                                    "description": "●  直接询问相关知情人员，获得现成的信息来源，并花时间汇集资料。"
+                                },
+                                {
+                                    "id": 10715,
+                                    "description": "●  亲自去现场对情况进行观察，询问相关人员，收集有用的信息。"
+                                },
+                                {
+                                    "id": 10716,
+                                    "description": "●  接触其他尽可能多的渠道或对象，获得他们的观点、背景资料及经验等各种相关或潜在相关的信息。"
+                                },
+                                {
+                                    "id": 10717,
+                                    "description": "●  不满足于表面信息的获得，能深入询问，挖掘问题的核心和真相。"
+                                },
+                                {
+                                    "id": 10718,
+                                    "description": "●  建立相关的信息收集系统，通过系统的正式研究渠道（如报纸、杂志等）来获取信息。"
+                                },
+                                {
+                                    "id": 10719,
+                                    "description": "●  对收集到的信息进行系统分类、整理和保存等方面的管理。"
+                                },
+                                {
+                                    "id": 10720,
+                                    "description": "●  形成收集信息的习惯，建立起能够长期运作的信息收集系统。"
+                                },
+                                {
+                                    "id": 10721,
+                                    "description": "●  长期不间断地使用自己的系统方法收集信息，并不断挖掘未来可能的潜在信息和信息收集途径。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1792,
+                            "abilityname": "项目管理",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                {
+                                    "id": 10722,
+                                    "description": "●  管理短期目标，为自己及别人开发并执行预测未来短期的、逐周的计划。"
+                                },
+                                { "id": 10723, "description": "●  确保计划有清晰的目标与里程碑。" },
+                                { "id": 10724, "description": "●  利用程序、系统有效管理项目。" },
+                                {
+                                    "id": 10725,
+                                    "description": "●  开发与执行计划，逐月预测未来的中期目标。确保每组计划得以完成。"
+                                },
+                                { "id": 10726, "description": "●  将商业战略转化为可操作的目标。" },
+                                { "id": 10727, "description": "●  在计划阶段确定并考虑到彼此任务间的相互依赖。" },
+                                { "id": 10728, "description": "●  确保每个组织成员实现目标计划和完成工作。" },
+                                {
+                                    "id": 10729,
+                                    "description": "●  开发执行包括影响组织其它部门的行动计划。为可能影响组织战略的突发事件准备对策。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1793,
+                            "abilityname": "学习迁移",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10730, "description": "●  将别人明确表述的经验和做法，应用到工作中。" },
+                                {
+                                    "id": 10731,
+                                    "description": "●  对别人明确表述的经验和做法加以调整修改，运用于解决不同的问题。"
+                                },
+                                {
+                                    "id": 10732,
+                                    "description": "●  将各方面知识的精髓融为一体，得到处理不同问题的通则或经验方法，并将之变成为自己的东西，用它来分析现实中的工作问题，提出有效的解决办法。"
+                                },
+                                {
+                                    "id": 10733,
+                                    "description": "●  从经历的偶发体验或事件中，亲自总结出解决问题的方法并加以运用。"
+                                }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        },
+                        {
+                            "id": 1794,
+                            "abilityname": "专业提升",
+                            "parent_id": 1787,
+                            "defaultdescription": null,
+                            "descriptionlist": [
+                                { "id": 10734, "description": "●   了解专业领域的最新发展情况并思考怎样运用。" },
+                                { "id": 10735, "description": "●  用技术/专业经验证实项目是否可实现。" },
+                                { "id": 10736, "description": "●  运用技术与专业能力促进项目与局面的拓宽。" },
+                                { "id": 10737, "description": "●  利用本专业范围外知识来提升业务。" },
+                                {
+                                    "id": 10738,
+                                    "description": "●  利用本专业内能促进其它领域工作或项目的专业知识提高其他部门的效率。"
+                                },
+                                { "id": 10739, "description": "●  寻找能利用专业知识促进别人项目发展的机会。" },
+                                {
+                                    "id": 10740,
+                                    "description": "●  在公司工作范围外寻找机会以提高自己新知识的水平，并通过在专业杂志上出版自己的文章来展现自己这方面的能力。"
+                                },
+                                { "id": 10741, "description": "●  充当起最新技术的倡导者与传教士的角色。" },
+                                { "id": 10742, "description": "●  抓住机会了解外部公司的技术/进展。" }
+                            ],
+                            "rowindex": "",
+                            "targetscore": null,
+                            "maxtargetscore": null,
+                            "children": [],
+                            "modeldicdimensionid": 0,
+                            "weight": 0.0
+                        }
+                    ],
+                    "modeldicdimensionid": 0,
+                    "weight": 0.0
+                }
+            ]
+        }
+    ]
+}

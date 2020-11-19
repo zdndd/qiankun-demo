@@ -1,0 +1,61 @@
+<div class="header-wrapper">
+    <div class="title" title="{{ dictionaryname }}">
+        {{ dictionaryname }}
+        <span></span>
+    </div>
+</div>
+
+<div class="operate-btn">
+    <!-- <button nz-button nztype="default" class="ant-btn ant-btn-default  add-course-class">
+      <span><i class="icon-ic_export"></i>{{'导入' | translate}} </span>
+  </button> -->
+    <button nz-button nztype="default" class="ant-btn ant-btn-default  add-course-class" (click)="addDimension(0)">
+        <span><i class="icon-ic_add"></i>{{ 'Add Dimension' | translate }}</span>
+    </button>
+
+    <button nz-button nztype="default" class="ant-btn ant-btn-default  add-course-class" (click)="saveDimension()">
+        <span><i class="icon-ic_save"></i>{{ 'Save' | translate }} </span>
+    </button>
+    <div class="action-btns">
+        <a routerLink="/agile-modeling/home/dictionary-list"><span class="icon-ic_back"> </span></a>
+    </div>
+</div>
+<ng-template #other>
+    <div class="loading" *ngIf="pageState == 1">
+        <nz-spin></nz-spin>
+    </div>
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+</ng-template>
+<div *ngIf="pageState == 3; else other" class="dimension-wrap">
+    <div class="dimension-list">
+        <p>{{ 'Dimensionality' | translate }}</p>
+        <div class="dimension-list-wrap" pretty-scroll>
+            <ul>
+                <li *ngFor="let item of total; index as i" [ngClass]="{ active: i == currentIndex }">
+                    <span (click)="choiceDimension(item, i)" title="{{ item.abilityname }}"
+                        >{{ item.rowindex }}.{{ item.abilityname }}</span
+                    >
+                    <a
+                        *ngIf="!isModelUsed || item.id === 0 || item.id === '' || item.id === null"
+                        (click)="deleteDimension(item)"
+                        ><i class="icon-ic_del"></i
+                    ></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dimension-content">
+        <tree-list
+            [standardConfigId]="currentStandardConfig.id"
+            [title]="currentStandardConfig.name"
+            [total]="total[currentIndex]"
+            [editChild]="'true'"
+            [isModelUsed]="isModelUsed"
+            (editElement)="editElement($event)"
+        >
+        </tree-list>
+    </div>
+</div>

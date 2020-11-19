@@ -1,0 +1,21 @@
+<div class="chart-state">
+    <ng-container *ngIf="state == 0">
+        <nz-spin></nz-spin>
+    </ng-container>
+    <ng-container *ngIf="state == 2">
+        <img src="{{ imgUrl }}" />
+        <span>暂无数据</span>
+    </ng-container>
+    <ng-container *ngIf="state == 3">
+        <img src="{{ imgUrl }}" />
+        <span>{{ 'Click to view the description' | translate }}</span>
+    </ng-container>
+    <ng-container *ngIf="state == 4">
+        <img src="assets/img/ic-charterror@2x.png" />
+        <span>{{ title }}</span>
+    </ng-container>
+    <ng-container *ngIf="state == 5">
+        <img src="{{ imgUrl }}" />
+        <span>{{ title }}</span>
+    </ng-container>
+</div>

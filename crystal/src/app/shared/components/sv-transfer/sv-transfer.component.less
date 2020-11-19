@@ -1,0 +1,242 @@
+:host ::ng-deep {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+
+    .source-area {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .title {
+            padding: 0px 0px 7px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #777d93;
+        }
+
+        .inner {
+            flex: 1;
+            border-radius: 3px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            display: flex;
+            flex-direction: column;
+            min-height: 0px;
+
+            .selected-all {
+                height: 29px;
+                line-height: 29px;
+                padding-left: 12px;
+                border-top: 1px solid #dddddd;
+                display: flex;
+                align-items: center;
+                label {
+                    padding: 0px !important;
+                }
+            }
+
+            .head {
+                display: flex;
+
+                input {
+                    background-color: #f6f7fb;
+                    border-width: 0px !important;
+                    border-color: #dddddd !important;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+
+                .ant-select {
+                    & + .ant-select {
+                        .ant-select-selection {
+                            border-left-width: 1px !important;
+                        }
+                    }
+                }
+
+                .ant-select-selection {
+                    border-radius: 0px;
+                    border-left-width: 0px !important;
+                    border-top-width: 0px !important;
+                    border-right-width: 0px !important;
+                    background-color: #f6f7fb; // border-color: transparent !important;
+                }
+            }
+
+            .box {
+                flex: 1;
+                position: relative;
+                width: 100%;
+                overflow: auto;
+                min-height: 0px;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px 0px 5px 0px;
+
+                    li {
+                        font-size: 13px;
+                        white-space: nowrap;
+
+                        label {
+                            padding: 4px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        width: 34px;
+        margin: 0px 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        button {
+            border-radius: 4px;
+            padding: 0px;
+            width: 100%;
+            background-color: #f1f4fd;
+            border-width: 0px;
+
+            & + button {
+                margin-top: 10px;
+                transform: scalex(-1);
+            }
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .target-area {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .target-block {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            min-height: 0px;
+
+            &:last-child {
+                margin-bottom: 0px !important;
+            }
+
+            .head {
+                padding: 0px 0px 7px 12px;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #777d93;
+                position: relative;
+
+                span {
+                    color: #ff986b;
+                }
+
+                a {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                }
+            }
+
+            .box {
+                flex: 1;
+                border-radius: 3px;
+                border: 1px solid #dddddd;
+                width: 100%;
+                overflow: auto;
+                display: flex;
+                position: relative;
+
+                &.show-weight {
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        right: 81px;
+                        width: 1px;
+                        border-right: 1px solid #dddddd;
+                        z-index: 999;
+                        height: 100%;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px 0px 0px 0px;
+                    position: relative;
+
+                    &.label-list {
+                        flex: 1; // border-rsight: 1px solid #dddddd;
+                        &.showWeight {
+                            li {
+                                max-width: 170px;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+
+                    &.input-list {
+                        width: 82px;
+                        padding: 0px 0px;
+
+                        li {
+                            border-left: 1px solid #dddddd;
+                        }
+                    }
+
+                    li {
+                        font-size: 13px;
+                        padding: 0px 10px;
+                        height: 28px;
+                        line-height: 28px;
+                        white-space: nowrap;
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            padding: 4px 0px;
+                            overflow: hidden;
+                            //   white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
+                        input {
+                            padding: 0px;
+                            height: 20px;
+                            font-size: 13px;
+                            border-radius: 2.4px;
+                            padding: 0px 6px;
+                        }
+                    }
+                }
+            }
+            .error-tip {
+                color: #f04d78;
+            }
+        }
+    }
+}

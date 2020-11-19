@@ -1,0 +1,88 @@
+<div class="sidebar">
+  <a
+    routerLink="/quality-dictionary/home/dictionary-list"
+    nzTitle="{{ 'Quality Of The Dictionary' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_dictionary"> </i>
+    <span>{{ "Quality Of The Dictionary" }}</span>
+  </a>
+  <a
+    routerLink="/agile-modeling/"
+    nzTitle="{{ 'TAM' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_model"> </i>
+    <span>{{ "KAM" }}</span>
+  </a>
+  <a
+    routerLink="/oc/home/competency/"
+    nzTitle="{{ 'TPC' }}"
+    nzPlacement="right"
+    nz-tooltip
+    [class.actived]="isCompetencyActive"
+  >
+    <i class="icon-ic_Bussiness"> </i>
+    <span>{{ "KPC" }}</span>
+  </a>
+  <a
+    routerLink="/assessment-center/"
+    nzTitle="{{ 'TAC' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_Assessment"> </i>
+    <span>{{ "KAC" }}</span>
+  </a>
+  <a
+    routerLink="/talent-inventory/"
+    nzTitle="{{ 'TTR' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_nav_app"></i>
+    <span>{{ "KTR" }}</span>
+  </a>
+  <a
+    routerLink="/succession/"
+    nzTitle="{{ 'KDP' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_nav_FZGH"></i>
+    <span>{{ "KDP" }}</span>
+  </a>
+  <a
+    routerLink="/devel-scheme/"
+    nzTitle="{{ 'KDM' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_nav_FZJH"></i>
+    <span>{{ "KDM" }}</span>
+  </a>
+  <a
+    routerLink="/course-design/"
+    nzTitle="{{ 'TID' }}"
+    nzPlacement="right"
+    nz-tooltip
+    routerLinkActive="active"
+  >
+    <i class="icon-ic_course"> </i>
+    <span>{{ "KID" }}</span>
+  </a>
+
+  <!-- <a routerLink="/coming-soon" nzTitle="{{ 'TMP'  }}" nzPlacement="right" nz-tooltip
+        routerLinkActive="active">
+        <i class="icon-ic_nav_study"> </i>
+        <span>{{ 'Learn maps'  }}</span>
+    </a> -->
+</div>

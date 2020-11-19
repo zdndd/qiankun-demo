@@ -1,0 +1,37 @@
+<div class="education" *ngIf="pageState == 1; else other">
+    <nz-timeline>
+        <nz-timeline-item *ngFor="let item of educateData" [nzDot]="dotTemplate">
+            <div class="title">
+                {{ item.year }}
+            </div>
+            <div class="main">
+                <div class="content">
+                    <div class="education-bg">
+                        <img *ngIf="item.edulevelicon === '研'" src="assets/img/yan.png" />
+                        <img *ngIf="item.edulevelicon === '本'" src="assets/img/ben.png" />
+                        <img *ngIf="item.edulevelicon === '专'" src="assets/img/zhuan.png" />
+                        <img *ngIf="item.edulevelicon === '高'" src="assets/img/gao.png" />
+                        <img *ngIf="item.edulevelicon === '其他'" src="assets/img/qita.png" />
+                        <img *ngIf="item.edulevelicon === ''" src="assets/img/kong.png" />
+                    </div>
+                    <div class="wrap">
+                        <p>
+                            {{ item.school }}<span *ngIf="item.graguationtime">{{ item.graguationtime }}毕业</span>
+                        </p>
+                    </div>
+                    <div class="wrap" *ngIf="item.speciality">
+                        <p>{{ item.speciality }}<span>专业</span></p>
+                    </div>
+                </div>
+            </div>
+        </nz-timeline-item>
+    </nz-timeline>
+    <ng-template #dotTemplate>
+        <div class="dot">
+            <div></div>
+        </div>
+    </ng-template>
+</div>
+<ng-template #other>
+    <state-icon [state]="pageState"></state-icon>
+</ng-template>

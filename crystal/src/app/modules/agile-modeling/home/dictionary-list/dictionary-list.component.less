@@ -1,0 +1,69 @@
+:host ::ng-deep {
+    // flex-grow: 1;
+    // display: flex;
+    // width: 100%;
+    height: 100%;
+    // flex-direction: column;
+    .loading {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    .empty-data {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    .table-wrap {
+        display: flex;
+        height: 100%;
+        flex: 1;
+        flex-direction: column;
+        margin-top: 43px;
+        .table-content {
+            flex: 1;
+            padding: 0px;
+            position: relative;
+
+            .ps__rail-x {
+                display: none !important;
+
+                .ps__thumb-x {
+                    display: none !important;
+                }
+            }
+
+            nz-table {
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+            }
+        }
+    }
+
+    .operate-btn {
+        position: fixed;
+        right: 24px;
+        top: 54px;
+        z-index: 101;
+        .add-course-class {
+            margin-right: 6px;
+        }
+        i {
+            display: inline-block;
+            margin-right: 2px;
+        }
+    }
+    .a_download {
+        opacity: 0;
+        margin: 0 14px 0 0;
+    }
+    .ant-table-tbody tr:hover {
+        .a_download {
+            opacity: 1;
+        }
+    }
+}

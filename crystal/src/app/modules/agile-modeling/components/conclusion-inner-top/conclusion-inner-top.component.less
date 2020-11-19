@@ -1,0 +1,35 @@
+:host ::ng-deep {
+  ul.menu-top{
+    margin-bottom: 14px;
+    li{
+      cursor: pointer;
+      position: relative;
+      min-width: 88px;
+      line-height: 30px;
+      float: left;
+      padding: 0 16px;
+      height: 30px;
+      background-color: #95a3fa;
+      color: #fff;
+      box-sizing: border-box;
+      margin-right: 8px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      &:hover i{
+        display: block;
+      }
+      i{
+        display: none;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: -6px;
+        top: -6px;
+        //background-color: #eee;
+        border-radius: 50%;
+        background: url("/assets/img/ic-photo-del@2x.png") 0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

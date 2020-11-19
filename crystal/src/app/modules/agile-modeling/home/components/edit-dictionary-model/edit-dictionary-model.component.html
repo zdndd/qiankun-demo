@@ -1,0 +1,29 @@
+<div class="form-input-group">
+    <div class="row" [class.has-error]="name.invalid && name.dirty && name.touched">
+        <input
+            nz-input
+            placeholder="{{ 'Please Input' | translate: { field: 'Dictionary Name' | translate } }}"
+            nzSize="default"
+            [(ngModel)]="dictionaryName"
+            required
+            maxlength="200"
+            #name="ngModel"
+        />
+    </div>
+    <div *ngIf="name.invalid && name.dirty && name.touched" class="alert alert-danger">
+        <div *ngIf="name.errors.required" class="tips">
+            "{{ 'Please Input' | translate: { field: 'Dictionary Name' | translate } }}"
+        </div>
+    </div>
+
+    <!-- <div class="row drp"  [class.has-error]="drpdownItem.invalid &&  drpdownItem.dirty && drpdownItem.touched">
+    <nz-select   #drpdownItem="ngModel" required style="width: 100%;" [(ngModel)]="qualityType"  nzPlaceHolder="{{ '请选择素质类型' | translate }}" [nzDisabled]="disabled">
+      <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.name" [nzValue]="option.id"></nz-option>
+    </nz-select>
+  </div>
+  <div *ngIf="drpdownItem.invalid && drpdownItem.dirty && drpdownItem.touched" class="alert alert-danger">
+      <div *ngIf="drpdownItem.errors.required" class="tips">
+          请选择素质类型
+      </div>
+    </div> -->
+</div>

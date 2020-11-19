@@ -1,0 +1,86 @@
+<ul class="searchHeader">
+    <li #searchWrap class="searchStatic">
+        <nz-input-group nzSearch [nzSuffix]="IconButton">
+            <input maxlength="50" type="text" nz-input placeholder="{{ 'Ability Model Search' | translate }}"
+                [(ngModel)]="searchKeyword" (keyup.enter)="filterData()" (focus)="searchWrap.className = null"
+                (blur)="searchWrap.className = 'searchStatic'" />
+        </nz-input-group>
+        <ng-template #IconButton>
+            <button nz-button nzType="primary" nzSearch (click)="filterData()">
+                <i class="icon-ic_search"></i>
+            </button>
+        </ng-template>
+    </li>
+    <li>
+        <nz-divider nzType="vertical"></nz-divider>
+    </li>
+</ul>
+<div *ngIf='maximumdata' class="max-data">
+    {{ 'Model Limits' | translate }}：
+    <span>{{maximumdata.currentmaximum}}</span>
+    /<div *ngIf="maximumdata.maximum>-1; else elseBlock">
+        {{maximumdata.maximum}}</div>
+    <ng-template #elseBlock>{{ 'unlimited' | translate }}</ng-template>
+</div>
+<div class="model-page" pretty-scroll [ngClass]="lang" [class.empty]="loading == 2">
+    <nz-spin [nzSpinning]="loading===1">
+
+        <div class="project-list" cdkDropListGroup>
+            <div cdkDropList [cdkDropListEnterPredicate]="dropListEnterPredicate"
+                (cdkDropListDropped)="dropListDropped()"></div>
+
+            <div class="project-item">
+                <div class="add" (click)="popupAddProject(null, 'add')">
+                    <img *ngIf="lang === 'zh'" src="assets/img/modeling_type_add.png" />
+                    <img *ngIf="lang === 'en'" src="assets/img/add-en.png" />
+                </div>
+            </div>
+            <div cdkDropList *ngFor="let item of list" [cdkDropListEnterPredicate]="dropListEnterPredicate"
+                (cdkDropListDropped)="dropListDropped()">
+                <div *ngIf="item.visible" cdkDrag (cdkDragMoved)="dragMoved($event)" class="project-item"
+                    [ngClass]="{ showEdit: modelEditId === item.id }">
+                    <div class="inner">
+                        <div class="meta">
+                            <div class="caption">
+                                <h3 class="title limt-1" style="width: 232px;">
+                                    {{ item.modelname }}
+                                </h3>
+                            </div>
+                            <a (click)="showOperator(item, $event)">
+                                <span class="icon-ic_operate"></span>
+                            </a>
+                        </div>
+                        <div class="info" (click)="itemClick(item)"
+                            [ngClass]=" item.lstabilityproportion.length>7?'typeInfinite':'type' + item.lstabilityproportion?.length">
+                            <div class="chart">
+                                <chart-content [data]="item.lstabilityproportion"></chart-content>
+                            </div>
+                        </div>
+                        <div class="caption flex-h flex-align-center flex-justify-between">
+                            <h4 class="subTitle">
+                                {{ item.createdate }}
+                            </h4>
+                            <span class="subTitle limt-1">{{item.createusername}}</span>
+                        </div>
+
+                        <div class="overlay-edit">
+                            <!--启用-->
+                            <a (click)="onEdit(item)">
+                                <span class="icon-ic_xm_edit"> </span>
+                                <p>{{ 'Edit' | translate }}</p>
+                            </a>
+                            <a (click)="onDelete(item)">
+                                <span class="icon-ic_xm_del"> </span>
+                                <p>{{ 'Delete' | translate }}</p>
+                            </a>
+                            <a (click)="onCopy(item)">
+                                <span class="icon-ic_xm_copy"> </span>
+                                <p>{{ 'copy' | translate }}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nz-spin>
+</div>

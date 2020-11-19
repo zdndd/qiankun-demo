@@ -1,0 +1,238 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": [
+    {
+      "id": 1,
+      "name": "模块1",
+      "description":"這是描述一",
+      "moduledetails": [{
+        "targetid": 11,
+        "name": "内容1",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":4,
+            "description": "1-1、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"15",
+            "detailtypeid":0
+          },{
+            "typename":5,
+            "description": "1-2、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"20",
+            "detailtypeid":1
+          },{
+            "typename":6,
+            "description": "1-3、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"75",
+            "detailtypeid":2
+          },{
+            "typename":7,
+            "description": "1-4、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"5",
+            "detailtypeid":3
+          },{
+            "typename":8,
+            "description": "1-5、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"",
+            "detailtypeid":333
+          }
+        ]
+      },{
+        "targetid": 12,
+        "name": "内容2",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description": "2-1、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"",
+            "detailtypeid":4
+          },{
+            "typename":0,
+            "description": "2-2、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"20",
+            "detailtypeid":5
+          },{
+            "typename":0,
+            "description": "2-3、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"75",
+            "detailtypeid":6
+          },{
+            "typename":0,
+            "description": "2-4、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"5",
+            "detailtypeid":7
+          }
+        ]
+      },{
+        "targetid": 13,
+        "name": "内容3",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description": "3-1、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"15",
+            "detailtypeid":8
+          },{
+            "typename":0,
+            "description": "3-2、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"20",
+            "detailtypeid":9
+          },{
+            "typename":0,
+            "description": "3-3、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"75",
+            "detailtypeid":10
+          },{
+            "typename":0,
+            "description": "3-4、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"5",
+            "detailtypeid":11
+          }
+        ]
+      },{
+        "targetid": 14,
+        "name": "内容4",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description": "4-1、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"15",
+            "detailtypeid":12
+          },{
+            "typename":0,
+            "description": "4-2、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"20",
+            "detailtypeid":13
+          },{
+            "typename":0,
+            "description": "4-3、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"75",
+            "detailtypeid":14
+          },{
+            "typename":0,
+            "description": "4-4、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"5",
+            "detailtypeid":15
+          }
+        ]
+      }]
+    },{
+      "id": 2,
+      "name": "模块2",
+      "description":"這是描述二",
+      "moduledetails": [{
+        "targetid": 21,
+        "name": "内容1",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description": "2-1、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"15",
+            "detailtypeid":16
+          },{
+            "typename":0,
+            "description":"我是描述12",
+            "time":"20",
+            "detailtypeid":17
+          },{
+            "typename":0,
+            "description":"我是描述13",
+            "time":"75",
+            "detailtypeid":18
+          },{
+            "typename":0,
+            "description":"我是描述14",
+            "time":"5",
+            "detailtypeid":19
+          }
+        ]
+      },{
+        "targetid": 22,
+        "name": "内容2",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description": "2-2、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"15",
+            "detailtypeid":20
+          },{
+            "typename":0,
+            "description":"我是描述12",
+            "time":"20",
+            "detailtypeid":21
+          },{
+            "typename":0,
+            "description":"我是描述13",
+            "time":"75",
+            "detailtypeid":22
+          },{
+            "typename":0,
+            "description":"我是描述14",
+            "time":"5",
+            "detailtypeid":23
+          }
+        ]
+      },{
+        "targetid": 23,
+        "name": "内容3",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description": "2-3、筛选结果可以再原数据源上或原数据源下方显示。\n2、条件区域设置：同行为与条件，异行为或条件。\n3、取消高级筛选：可以再菜单栏中选“数据”|“筛选”|“全部显示”\n     命令。",
+            "time":"15",
+            "detailtypeid":24
+          },{
+            "typename":0,
+            "description":"我是描述12",
+            "time":"20",
+            "detailtypeid":25
+          },{
+            "typename":0,
+            "description":"我是描述13",
+            "time":"75",
+            "detailtypeid":26
+          },{
+            "typename":0,
+            "description":"我是描述14",
+            "time":"5",
+            "detailtypeid":27
+          }
+        ]
+      },{
+        "targetid": 24,
+        "name": "内容4",
+        "alltime": 115,
+        "contenttypes":[
+          {
+            "typename":0,
+            "description":"我是描述11",
+            "time":"15",
+            "detailtypeid":28
+          },{
+            "typename":0,
+            "description":"我是描述12",
+            "time":"20",
+            "detailtypeid":29
+          },{
+            "typename":0,
+            "description":"我是描述13",
+            "time":"75",
+            "detailtypeid":30
+          },{
+            "typename":0,
+            "description":"我是描述14",
+            "time":"5",
+            "detailtypeid":31
+          }
+        ]
+      }]
+    }
+  ]
+}

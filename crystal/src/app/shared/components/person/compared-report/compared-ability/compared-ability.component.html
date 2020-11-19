@@ -1,0 +1,26 @@
+<ng-container *ngIf="pageState === 1; else other">
+    <div class="ability-container flex-h flex-align-center" *ngFor="let item of data">
+        <!-- {{item.num1}} {{item.sum1}} -->
+        <div class="number-left">{{ item.num1 !== -1 ? item.num1 : '' }}</div>
+        <div class="ability-content flex-h flex-align-center new-flex-1" [ngStyle]="{ height: itemHeight + 'px' }">
+            <div class="left new-flex-1">
+                <span class="inner" *ngIf="item.num1 !== -1"
+                    [ngStyle]="{ width: (item.num1 / item.sum1) * 100 + '%' }"></span>
+            </div>
+            <div class="center limt-1" nz-tooltip [nzTitle]="item.title" nzTooltipPlacement="bottomRight">
+                {{ item.title }}
+            </div>
+            <div class="right new-flex-1">
+                <span class="inner" *ngIf="item.num2 !== -1"
+                    [ngStyle]="{ width: (item.num2 / item.sum2) * 100 + '%' }"></span>
+            </div>
+        </div>
+        <div class="number-right">{{ item.num2 !== -1 ? item.num2 : '' }}</div>
+        <!-- {{item.num2}} {{item.sum2}} -->
+    </div>
+</ng-container>
+<ng-template #other>
+    <div class="status-container">
+        <state-icon [state]="pageState"></state-icon>
+    </div>
+</ng-template>

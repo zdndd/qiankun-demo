@@ -1,0 +1,426 @@
+{
+  "errorcode": 0,
+  "message": "操作成功",
+  "data": [
+    {
+      "coursename": "从入门到精通—新员工Excel图表入门",
+      "id": 3,
+      "targetlist": [
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点1",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点2",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点3",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点4",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点5",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点6",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点7",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点8",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点9",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点10",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点11",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点12",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点13",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点14",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点15",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点16",
+          "targettype": 2
+        }
+      ]
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": [
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点9",
+          "targettype": 2
+        }
+      ]
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": [
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点1",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点2",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点3",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点4",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点5",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点6",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点7",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点8",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点9",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点10",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点11",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点12",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点13",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点14",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点15",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点16",
+          "targettype": 2
+        }
+      ]
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": [
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点9",
+          "targettype": 2
+        }
+      ]
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": [
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点1",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点2",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点3",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点4",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "知识点5",
+          "targettype": 1
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点6",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点7",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点8",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点9",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点10",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点11",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点12",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点13",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点14",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点15",
+          "targettype": 2
+        },
+        {
+          "id": 0,
+          "courseid": 3,
+          "targetname": "技能点16",
+          "targettype": 2
+        }
+      ]
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    },
+    {
+      "coursename": "我是课程二我是课程二我是课程二我是课程二",
+      "id": 4,
+      "targetlist": []
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<div class="breadcrumbs">
+        {{ moduleName }} / <span>{{typeName}}</span>
+    <a class="help"><i class="icon-ic_info" (click)="openHelp()"> </i></a>
+    <a class="back" (click)="goBack()"><span class="icon-ic_back"> </span></a>
+</div>
+<div class="basic-tabs tabs-wrapper">
+    <div class="tabs-inner">
+        <ng-container *ngIf="isLeaderInterview;else otherModule">
+            <ng-container *ngFor="let navItem of navs;let i = index;">
+                <a  class="tabs-item"
+                    *ngIf="i < interviewprogress -1"
+                    [routerLink]="navItem.url"
+                    routerLinkActive="actived"
+                    >
+                        {{ navItem.title }}
+                </a>
+            </ng-container>
+            <!-- 根据interviewprogress来判断是否需要显示下一步按钮，结论页interviewprogress = 5 -->
+            <a class="tabs-item tabs-step" *ngIf="interviewprogress < 5" (click)="nextStep()">
+                <i class="icon-ic_put"></i>
+            </a>
+        </ng-container>
+        <ng-template #otherModule>
+            <a  class="tabs-item"
+                *ngFor="let navItem of navs;"
+                [routerLink]="navItem.url"
+                routerLinkActive="actived"
+                >
+                    {{ navItem.title }}
+            </a>
+        </ng-template>
+    </div>
+</div>
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+
+<ng-template #modal1Content>
+    <img style="width: 962px;height: 542px;" src="assets/img/ability-comparison@2x.jpg" />
+</ng-template>
+
+<ng-template #modal2Content>
+    <img style="width: 954px;height: 564px;" src="assets/img/leader-interview@2x.jpg" />
+</ng-template>
+
+<ng-template #modal3Content>
+    <img style="width: 912px;height: 423px;" src="assets/img/task-analysis@2x.jpg" />
+</ng-template>
+
+<ng-template #modal4Content>
+    <img style="width: 945px;height: 501px;" src="assets/img/employee-survey@2x.jpg" />
+</ng-template>

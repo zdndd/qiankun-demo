@@ -1,0 +1,62 @@
+{
+    "datasource": {
+        "columns": [
+            {
+                "code": "4",
+                "title": "绩效"
+            },
+            {
+                "code": "5",
+                "title": "能力"
+            },
+            {
+                "code": "6",
+                "title": "特质"
+            }
+        ],
+        "rows": [
+            {
+                "code": "1",
+                "title": "组织",
+                "columns": [
+                    {
+                        "code": "4",
+                        "value": "我是绩效"
+                    },
+                    {
+                        "code": "5",
+                        "value": "我是能力"
+                    }
+                ]
+            },
+            {
+                "code": "2",
+                "title": "群体",
+                "columns": [
+                    {
+                        "code": "5",
+                        "value": "我是能力"
+                    },
+                    {
+                        "code": "6",
+                        "value": "我是特质"
+                    }
+                ]
+            },
+            {
+                "code": "3",
+                "title": "个人",
+                "columns": [
+                    {
+                        "code": "5",
+                        "value": "我是能力"
+                    },
+                    {
+                        "code": "6",
+                        "value": "我是特质"
+                    }
+                ]
+            }
+        ]
+    }
+}

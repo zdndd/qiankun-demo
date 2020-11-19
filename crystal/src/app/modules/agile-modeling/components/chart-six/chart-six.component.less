@@ -1,0 +1,71 @@
+@reset-width: 45px;
+@reset-height: 15px;
+
+::ng-deep {
+    .abilitylist6 {
+        width: 495px;
+        height: 370px;
+        overflow: hidden;
+    }
+    .abilitylist6-box {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &.cdk-drag-preview {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            line-height: 30px;
+            height: 30px !important;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
+    .abilitylist6-wrap {
+        cursor: move;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        margin: 0;
+        color: #fff;
+    }
+    .abilitylist6-wrap:nth-child(1) {
+        font-size: 22px;
+        transform: translate3d(191px, 170px, 0) !important;
+    }
+    .abilitylist6-wrap:nth-child(2) {
+        font-size: 16px;
+        transform: translate3d(175px, 45px, 0) !important;
+    }
+    .abilitylist6-wrap:nth-child(3) {
+        font-size: 21px;
+        transform: translate3d(350px, 85px, 0) !important;
+    }
+    .abilitylist6-wrap:nth-child(4) {
+        font-size: 20px;
+        transform: translate3d(346px - @reset-width, 299px - @reset-height, 0) !important;
+    }
+    .abilitylist6-wrap:nth-child(5) {
+        font-size: 18px;
+        transform: translate3d(88px, 290px, 0) !important;
+    }
+    .abilitylist6-wrap:nth-child(6) {
+        font-size: 22px;
+        transform: translate3d(7px, 134px, 0) !important;
+    }
+}
+:host ::ng-deep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .agileChart {
+        width: 495px;
+        height: 370px;
+        background: url(/assets/img/chart-6.png) no-repeat;
+        background-size: 495px 370px;
+        //margin-top: 113px;
+    }
+}

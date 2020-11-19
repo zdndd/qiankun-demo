@@ -1,0 +1,54 @@
+<div class="operator-btns">
+    <!-- <button nz-button (click)="exportHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导出' | translate }}
+    </button> -->
+    <!-- <button nz-button (click)="importHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导入' | translate }}
+    </button> -->
+</div>
+<div class="echarts-wrap">
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+    <div class="static-table" style="position: relative; min-height: 155px;">
+        <nz-table
+            class="theme_simple"
+            #columnTable
+            [nzData]="listOfData"
+            [nzBordered]="true"
+            [nzShowPagination]="false"
+        >
+            <thead>
+                <tr *ngFor="let data of columnTable.data; index as i">
+                    <ng-template [ngIf]="i <= 0">
+                        <th *ngFor="let item of data; index as ii">
+                            <ng-template [ngIf]="ii <= 0">
+                                <div style="width: 100px;">{{ item }}</div>
+                            </ng-template>
+                            <div style="width: 50px;">{{ item }}</div>
+                        </th>
+                    </ng-template>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of columnTable.data; index as i">
+                    <ng-template [ngIf]="i > 0">
+                        <td *ngFor="let item of data; index as ii">
+                            <ng-template [ngIf]="ii <= 0">
+                                <div class="color{{ i }}"></div>
+                            </ng-template>
+                            {{ item }}
+                            <ng-template [ngIf]="ii <= 0">
+                                {{ '(Avg.)' | translate }}
+                            </ng-template>
+                        </td>
+                    </ng-template>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+    <div style="height: 100%;">
+        <chart-bar [chartParams]="chartParams"></chart-bar>
+    </div>
+</div>

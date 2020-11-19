@@ -1,0 +1,65 @@
+{
+  "errorcode": 0,
+  "message": "获取成功",
+  "data": {
+    "id": 1,
+    "customerid": "12580",
+    "customername": null,
+    "settings": [
+      {
+        "id": 0,
+        "moduleid": 1000,
+        "modulename": "后台管理",
+        "selectvalue": 0,
+        "isopen": false,
+        "begindate": "0001-01-01T00:00:00",
+        "enddate": "0001-01-01T00:00:00"
+      },
+      {
+        "id": 20,
+        "moduleid": 1001,
+        "modulename": "人才盘点",
+        "selectvalue": 500,
+        "isopen": false,
+        "begindate": "0001-01-01T00:00:00",
+        "enddate": "2021-03-11T00:00:00"
+      },
+      {
+        "id": 21,
+        "moduleid": 1002,
+        "modulename": "敏捷建模",
+        "selectvalue": 5,
+        "isopen": true,
+        "begindate": "0001-01-01T00:00:00",
+        "enddate": "2021-03-11T00:00:00"
+      },
+      {
+        "id": 24,
+        "moduleid": 1005,
+        "modulename": "课程设计",
+        "selectvalue": 1,
+        "isopen": true,
+        "begindate": "0001-01-01T00:00:00",
+        "enddate": "2021-03-11T00:00:00"
+      },
+      {
+        "id": 25,
+        "moduleid": 1006,
+        "modulename": "岗位胜任力",
+        "selectvalue": -1,
+        "isopen": false,
+        "begindate": "0001-01-01T00:00:00",
+        "enddate": "2021-03-11T00:00:00"
+      },
+      {
+        "id": 26,
+        "moduleid": 1007,
+        "modulename": "评估中心",
+        "selectvalue": 500,
+        "isopen": false,
+        "begindate": "0001-01-01T00:00:00",
+        "enddate": "2021-03-11T00:00:00"
+      }
+    ]
+  }
+}

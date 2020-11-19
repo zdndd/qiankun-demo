@@ -1,0 +1,41 @@
+:host ::ng-deep {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .container {
+        height: 600px;
+        padding: 0px 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .form-item {
+        display: flex;
+        width: 100%;
+        &.desc {
+            margin-top: 10px;
+            flex-direction: column;
+            label {
+                padding-left: 10px;
+                padding-bottom: 8px;
+            }
+            textarea {
+                height: 90px;
+            }
+        }
+        .form-item-content {
+            flex-grow: 1;
+            position: relative;
+        }
+        label {
+            flex-shrink: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        input {
+            flex-grow: 1;
+        }
+    }
+}

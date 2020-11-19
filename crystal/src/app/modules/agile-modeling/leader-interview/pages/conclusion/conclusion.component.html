@@ -1,0 +1,34 @@
+<!--conclusion结论-->
+<div class="operator-btns">
+    <button
+        nz-button
+        (click)="updatetModal()"
+        nzType="default"
+        nz-tooltip
+        nzTooltipTitle="{{ 'The conclusion will be updated to standard conclusion' | translate }}"
+    >
+        <i class="icon-ic_renovate"></i>&nbsp;
+        {{ 'Update Conclusion' | translate }}
+    </button>
+
+    <nz-select
+        nzMode="multiple"
+        nzPlaceHolder="{{ 'Selection method' | translate }}"
+        [(ngModel)]="selectListValue"
+        (ngModelChange)="modelChange($event)"
+        (nzOpenChange)="refreshConclusion()"
+    >
+        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option"> </nz-option>
+    </nz-select>
+    <button nz-button (click)="showSelectModal()" nzType="default">
+        <i nz-icon nzType="setting"></i>{{ 'Select Ability' | translate }}
+    </button>
+</div>
+
+<conclusion-common
+    [modelid]="checkData.modelid"
+    [tabid]="checkData.tabid"
+    [autotabid]="checkData.autotabid"
+    (checkData)="getcheckData($event)"
+>
+</conclusion-common>

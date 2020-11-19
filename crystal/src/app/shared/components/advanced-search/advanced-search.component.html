@@ -1,0 +1,147 @@
+<div class="container base-dialog-form">
+    <div class="form-left">
+        <div nz-col nzSpan="6" class="form-item">
+            <label>{{ 'department' | translate }}</label>
+            <nz-select
+                [(ngModel)]="departmentValue"
+                (ngModelChange)="departmentSelect($event)"
+                nzPlaceHolder="{{ 'Please Choose' | translate: { field: '' | translate } }}"
+            >
+                <nz-option *ngFor="let option of departmentList" [nzValue]="option.value" [nzLabel]="option.text">
+                </nz-option>
+            </nz-select>
+        </div>
+        <div nz-col nzSpan="6" class="form-item">
+            <label>{{ 'Job sequence' | translate }}</label>
+            <nz-select
+                [nzDisabled]="isSelectDepart"
+                [(ngModel)]="jobSequenceValue"
+                (ngModelChange)="jobSequenceSelect($event)"
+                nzPlaceHolder="{{ 'Please Choose' | translate: { field: '' | translate } }}"
+            >
+                <nz-option
+                    *ngFor="let option of jobSequenceList"
+                    [nzValue]="option.value"
+                    [nzLabel]="option.extratext"
+                ></nz-option>
+            </nz-select>
+        </div>
+        <div nz-col nzSpan="6" class="form-item">
+            <label>{{ 'Post' | translate }}</label>
+            <nz-select
+                [nzDisabled]="isSelectDepart"
+                [(ngModel)]="positionNameValue"
+                (ngModelChange)="positionNameSelect($event)"
+                nzPlaceHolder="{{ 'Please Choose' | translate: { field: '' | translate } }}"
+            >
+                <nz-option
+                    *ngFor="let option of positionNameList"
+                    [nzValue]="option.value"
+                    [nzLabel]="option.text"
+                ></nz-option>
+            </nz-select>
+        </div>
+        <div nz-col nzSpan="6" class="form-item">
+            <label>{{ 'Rank' | translate }}</label>
+            <nz-select
+                [nzDisabled]="isSelectDepart"
+                [(ngModel)]="rankValue"
+                (ngModelChange)="rankSelect($event)"
+                nzPlaceHolder="{{ 'Please Choose' | translate: { field: '' | translate } }}"
+            >
+                <nz-option *ngFor="let option of rankList" [nzValue]="option.value" [nzLabel]="option.text"></nz-option>
+            </nz-select>
+        </div>
+        <div class="operate">
+            <a class="advancedSearch" (click)="search()">
+                <span>{{ 'Search' | translate }}</span>
+            </a>
+            <a class="advancedSearch" (click)="reset()">
+                <span>{{ 'Reset' | translate }}</span>
+            </a>
+        </div>
+    </div>
+
+    <ng-container *ngIf="pagestate === 3; else other">
+        <div class="sv-panel-body">
+            <nz-table
+                #basicTable
+                pretty-table
+                class="theme_default advanced-search"
+                [nzData]="tabledata"
+                [nzShowPagination]="false"
+                [nzPageSize]="20"
+                (nzCurrentPageDataChange)="currentPageDataChange($event)"
+            >
+                <thead>
+                    <tr>
+                        <th
+                            nzWidth="30px"
+                            nzShowCheckbox
+                            [(nzChecked)]="isAllDisplayDataChecked"
+                            [nzIndeterminate]="isIndeterminate"
+                            (nzCheckedChange)="checkAll($event)"
+                        ></th>
+                        <th nzWidth="60px">{{ 'No.' | translate }}</th>
+                        <th nzWidth="120px">{{ 'Emp Code' | translate }}</th>
+                        <th nzWidth="120px">{{ 'Employee Name' | translate }}</th>
+                        <th nzWidth="120px">{{ 'Post' | translate }}</th>
+                        <th nzWidth="140px">{{ 'Job sequence' | translate }}</th>
+                        <th nzWidth="140px">{{ 'Rank' | translate }}</th>
+                        <th nzWidth="140px">{{ 'department' | translate }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of basicTable.data; index as i">
+                        <td
+                            nzShowCheckbox
+                            [nzDisabled]="data.disabled"
+                            [(nzChecked)]="mapOfCheckedId[data.empcode + '@$@' + data.positionid]"
+                            (nzCheckedChange)="refreshStatus()"
+                        ></td>
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ data.empcode | empcodeFilter }}</td>
+                        <td>
+                            <a>{{ data.empname }} </a>
+                        </td>
+                        <td>{{ data.positionname }}</td>
+                        <td>{{ data.positionjob }}</td>
+                        <td>{{ data.positiongrade }}</td>
+                        <td>{{ data.orgname }}</td>
+                    </tr>
+                </tbody>
+            </nz-table>
+        </div>
+        <div class="sv-panel-footer" *ngIf="tabledata.length > 0 && pagestate === 3">
+            <div class="select-way">
+                <ul>
+                    <li>
+                        <label nz-checkbox [(ngModel)]="isCheckedAllPage" (ngModelChange)="selectAllPage()"
+                            >全选所有</label
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <sv-pagination
+                [nzPageSize]="pagesize"
+                [nzPageIndex]="pageindex"
+                (nzPageIndexChange)="pageIndexChange($event)"
+                [nzTotal]="totalcount"
+                [nzShowTotal]="totalTemplate"
+            ></sv-pagination>
+            <ng-template #totalTemplate let-total>
+                {{ 'Page Total' | translate: { field: pagecount, total: totalcount } }}
+            </ng-template>
+        </div>
+    </ng-container>
+    <ng-template #other>
+        <div class="empty-data">
+            <nz-spin nzTip="Loading..." *ngIf="pagestate == 1"></nz-spin>
+            <div class="empty-data-img">
+                <img *ngIf="pagestate == 2 && lang === 'zh'" src="assets/img/image-empty.png" />
+                <img *ngIf="pagestate == 2 && lang === 'en'" src="assets/img/image-empty-en.png" />
+            </div>
+        </div>
+    </ng-template>
+</div>

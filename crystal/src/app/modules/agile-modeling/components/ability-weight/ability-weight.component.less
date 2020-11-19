@@ -1,0 +1,101 @@
+:host ::ng-deep {
+    width: 100%;
+    height: 100%;
+    .detail-title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #777d93;
+    }
+    .detail-type {
+        margin: 0px auto;
+        width: 512px;
+        height: 460px;
+        background-image: url(/assets/img/bg-shot.png);
+        background-size: 512px 460px;
+
+        .list-ul {
+            width: 512px;
+            list-style-type: none;
+            padding: 0;
+            li {
+                float: left;
+                width: 240px;
+                height: 214px;
+                position: relative;
+                //opacity: 0.95;
+                //border-radius: 3px;
+                //box-shadow: 0 0 17px 0 rgba(96, 113, 223, 0.12);
+                //background-color: #ffffff;
+                margin-bottom: 16px;
+
+                .lst-proportion {
+                    width: 80px;
+                    height: 36px;
+                    display: flex;
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                    transform: translate(0%, -50%);
+                    .percent-sign {
+                        height: 36px;
+                        line-height: 36px;
+                    }
+                    .ant-input {
+                        height: 34px !important;
+                        line-height: 34px !important;
+                        color: #253238;
+                        font-size: 13px;
+                        text-align: center;
+                        border-radius: 2px;
+                        border-color: #777d93;
+                        background-color: #ffffff;
+                    }
+                }
+
+                .bullet {
+                    position: absolute;
+
+                    top: 14px;
+                    background-size: cover;
+                    width: 110px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #454a6b;
+                    cursor: pointer;
+                    &.bullet-l {
+                        background-image: url(/assets/img/btn-bullet-complete-l.svg);
+                        //left: 68px;
+                        padding-left: 20px;
+                        left: 70%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &.bullet-r {
+                        background-image: url(/assets/img/btn-bullet-complete-r.svg);
+                        // right: 68px;
+                        padding-right: 20px;
+                        text-align: right;
+                        left: 70%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                > ul {
+                    > li {
+                        a {
+                            font-size: 36px;
+                        }
+                    }
+                }
+            }
+            li:nth-child(1),
+            li:nth-child(3) {
+                margin-right: 16px;
+            }
+        }
+    }
+}

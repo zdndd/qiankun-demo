@@ -1,0 +1,86 @@
+<div class="operator-btns">
+    <!-- <button nz-button (click)="importHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导入' | translate }}
+    </button> -->
+    <!-- <button nz-button (click)="exportHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导出' | translate }}
+    </button> -->
+    <button nz-button (click)="selectHandler()" nzType="default">
+        <i nz-icon nzType="plus"></i>{{ 'Add Ability' | translate }}
+    </button>
+</div>
+<!-- pretty-table -->
+<div class="table-content">
+    <nz-table
+        #headerTable
+        pretty-table
+        class="theme_simple"
+        [nzBordered]="true"
+        [nzLoading]="loading"
+        [nzData]="tableData"
+        [nzShowPagination]="false"
+    >
+        <thead *ngIf="columns.length > 0">
+            <tr>
+                <th nzWidth="80px"></th>
+                <th class="ability-column" *ngFor="let item of columns" nzWidth="80px">
+                    {{ item.abilityname }}
+                    <span class="remove" (click)="deleteColumn(item)">
+                        <i class="icon-ic_del"></i>
+                    </span>
+                </th>
+                <th nzWidth="80px" style="color: #6373da !important;">{{ 'The weight' | translate }}</th>
+            </tr>
+        </thead>
+        <tbody id="table1">
+            <tr
+                *ngFor="let row of tableData; let i = index"
+                (mouseover)="mouseoverCell($event, row, i)"
+                (mouseout)="mouseoutCell($event, row, i)"
+            >
+                <td style="color: #626262;">{{ columns[i].abilityname }}</td>
+                <td
+                    *ngFor="let item of row.datasource; let column = index"
+                    [class.cell0]="item.cellinfo.celltype == 0"
+                    [class.cell2]="item.cellinfo.celltype == 1"
+                    [class.cell1]="item.cellinfo.celltype == -1"
+                >
+                    <ng-container *ngIf="item.cellinfo.celltype == 0">
+                        <nz-cascader
+                            [nzLabelRender]="renderTpl"
+                            [nzPlaceHolder]="'Please Choose' | translate: { field: '' }"
+                            [nzOptions]="item.pickerOptions"
+                            [(ngModel)]="item.cellinfo.value1"
+                            (ngModelChange)="onChanges($event, item.cellinfo, column, i)"
+                        >
+                        </nz-cascader>
+                    </ng-container>
+                    <ng-container *ngIf="item.cellinfo.celltype != 0">
+                        {{ item.cellinfo.value1 }}
+                    </ng-container>
+                </td>
+                <td>{{ row.weightvalue }}%</td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>
+<ng-template #renderTpl let-labels="labels" let-selectedOptions="selectedOptions">
+    <ng-container *ngFor="let label of labels; let i = index; let isLast = last">
+        <span *ngIf="isLast">
+            <!-- {{ label }}   -->
+            {{ selectedOptions[i].code }}
+        </span>
+    </ng-container>
+</ng-template>
+<ng-template cdk-portal #rowRemoveTemplate="cdkPortal">
+    <div
+        class="row-remove-overlay"
+        (click)="deleteRow($event)"
+        (mouseenter)="removeBtnMouseEnter($event)"
+        (mouseleave)="removeBtnMouseLeave($event)"
+    >
+        <span>
+            <i class="icon-ic_del"></i>
+        </span>
+    </div>
+</ng-template>

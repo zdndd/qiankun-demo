@@ -1,0 +1,105 @@
+<div class="candidate">
+    <button nz-button nztype="default" class="ant-btn ant-btn-default" (click)="addCandidate()">
+        <span
+            ><i class="icon-ic_info_addP"></i><span class="candidate-btn">{{ 'Candidate' | translate }}</span>
+        </span>
+    </button>
+</div>
+<div class="page-header flex-h">
+    <report-person-card class="new-flex-1" [personalInfo]="personalInfo[0]" [backgroundColor]="'#7e8be0'">
+    </report-person-card>
+    <div class="header-gap"></div>
+    <report-person-card class="new-flex-1" [personalInfo]="personalInfo[1]" [backgroundColor]="'#59b9a2'">
+    </report-person-card>
+</div>
+<nz-tabset
+    class="compage-tab new-flex-1"
+    [(nzSelectedIndex)]="selectedIndex"
+    (nzSelectedIndexChange)="selectedIndexChange()"
+>
+    <nz-tab nzTitle="{{ tabInfo[0].title }}">
+        <!-- <a nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: tabInfo[0].tabIndex }"
+            queryParamsHandling="merge">{{tabInfo[0].title}}</a> -->
+        <ng-template nz-tab>
+            <div class="page-body" pretty-scroll>
+                <div class="container flex-h">
+                    <div class="left new-flex-1">
+                        <compared-report-content [title]="'个人信息'">
+                            <info-card [personalInfo]="personalInfo[0]"></info-card>
+                        </compared-report-content>
+                        <compared-report-content [title]="'工作经历'">
+                            <info-work [workArr]="workArr[0]"></info-work>
+                        </compared-report-content>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="right new-flex-1">
+                        <compared-report-content [title]="'个人信息'" [color]="'green'">
+                            <info-card [personalInfo]="personalInfo[1]"></info-card>
+                        </compared-report-content>
+                        <compared-report-content [title]="'工作经历'" [color]="'green'">
+                            <info-work [workArr]="workArr[1]" [color]="'#59b9a2'"></info-work>
+                        </compared-report-content>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </nz-tab>
+    <nz-tab nzTitle="{{ tabInfo[1].title }}">
+        <!-- <a nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: tabInfo[1].tabIndex }"
+            queryParamsHandling="merge">{{tabInfo[1].title}}</a> -->
+        <ng-template nz-tab>
+            <div class="page-body" pretty-scroll>
+                <div class="container flex-h">
+                    <div class="left new-flex-1">
+                        <compared-report-content [title]="'经历'">
+                            <div class="pd-50">
+                                <compared-experience [data]="strengthData[4]"></compared-experience>
+                            </div>
+                        </compared-report-content>
+                        <compared-report-content [title]="'能力'">
+                            <div class="pd-50">
+                                <compared-ability [data]="strengthData[1]"></compared-ability>
+                            </div>
+                        </compared-report-content>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="right new-flex-1">
+                        <compared-report-content [title]="'动力'">
+                            <div class="pd-50">
+                                <compared-ability [data]="strengthData[2]"></compared-ability>
+                            </div>
+                        </compared-report-content>
+                        <compared-report-content [title]="'潜力'">
+                            <div class="pd-50">
+                                <compared-ability [data]="strengthData[3]"></compared-ability>
+                            </div>
+                        </compared-report-content>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </nz-tab>
+    <nz-tab nzTitle="{{ tabInfo[2].title }}">
+        <!-- <a nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: tabInfo[2].tabIndex }"
+            queryParamsHandling="merge">{{tabInfo[2].title}}</a> -->
+
+        <ng-template nz-tab>
+            <div class="page-body" pretty-scroll>
+                <div class="container flex-h">
+                    <div class="left new-flex-1">
+                        <compared-report-content [title]="'绩效'">
+                            <ass-chart-line-bar [chartData]="performanceAnalysis" [colors]="colors">
+                            </ass-chart-line-bar>
+                        </compared-report-content>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="right new-flex-1">
+                        <compared-report-content [title]="'人才九宫格（部门）'">
+                            <nine-table [nineData]="nineData"></nine-table>
+                        </compared-report-content>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </nz-tab>
+</nz-tabset>

@@ -1,0 +1,11 @@
+<echart
+    *ngIf="pageState == 1; else other"
+    [option]="option"
+    [width]="containerWidth"
+    [height]="containerHeight"
+></echart>
+<ng-template #other>
+    <div class="status-container">
+        <state-icon [state]="pageState"></state-icon>
+    </div>
+</ng-template>

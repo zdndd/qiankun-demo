@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor='let item of sliderData' [ngClass]="{'li_disable':!item.isshow}">
+        {{item.title}}
+        <nz-switch class="switch" (click)="clickSwitch(item)" [(ngModel)]="item.isshow"></nz-switch>
+    </li>
+</ul>

@@ -1,0 +1,108 @@
+﻿[
+    {
+        "id": "1",
+        "modelname": "1.XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" },
+            { "id": 3, "abilityname": "3上仙猜疑" },
+            { "id": 4, "abilityname": "4妈妈咪呀" },
+            { "id": 5, "abilityname": "5啊爸咪呀" },
+            { "id": 6, "abilityname": "6把妈咪呀" },
+            { "id": 7, "abilityname": "7压爸咪呀" }
+        ],
+        "isclickcreatemodel": true,
+        "remark": "test remark"
+    },
+    {
+        "id": "2",
+        "modelname": "2.能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [{ "id": 1, "abilityname": "1能力满分" }],
+        "remark": "test remark"
+    },
+    {
+        "id": "3",
+        "modelname": "3.XXX 能力模型 XXX 能力模型 XXX 能力模型 XXX 能力模型 XXX 能力模型 XXX 能力模型XXX 能力模型 XXX 能力模型 XXX 能力模型XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" }
+        ],
+        "remark": "test remark"
+    },
+    {
+        "id": "4",
+        "modelname": "4.XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" },
+            { "id": 3, "abilityname": "3上仙猜疑" }
+        ],
+        "remark": "test remark"
+    },
+    {
+        "id": "5",
+        "modelname": "5.XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" },
+            { "id": 3, "abilityname": "3上仙猜疑" },
+            { "id": 4, "abilityname": "4妈妈咪呀" }
+        ],
+        "remark": "test remark"
+    },
+    {
+        "id": "6",
+        "modelname": "6.XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" },
+            { "id": 3, "abilityname": "3上仙猜疑" },
+            { "id": 4, "abilityname": "4妈妈咪呀" },
+            { "id": 5, "abilityname": "5啊爸咪呀" }
+        ],
+        "remark": "test remark"
+    },
+    {
+        "id": "7",
+        "modelname": "7.XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" },
+            { "id": 3, "abilityname": "3上仙猜疑" },
+            { "id": 4, "abilityname": "4妈妈咪呀" },
+            { "id": 5, "abilityname": "5啊爸咪呀" },
+            { "id": 6, "abilityname": "6把妈咪呀" }
+        ],
+        "remark": "test remark"
+    },
+    {
+        "id": "8",
+        "modelname": "8.XXX 能力模型 XXX 能力模型 XXX 能力模型",
+        "createusername": "rock",
+        "createdate": "2019-05-06T11:05:55.412Z",
+        "lstabilityname": [
+            { "id": 1, "abilityname": "1能力满分" },
+            { "id": 2, "abilityname": "2古语十五" },
+            { "id": 3, "abilityname": "3上仙猜疑" },
+            { "id": 4, "abilityname": "4妈妈咪呀" },
+            { "id": 5, "abilityname": "5啊爸咪呀" },
+            { "id": 6, "abilityname": "6把妈咪呀" },
+            { "id": 7, "abilityname": "7压爸咪呀" }
+        ],
+        "remark": "test remark"
+    }
+]

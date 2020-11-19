@@ -1,0 +1,21 @@
+<!--conclusion结论-->
+<div class="operator-btns">
+    <button
+        nz-button
+        (click)="updatetModal()"
+        nzType="default"
+        nz-tooltip
+        nzTooltipTitle="{{ 'The conclusion will be updated to standard conclusion' | translate }}"
+    >
+        <i class="icon-ic_renovate"></i>&nbsp;
+        {{ 'Update Conclusion' | translate }}
+    </button>
+    <button nz-button (click)="showSelectModal()" nzType="default">
+        <i nz-icon nzType="setting"></i>{{ 'Select Ability' | translate }}
+    </button>
+</div>
+<conclusion-common
+    [modelid]="checkData.modelid"
+    [tabid]="checkData.tabid"
+    (checkData)="getcheckData($event)"
+></conclusion-common>

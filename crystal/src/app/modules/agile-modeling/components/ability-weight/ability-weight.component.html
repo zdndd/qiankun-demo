@@ -1,0 +1,25 @@
+<div class="detail-title">{{ 'Please assign weights first' | translate }}</div>
+<div class="detail-type">
+    <nz-spin [nzSpinning]="tagsLoading === 1">
+        <ul class="list-ul">
+            <ng-container *ngFor="let item of tagsData; index as i">
+                <li>
+                    <span class="lst-proportion">
+                        <vx-input-number
+                            [maxLength]="4"
+                            [decimalNumber]="2"
+                            [allowMinus]="true"
+                            [(ngModel)]="item.weight"
+                            [isFloat]="true"
+                            placeholder="{{ 'Please Input' | translate: { field: '' | translate } }}"
+                        ></vx-input-number>
+                        <span class="percent-sign">&nbsp;%</span>
+                    </span>
+                    <div class="bullet" [class.bullet-r]="i % 2" [class.bullet-l]="i % 2 === 0">
+                        {{ tagsMap[i].title }}
+                    </div>
+                </li>
+            </ng-container>
+        </ul>
+    </nz-spin>
+</div>

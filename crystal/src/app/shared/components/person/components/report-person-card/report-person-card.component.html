@@ -1,0 +1,33 @@
+<div class="top flex-h" [ngStyle]="{ 'background-color': backgroundColor }">
+    <!--    <ng-container>-->
+    <div class="avator">
+        <nz-avatar nzSrc="{{ personalInfo?.headimg ? personalInfo?.headimg : photo }}"></nz-avatar>
+    </div>
+    <div class="info">
+        <p class="title">个人报告-{{ personalInfo?.empname }}</p>
+        <p>{{ 'global.fields.emp-code' | translate }}：{{ personalInfo?.empcode }}</p>
+        <p>{{ personalInfo?.orgname }} {{ personalInfo?.positionname }}</p>
+    </div>
+    <div class="time">
+        <div class="text">更新日期：{{ personalInfo?.updatetime }}</div>
+    </div>
+    <!--    </ng-container>-->
+</div>
+
+<ng-container *ngIf="showRefresh">
+    <div class="btn-refresh">
+        <button
+            nz-button
+            nztype="default"
+            class="ant-btn ant-btn-default"
+            (click)="refresh()"
+            [nzTooltipTitle]="'global.action.refresh' | translate"
+            nz-tooltip
+        >
+            <span
+                ><i class="icon-ic_renovate"></i
+                ><span class="ref-word"> {{ 'global.action.refresh' | translate }}</span>
+            </span>
+        </button>
+    </div>
+</ng-container>

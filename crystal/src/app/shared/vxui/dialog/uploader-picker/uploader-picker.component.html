@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="upload-list">
+
+
+    <div class="ant-upload-list ant-upload-list-text">
+      <div class="ant-upload-list-item" *ngFor="let item of fileList;let i=index">
+        <div class="ant-upload-list-item-info">
+            <i nz-icon nzType="paper-clip" theme="outline"></i>
+            <span class="ant-upload-list-item-name" title="{{item.name}}">{{item.name}}</span>
+            <span class="ant-upload-list-item-state state-{{item.status}}">
+                <ng-container *ngIf="item.status=='success'">{{'Waiting for upload'| translate}}</ng-container>
+                <ng-container *ngIf="item.status=='done'">{{'Uploaded'| translate}}</ng-container>
+                <ng-container *ngIf="item.status=='error'">{{'Upload failed'| translate}}</ng-container>
+                <ng-container *ngIf="item.status=='uploading'">{{'Uploading'| translate}}</ng-container>
+            </span>
+        </div>
+        <i nz-icon nzType="close" (click)="removeItem(item,i)" title="{{ 'Delete' | translate }}" theme="outline"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="button-row">
+  <nz-upload [(nzFileList)]="fileList" [nzMultiple]="true" [nzShowUploadList]="false" (nzChange)="handleChnage($event)"
+    [nzBeforeUpload]="beforeUpload">
+    <button nz-button>
+      <i nz-icon nzType="upload"></i><span>{{'Select the file'|translate}}</span>
+    </button>
+  </nz-upload>&nbsp;
+  <button nz-button [nzType]="'primary'" [nzLoading]="uploading" (click)="handleUpload()" [disabled]="fileList.length == 0">
+    <ng-container *ngIf="uploading">{{'Uploading'| translate}}</ng-container>
+    <ng-container *ngIf="!uploading">{{'Start upload'| translate}}</ng-container>
+  </button>
+</div>

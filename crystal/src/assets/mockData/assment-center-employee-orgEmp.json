@@ -1,0 +1,67 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": [
+    {
+      "empcode": "1",
+      "empname": "string",
+      "email": "string",
+      "organizationalid": "string",
+      "organizationalname": "string",
+      "positionid": "1",
+      "positionname": "string",
+      "empstatus": "string",
+      "positonjob": "string",
+      "superiorcode": "string",
+      "superiroemail": "string",
+      "superiorname": "string",
+      "indirectcode": "string",
+      "indirectname": "string",
+      "indirectemail": "string",
+      "emplist": [
+        {
+          "empcode": "string",
+          "empname": "string",
+          "email": "string"
+        }
+      ],
+      "levellist": [
+        {
+          "empcode": "string",
+          "empname": "string",
+          "email": "string"
+        }
+      ]
+    },{
+      "empcode": "2",
+      "empname": "string123",
+      "email": "string123",
+      "organizationalid": "string",
+      "organizationalname": "string123",
+      "positionid": "2",
+      "positionname": "string",
+      "empstatus": "string",
+      "positonjob": "string",
+      "superiorcode": "string",
+      "superiroemail": "string",
+      "superiorname": "string",
+      "indirectcode": "string",
+      "indirectname": "string",
+      "indirectemail": "string",
+      "emplist": [
+        {
+          "empcode": "string",
+          "empname": "string",
+          "email": "string"
+        }
+      ],
+      "levellist": [
+        {
+          "empcode": "string",
+          "empname": "string",
+          "email": "string"
+        }
+      ]
+    }
+  ]
+}

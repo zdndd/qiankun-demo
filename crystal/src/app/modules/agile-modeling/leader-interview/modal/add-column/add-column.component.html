@@ -1,0 +1,33 @@
+<div class="content base-dialog-form">
+    <div style="text-align: right;">
+        <button nz-button nzType="primary" (click)="addRow()">{{ 'Add New' | translate }}</button>
+    </div>
+    <div class="data-table">
+        <table>
+            <tr>
+                <td>{{ 'Sn' | translate }}</td>
+                <td>{{ 'Description' | translate }}</td>
+                <td>{{ 'Operation' | translate }}</td>
+            </tr>
+        </table>
+
+        <div class="scroll-container" pretty-scroll>
+            <table>
+                <tr *ngFor="let control of columnsArray.controls; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td [formGroup]="control">
+                        <input
+                            nz-input
+                            placeholder="{{ 'Please Input' | translate: { field: '' | translate } }}"
+                            maxlength="20"
+                            [formControlName]="'columnname'"
+                        />
+                    </td>
+                    <td>
+                        <a (click)="delRow(i, $event)"> <i class="icon-ic_del"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

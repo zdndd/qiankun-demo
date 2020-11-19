@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <a *ngIf="menu.children[0] && menu.children[0].state" routerLink="/cms/role-auth/" nzTitle="{{ 'TRM' | translate }}"
+    nzPlacement="right" nz-tooltip routerLinkActive="active">
+    <i class="icon-ic_nav_privileges"> </i>
+    <span>{{ 'KRM' | translate }}</span>
+  </a>
+  <a *ngIf="menu.children[1] && menu.children[1].state" routerLink="/cms/user/" nzTitle="{{ 'TUM' | translate }}"
+    nzPlacement="right" nz-tooltip routerLinkActive="active">
+    <i class="icon-ic_nav_setting"> </i>
+    <span>{{ 'KUM' | translate }}</span>
+  </a>
+
+  <a routerLink="/cms/organization/" nzTitle="{{ 'TOS' | translate }}" nzPlacement="right" nz-tooltip
+    routerLinkActive="active">
+    <i class="icon-ic_nav_setting"> </i>
+    <span>{{ 'KOS' | translate }}</span>
+  </a>
+
+  <a routerLink="/cms/operation-log/" nzTitle="{{ 'TOL' | translate }}" nzPlacement="right" nz-tooltip
+    routerLinkActive="active">
+    <i class="icon-ic_selectall"> </i>
+    <span>{{ 'KOL' | translate }}</span>
+  </a>
+
+  <a *ngIf="goCrystal" class="goback" (click)="goBack()" nzTitle="{{ 'Go Back' | translate }}" nzPlacement="right"
+    nz-tooltip routerLinkActive="active">
+    <i class="icon-ic_back"> </i>
+    <span>{{ 'Go Back' | translate }}</span>
+  </a>
+
+</div>

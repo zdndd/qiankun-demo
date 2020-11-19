@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "sort": 0,
+        "objectname": "上级",
+        "scene": "工作汇报",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 2,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 3,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 4,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 5,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 6,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 7,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 8,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 9,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    },
+    {
+        "id": 10,
+        "sort": 0,
+        "objectname": "同事",
+        "scene": "组织项目会议",
+        "abilitya": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityb": {
+            "abilityid": 0,
+            "abilityname": "xxxxx"
+        },
+        "abilityc": {
+            "abilityid": 0,
+            "abilityname": "xxxxxx"
+        }
+    }
+]

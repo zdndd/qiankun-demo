@@ -1,0 +1,26 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": [
+    {
+      "id": 0,
+      "empcode": "1",
+      "empname": "string",
+      "positionid": "1",
+      "orgid": "1",
+      "positionname": "string",
+      "orgname": "string",
+      "emial": "string"
+    },{
+      "id": 1,
+      "empcode": "2",
+      "empname": "string123",
+      "positionid": "2",
+      "orgid": "string",
+      "positionname": "string",
+      "orgname": "string123",
+      "emial": "string"
+    }
+  ]
+}
+

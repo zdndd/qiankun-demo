@@ -1,0 +1,27 @@
+<div class="agileChart">
+    <div class="abilitylist-infinite">
+        <nz-table
+            nzSize="middle"
+            class="abilitylist-infinite-table"
+            [nzData]="data"
+            [nzFrontPagination]="false"
+            [nzShowPagination]="false"
+            [nzScroll]="tableScroll"
+        >
+            <thead>
+                <tr>
+                    <th nzWidth="60px">序号</th>
+                    <th nzWidth="100px">能力名称</th>
+                    <th>能力描述</th>
+                </tr>
+            </thead>
+            <tbody cdkDropList (cdkDropListDropped)="drop($event)">
+                <tr *ngFor="let item of data; index as i" cdkDrag>
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ item.abilityname }}</td>
+                    <td class="text-area">{{ item.description }}</td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>

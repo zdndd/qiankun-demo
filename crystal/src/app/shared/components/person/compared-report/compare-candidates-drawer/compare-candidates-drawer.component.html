@@ -1,0 +1,107 @@
+<div class="content">
+    <div class="header">
+        <span class="title">{{ 'Select Candidate' | translate }}</span>
+        <span class="btn-group">
+            <button nz-button nztype="default" class="ant-btn ant-btn-default" (click)="save()">
+                <span class="btn-save">{{ 'Save' | translate }}</span>
+            </button>
+            <button nz-button nztype="default" class="ant-btn ant-btn-default" (click)="cancel()">
+                <span class="btn-cancel">{{ 'Empty' | translate }}</span>
+            </button>
+        </span>
+    </div>
+    <div class="tab">
+        <nz-radio-group
+            [(ngModel)]="radioValue"
+            [nzButtonStyle]="'solid'"
+            [nzSize]="'small'"
+            (ngModelChange)="radioChange()"
+        >
+            <label nz-radio-button nzValue="left">{{ 'Replace Left' | translate }}</label>
+            <label nz-radio-button nzValue="right">{{ 'Replace Right' | translate }}</label>
+            <label nz-radio-button nzValue="all">{{ 'Replace All' | translate }}</label>
+        </nz-radio-group>
+    </div>
+
+    <div class="per-card" pretty-scroll>
+        <ul>
+            <li *ngFor="let item of personalInfo; let i = index">
+                <ng-container *ngIf="item.disabled; else tmpOther">
+                    <div class="par-card-info par-card-info-disabled" [ngStyle]="styleMethodDisabled(item.empcode)">
+                        <div
+                            *ngIf="item.sortnumber"
+                            [ngClass]="{
+                                'tag-sort-yellow': item.sortnumber === -1,
+                                'tag-sort-pink': item.sortnumber > 0
+                            }"
+                        >
+                            <span
+                                [ngClass]="{
+                                    'tag-color-yellow': item.sortnumber === -1,
+                                    'tag-color-pink': item.sortnumber > 0
+                                }"
+                            >
+                                <div>{{ 'PK' | translate }}</div>
+                                <div>{{ item.comparedCount }}</div>
+                                <div>{{ 'Times' | translate }}</div>
+                            </span>
+                        </div>
+                        <div class="left-head">
+                            <div class="avator">
+                                <nz-avatar nzSrc="{{ item?.headimg ? item?.headimg : photo }}"></nz-avatar>
+                            </div>
+                        </div>
+                        <div class="right-basic-info">
+                            <div class="info-detail">
+                                <span class="name">{{ item.empname }}</span>
+                                <span>{{ item.empcode }}</span>
+                            </div>
+                            <div class="info-detail">
+                                <span>{{ item.orgname }} </span>
+                                <span>{{ item.positionname }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+                <ng-template #tmpOther>
+                    <div class="par-card-info" [ngStyle]="styleMethod(item.empcode)" (click)="checkTab(item.empcode)">
+                        <div
+                            *ngIf="item.sortnumber"
+                            [ngClass]="{
+                                'tag-sort-yellow': item.sortnumber === -1,
+                                'tag-sort-pink': item.sortnumber > 0
+                            }"
+                        >
+                            <span
+                                [ngClass]="{
+                                    'tag-color-yellow': item.sortnumber === -1,
+                                    'tag-color-pink': item.sortnumber > 0
+                                }"
+                            >
+                                <div>{{ 'PK' | translate }}</div>
+                                <div>{{ item.comparedCount }}</div>
+                                <div>{{ 'Times' | translate }}</div>
+                            </span>
+                        </div>
+                        <div class="left-head">
+                            <div class="avator">
+                                <nz-avatar nzSrc="{{ item?.headimg ? item?.headimg : photo }}"></nz-avatar>
+                            </div>
+                        </div>
+                        <div class="right-basic-info">
+                            <div class="info-detail">
+                                <span class="name">{{ item.empname }}</span>
+                                <span>{{ item.empcode }}</span>
+                            </div>
+                            <div class="info-detail">
+                                <span>{{ item.orgname }} </span>
+                                <span>{{ item.positionname }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,153 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": {
+        "heads": ["1", "2"],
+        "projectlist": [
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "1",
+                "projectname": "项目1",
+                "startdate": "2020-04-29T00:00:00",
+                "enddate": "2020-10-20T00:00:00",
+                "children": ["3", "4", "5"]
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "2",
+                "projectname": "项目2",
+                "startdate": "2020-07-29T00:00:00",
+                "enddate": "2020-10-20T00:00:00",
+                "children": ["5", "6", "7"]
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "3",
+                "projectname": "项目3",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": ["8"]
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "4",
+                "projectname": "项目4",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": []
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "5",
+                "projectname": "项目5",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": ["9"]
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "6",
+                "projectname": "项目6",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": ["9", "10", "11"]
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "7",
+                "projectname": "项目7",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": []
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "8",
+                "projectname": "项目8",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": []
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "9",
+                "projectname": "项目9",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": ["12"]
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "10",
+                "projectname": "项目10",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": []
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "11",
+                "projectname": "项目11",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": []
+            },
+            {
+                "customerid": "BellaCompany",
+                "empcode": "emp008",
+                "empname": "emp008",
+                "positionid": "p2",
+                "positionname": "开发工程师",
+                "projectid": "12",
+                "projectname": "项目12",
+                "startdate": "2020-07-31T00:00:00",
+                "enddate": "2020-10-31T00:00:00",
+                "children": []
+            }
+        ]
+    }
+}

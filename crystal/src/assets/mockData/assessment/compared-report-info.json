@@ -1,0 +1,70 @@
+{
+  "errorcode": 0,
+  "message": null,
+  "data": {
+    "info": {
+      "positiongrade": "DC03",
+      "updatetime": "2020/03/26",
+      "empid": 1,
+      "empcode": "Emp0001",
+      "empname": "阿姨123",
+      "enname": "ayikaolenmian",
+      "gender": "男",
+      "nation": null,
+      "politicalstatus": null,
+      "birthday": "1996/01/12",
+      "marrystatus": null,
+      "mobilenumber": "16602192715",
+      "nativeplace": null,
+      "empemail": "274655022@qq.com",
+      "address": null,
+      "location": null,
+      "organizationalid": "zz100",
+      "orgname": "KNX1",
+      "positionname": "CEO",
+      "hukoulocation": "北京 北京",
+      "positionjob": "职能02"
+    },
+    "workArr": [{
+      "positionname": "总裁办",
+      "company": "销售总监",
+      "departmentname": "",
+      "startdate": "2020/01/01",
+      "enddate": "2020/02/24",
+      "isoldexperience": false,
+      "dategap": -216
+    }, {
+      "positionname": "",
+      "company": "肯耐珂萨",
+      "departmentname": "OTI",
+      "startdate": "2019/07/19",
+      "enddate": "2019/12/31",
+      "isoldexperience": false,
+      "dategap": -161
+    }, {
+      "positionname": "",
+      "company": "肯耐珂萨",
+      "departmentname": "",
+      "startdate": "2018/08/15",
+      "enddate": "2019/07/18",
+      "isoldexperience": true,
+      "dategap": 5
+    }, {
+      "positionname": "招聘专员",
+      "company": "招聘专员",
+      "departmentname": "招聘专员",
+      "startdate": "2016/07/19",
+      "enddate": "2018/07/31",
+      "isoldexperience": true,
+      "dategap": 357
+    }, {
+      "positionname": "招聘专员",
+      "company": "前程无忧",
+      "departmentname": "人力资源部",
+      "startdate": "2016/01/29",
+      "enddate": "2016/06/30",
+      "isoldexperience": true,
+      "dategap": 1118
+    }]
+  }
+}

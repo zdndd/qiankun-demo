@@ -1,0 +1,10 @@
+<label  class="control-label" title="{{data.label}}">{{data.label}}</label>
+<div  [ngClass]="{'has-error':form.get(data.id).dirty && form.get(data.id).touched  && form.get(data.id).errors}">
+    <ng-container dynamicField [config]="data" [group]="form"></ng-container>
+    <small class="form-field-error" *ngIf="form.get(data.id).dirty && form.get(data.id).touched  && form.get(data.id).errors">
+       <ng-container *ngIf="form.get(data.id).errors.required || form.get(data.id).errors.whitespace  || form.get(data.id).errors.lang">{{data.errMsg}}</ng-container>
+       <ng-container *ngIf="form.get(data.id).errors.minlength">{{ 'Input Min Length Tip' | translate:{'field':data.label,'minlength':data.minLength} }}</ng-container>
+       <ng-container *ngIf="form.get(data.id).errors.pattern">{{ 'Incorrectly Formatted Tip' | translate:{'field':''} }}</ng-container>
+       <ng-container *ngIf="form.get(data.id).errors.select_require">{{data.errMsg}}</ng-container>
+    </small>
+</div>

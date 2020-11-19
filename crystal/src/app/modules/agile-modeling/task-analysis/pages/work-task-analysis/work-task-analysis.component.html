@@ -1,0 +1,103 @@
+<div class="operator-btns">
+    <button nz-button (click)="addRowHandler()" nzType="default">
+        <i nz-icon nzType="plus"></i>{{ 'Add row' | translate }}
+    </button>
+    <!-- <button nz-button (click)="exportHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导出' | translate }}
+    </button> -->
+    <!-- <button nz-button (click)="importHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导入' | translate }}
+    </button> -->
+</div>
+<div class="table-content">
+    <nz-table
+        #headerTable
+        pretty-table
+        class="theme_simple"
+        [nzBordered]="true"
+        [nzLoading]="loading"
+        [nzData]="tableData"
+        [nzShowPagination]="false"
+    >
+        <thead>
+            <tr>
+                <th nzWidth="80px">{{ 'Importance Sequence' | translate }}</th>
+                <th nzWidth="100px">{{ 'Object' | translate }}</th>
+                <th nzWidth="200px">{{ 'Scene' | translate }}</th>
+                <th nzWidth="200px">{{ 'Ability A' | translate }}</th>
+                <th nzWidth="200px">{{ 'Ability B' | translate }}</th>
+                <th nzWidth="200px">{{ 'Ability C' | translate }}</th>
+            </tr>
+        </thead>
+        <tbody id="table1">
+            <tr
+                *ngFor="let row of tableData; let i = index"
+                [attr.id]="row.id"
+                (mouseover)="mouseoverCell($event, row, i)"
+                (mouseout)="mouseoutCell($event, row, i)"
+            >
+                <td class="dragHandler">
+                    {{ i + 1 }}
+                </td>
+                <td>
+                    <div class="editable-cell" *ngIf="editId !== i + '_objectname'; else editTpl">
+                        <div class="editable-cell-value-wrap" (click)="startEdit(i + '_objectname', $event)">
+                            {{ row.objectname }}
+                        </div>
+                    </div>
+                    <ng-template #editTpl>
+                        <input type="text" maxlength="200" nz-input [(ngModel)]="row.objectname" />
+                    </ng-template>
+                </td>
+                <td>
+                    <div class="editable-cell" *ngIf="editId !== i + '_scene'; else editTpl2">
+                        <div class="editable-cell-value-wrap" (click)="startEdit(i + '_scene', $event)">
+                            {{ row.scene }}
+                        </div>
+                    </div>
+                    <ng-template #editTpl2>
+                        <input type="text" maxlength="200" nz-input [(ngModel)]="row.scene" />
+                    </ng-template>
+                </td>
+                <td (click)="reset(row, 'a')" class="ability-select">
+                    <ng-container *ngIf="row.abilitya">
+                        {{ row.abilitya.abilityname }}
+                    </ng-container>
+                    <ng-container *ngIf="!row.abilitya">
+                        <span>{{ 'Please Choose' | translate: { field: '' | translate } }}</span>
+                    </ng-container>
+                </td>
+                <td (click)="reset(row, 'b')" class="ability-select">
+                    <ng-container *ngIf="row.abilityb">
+                        {{ row.abilityb.abilityname }}
+                    </ng-container>
+                    <ng-container *ngIf="!row.abilityb">
+                        <span>{{ 'Please Choose' | translate: { field: '' | translate } }}</span>
+                    </ng-container>
+                </td>
+                <td (click)="reset(row, 'c')" class="ability-select">
+                    <ng-container *ngIf="row.abilityc">
+                        {{ row.abilityc.abilityname }}
+                    </ng-container>
+                    <ng-container *ngIf="!row.abilityc">
+                        <span>{{ 'Please Choose' | translate: { field: '' | translate } }}</span>
+                    </ng-container>
+                </td>
+            </tr>
+        </tbody>
+    </nz-table>
+    <p class="note">{{ 'The importance of ability decreases from A to C.' | translate }}</p>
+</div>
+
+<ng-template cdk-portal #rowRemoveTemplate="cdkPortal">
+    <div
+        class="row-remove-overlay"
+        (click)="deleteRow()"
+        (mouseenter)="removeBtnMouseEnter()"
+        (mouseleave)="removeBtnMouseLeave()"
+    >
+        <span>
+            <i class="icon-ic_del"></i>
+        </span>
+    </div>
+</ng-template>

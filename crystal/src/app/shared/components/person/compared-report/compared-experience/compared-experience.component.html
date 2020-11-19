@@ -1,0 +1,20 @@
+<ng-container *ngIf="pageState === 1; else other">
+    <div class="wrap">
+        <div
+            class="experi-content flex-h flex-align-center"
+            [ngStyle]="{ height: itemHeight + 'px' }"
+            *ngFor="let item of data"
+        >
+            <div class="left new-flex-1" [ngClass]="{ ' has-list ': item.user1 === 1 }"></div>
+            <div class="center limt-1 new-flex-1" nz-tooltip [nzTitle]="item.title" nzTooltipPlacement="bottomRight">
+                {{ item.title }}
+            </div>
+            <div class="right new-flex-1" [ngClass]="{ ' has-list ': item.user2 === 1 }"></div>
+        </div>
+    </div>
+</ng-container>
+<ng-template #other>
+    <div class="status-container">
+        <state-icon [state]="pageState"></state-icon>
+    </div>
+</ng-template>

@@ -1,0 +1,89 @@
+:host ::ng-deep {
+  .ant-pagination {
+    margin: 0;
+    &-prev {
+      margin-right: 0px;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      border-right: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding: 1px;
+      line-height: 30px;
+      .ant-pagination-item-link {
+        border: 0px !important;
+        color: #6373da !important;
+      }
+      .ant-pagination-item-link:hover {
+        color: #6373da !important;
+      }
+    }
+    &-next {
+      margin-left: 0px;
+      border: 1px solid #cccccc;
+      border-radius: 0px;
+      border-left: 0px;
+      padding: 1px;
+      line-height: 30px;
+      .ant-pagination-item-link {
+        border: 0px !important;
+        color: #6373da !important;
+      }
+      .ant-pagination-item-link:hover {
+        color: #6373da !important;
+      }
+    }
+    &-total-text {
+      border: 1px solid #cccccc;
+      color: #6373da !important;
+      padding: 0 12px;
+      background-color: #fff;
+      margin: 0;
+      border-left: 0px;
+      border-radius: 2px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    &-item {
+      border-radius: 0px;
+      margin-right: 0;
+      border: 1px solid #cccccc;
+      line-height: 32px;
+      &-active {
+        background-color: #6373da;
+        border: 0px;
+        a {
+          color: #ffffff !important;
+        }
+      }
+      &-link-icon {
+        border-left: 0px;
+        color: #6373da !important;
+      }
+      a {
+        color: #6373da;
+      }
+    }
+    &-item:hover a {
+      color: #6373da;
+    }
+
+    &-jump-prev {
+      margin-right: 0px;
+      border: 1px solid #cccccc;
+      border-radius: 0;
+      background-color: #fff;
+      border-right: 0px;
+    }
+    &-jump-next {
+      margin-right: 0px;
+      border: 1px solid #cccccc;
+      border-radius: 0;
+      background-color: #fff;
+      border-right: 0px;
+    }
+  }
+  .ant-pagination-item + .ant-pagination-item {
+    border-left: 0;
+  }
+}

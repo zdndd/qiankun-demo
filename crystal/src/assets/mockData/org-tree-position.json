@@ -1,0 +1,22 @@
+{
+    "errorcode": 0,
+    "message": null,
+    "data": [
+      {
+        "id": 141,
+        "customerid": "12580",
+        "positionid": "13",
+        "positionname": "客户成功总监",
+        "organizationalname": "GCS",
+        "organizationalid": "22"
+      },
+      {
+        "id": 142,
+        "customerid": "12580",
+        "positionid": "14",
+        "positionname": "代理负责人",
+        "organizationalname": "GCS",
+        "organizationalid": "22"
+      }
+    ]
+  }

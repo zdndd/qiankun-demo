@@ -1,0 +1,25 @@
+{
+    "columns": ["能力1", "能力2", "能力3", "能力4"],
+    "employeesurverylist": [
+        {
+            "employeename": "员工a",
+            "employeeid": 0,
+            "surveydata": ["1", "2", "3", "4"]
+        },
+        {
+            "employeename": "员工a",
+            "employeeid": 0,
+            "surveydata": ["1", "2", "3", "4"]
+        },
+        {
+            "employeename": "员工b",
+            "employeeid": 0,
+            "surveydata": ["1", "2", "3", "4"]
+        },
+        {
+            "employeename": "员工b",
+            "employeeid": 0,
+            "surveydata": ["10", "2", "3", "4"]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+:host {
+    .table-wrap {
+        display: flex;
+        height: 100%;
+        flex: 1;
+        flex-direction: column;
+
+        .table-content {
+            flex: 1;
+            padding: 0px;
+            position: relative;
+
+            .ps__rail-x {
+                display: none !important;
+
+                .ps__thumb-x {
+                    display: none !important;
+                }
+            }
+
+            table {
+                table-layout: fixed;
+            }
+
+            nz-table {
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                table-layout: fixed; /*列宽由表格宽度和列宽度设定。*/
+            }
+
+            tr td {
+                div {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+:host ::ng-deep .ant-table table {
+    table-layout: fixed;
+}
+
+:host ::ng-deep tr {
+    .a_showdow {
+        opacity: 0;
+        margin: 0 14px 0 0;
+        transition: opacity 0.5s;
+    }
+    &:hover {
+        .a_showdow {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<table *ngIf="pageState == 1; else empty">
+    <tr *ngFor="let item of nineArr; index as i">
+        <ng-container *ngFor="let m of item; index as ii">
+            <td [ngClass]="ii == 0 ? 'text' : 'block'">
+                <span *ngIf="ii == 0">{{ m }}</span>
+                <div
+                    *ngIf="
+                        nineData && nineData.length >= 1 && (nineData[0]?.value === m || nineData[1]?.value === m);
+                        else other
+                    "
+                    class="success"
+                >
+                    <span
+                        *ngIf="nineData[0] && nineData[0]?.value === m"
+                        class="success0 {{
+                            !(nineData[0]?.value === m && nineData[1]?.value === m) ? 'success-single' : ''
+                        }}"
+                    >
+                        <i class="icon-ic_moji_{{ icons[m] }}"></i>
+                    </span>
+                    <span
+                        *ngIf="nineData[1] && nineData[1]?.value === m"
+                        class="success1 {{
+                            !(nineData[0]?.value === m && nineData[1]?.value === m) ? 'success-single' : ''
+                        }}"
+                    >
+                        <i class="icon-ic_moji_{{ icons[m] }}"></i>
+                    </span>
+                </div>
+                <ng-template #other>
+                    <div class="block{{ m }}"></div>
+                </ng-template>
+            </td>
+        </ng-container>
+    </tr>
+    <tr>
+        <td class="text"></td>
+        <td class="text">低</td>
+        <td class="text">中</td>
+        <td class="text">高</td>
+    </tr>
+</table>
+
+<ng-template #empty>
+    <state-icon [state]="pageState"></state-icon>
+</ng-template>

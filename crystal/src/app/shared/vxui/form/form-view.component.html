@@ -1,0 +1,50 @@
+<ng-template #buttons>
+    <ng-container *ngFor="let buttonItem of _config.buttons">
+    <button nz-button [nzLoading]="saving && buttonItem.type=='submit'" [attr.type]="buttonItem.type" [nzType]="buttonItem.color">
+        <ng-container *ngIf="saving && buttonItem.type=='submit'">
+        <span>{{ 'Saving' | translate }}</span> 
+        </ng-container>
+        <ng-container *ngIf="!saving || buttonItem.type!='submit'">
+            <span>{{buttonItem.label}}</span> 
+        </ng-container>
+    </button>
+    </ng-container>
+</ng-template>
+<div class="spin" *ngIf="loading">
+    <nz-spin nzTip="{{ 'Loading' | translate}}"></nz-spin>
+</div>
+<form [formGroup]="form" (ngSubmit)="submitHandler()">
+    <div class="layout-form" [ngStyle]="{'width':_config.width}">
+        <div class="layout-form-header" *ngIf="showHeader">
+            <span class="span-9">
+                <ng-container *ngIf="_config['buttonPosition']=='left'">
+                    <ng-container *ngTemplateOutlet="buttons"></ng-container>
+                </ng-container>
+            </span>
+            <span class="span-6">
+                {{_config["name"]}}
+            </span>
+            <span class="span-9">
+                <ng-container *ngIf="_config['buttonPosition']=='right'">
+                    <ng-container *ngTemplateOutlet="buttons"></ng-container>
+                </ng-container>
+            </span>
+        </div>
+        <div class="layout-form-content" [ngStyle]="{'padding-top':paddingTop+'px'}" cdkScrollable [ngClass]="{'no-scroll':!_height,'no-border':!showHeader}">
+            <fieldset class="form-column-{{_config['colNum']}}">
+                <ng-container *ngFor="let itemdata of _fields,let i=index">
+                    <div *ngIf="itemdata.type=='subheader'" class="form-sub-header" [innerHTML]="itemdata.label | safeHtml"></div>
+                    <form-item 
+                        [data]="itemdata" *ngIf="itemdata.type!='subheader'" [form]="form"></form-item>
+                    <div class="form-line" *ngIf="itemdata.line"></div>
+                </ng-container>
+            </fieldset>
+            <div class="bottom-buttons" *ngIf="_config.buttons.length>0">
+                <ng-container *ngIf="_config['buttonPosition']=='bottom'">
+                    <ng-container *ngTemplateOutlet="buttons"></ng-container>
+                </ng-container>
+            </div>
+            <div style="clear:both;overflow: hidden;" [ngStyle]="{'height':paddingBottom+'px'}"></div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="18" viewBox="0 0 40 18">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="40" height="18" fill="#D29E9E" rx="9"/>
+        <text fill="#FFF" font-family="Arial-BoldItalicMT, Arial" font-size="12" font-style="italic" font-weight="bold" letter-spacing="-.5">
+            <tspan x="4.751" y="13">Think</tspan>
+        </text>
+    </g>
+</svg>

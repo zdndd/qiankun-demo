@@ -1,0 +1,52 @@
+::ng-deep {
+    .abilitylist2 {
+        width: 457px;
+        height: 42px;
+    }
+    .abilitylist2-box {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &.cdk-drag-preview {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            line-height: 30px;
+            height: 30px !important;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+            0 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
+    .abilitylist2-wrap {
+        cursor: move;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        margin: 0;
+        line-height: 40px;
+        color: #f6f7fb;
+        font-size: 22px;
+    }
+    .abilitylist2-wrap:nth-child(1) {
+        transform: translate3d(0, 0, 0) !important;
+    }
+    .abilitylist2-wrap:nth-child(2) {
+        transform: translate3d(310px, 0px, 0) !important;
+    }
+}
+:host ::ng-deep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .agileChart {
+        width: 457px;
+        height: 363px;
+        background: url(/assets/img/chart-2.png) no-repeat;
+        background-size: 457px 363px;
+        position: relative;
+        //margin-top: 117px;
+    }
+}

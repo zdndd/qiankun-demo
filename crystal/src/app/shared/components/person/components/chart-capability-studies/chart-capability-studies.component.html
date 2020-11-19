@@ -1,0 +1,9 @@
+<echart
+    *ngIf="pageState == 1; else other"
+    [option]="chartOption"
+    [width]="containerWidth"
+    [height]="containerHeight"
+></echart>
+<ng-template #other>
+    <state-icon [state]="pageState"></state-icon>
+</ng-template>

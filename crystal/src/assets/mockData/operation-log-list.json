@@ -1,0 +1,109 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": {
+      "data": [
+        {
+            "id": 0,
+            "operationdescription": "字典修改",
+            "operatingaccount": "admin",
+            "operator": "admin",
+            "operationtime": "2020-03-05 12:20:30",
+            "modifyresult": "修改成功",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "操作明细文字操作明细文字操作明细文字操作明细文字操作明细文字过多换行样式。",
+            "operatingresult": "编辑成功",
+            "ip": "192.37.83.110"
+        },
+        {
+            "id": 1,
+            "operationdescription": "模型修改",
+            "operatingaccount": "kevin",
+            "operator": "kevin",
+            "operationtime": "2020-02-28 06:52:58",
+            "modifyresult": "修改失败",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "简单修改一下。",
+            "operatingresult": "编辑失败",
+            "ip": "192.37.83.110"
+        },
+        {
+            "id": 2,
+            "operationdescription": "字典修改",
+            "operatingaccount": "admin",
+            "operator": "kevin",
+            "operationtime": "2020-03-05 12:20:30",
+            "modifyresult": "修改成功",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "操作明细文字操作明操作明细文字操作明细文字操作明细文字操作明细文字操作明细文字过多换行样式。细文字操作明细文字操作明细文字操作明细文字过多换行样式。",
+            "operatingresult": "编辑成功",
+            "ip": "192.37.83.110"
+        },
+        {
+            "id": 3,
+            "operationdescription": "模型修改",
+            "operatingaccount": "kevin",
+            "operator": "kevin",
+            "operationtime": "2020-02-28 06:52:58",
+            "modifyresult": "修改失败",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "简单修改一下。",
+            "operatingresult": "编辑失败",
+            "ip": "192.37.83.110"
+        },
+        {
+            "id": 4,
+            "operationdescription": "模型修改",
+            "operatingaccount": "kevin",
+            "operator": "kevin",
+            "operationtime": "2020-02-28 06:52:58",
+            "modifyresult": "修改失败",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "简单修改一下。",
+            "operatingresult": "编辑失败",
+            "ip": "192.37.83.110"
+        },
+        {
+            "id": 5,
+            "operationdescription": "模型修改",
+            "operatingaccount": "kevin",
+            "operator": "kevin",
+            "operationtime": "2020-02-28 06:52:58",
+            "modifyresult": "修改失败",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "简单修改一下。",
+            "operatingresult": "编辑失败",
+            "ip": "192.37.83.110"
+        },
+        {
+            "id": 6,
+            "operationdescription": "模型修改",
+            "operatingaccount": "kevin",
+            "operator": "kevin",
+            "operationtime": "2020-02-28 06:52:58",
+            "modifyresult": "修改失败",
+            "module": "模块",
+            "organizationid": "KNX",
+            "operationtype": "编辑",
+            "operationdetail": "简单修改一下。",
+            "operatingresult": "编辑失败",
+            "ip": "192.37.83.110"
+        }
+      ],
+      "pageindex": 1,
+      "pagesize": 20,
+      "totalcount": 7
+    }
+  }

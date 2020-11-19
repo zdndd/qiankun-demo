@@ -1,0 +1,56 @@
+﻿{
+    "id": 0,
+    "tabid": 0,
+    "modelid": 0,
+    "description": "风险管理是指如何在项目或者企业一个肯定有风险的环境里把风险可能造成的不良影响减至最低的管理过程。风险管理对现代企业而言十分重要。当企业面临市场开放、法规解禁、产品创新，均使变化波动程度提高，连带增加经营的风险性。良好的风险管理有助于降低决策错误之几率、避免损失之可能、相对提高企业本身之附加价值。",
+    "lstabilityproportion": [
+        {
+            "abilityid": 0,
+            "abilityname": "经验提炼",
+            "proportion": 0,
+            "description": "组织经验提炼- 课程设计与开发专栏组织经验提炼—知识管理和课程开发的基石文",
+            "sort": 0,
+            "createuser": 0,
+            "createdate": "2019-05-13T03:23:02.849Z",
+            "modifyuser": 0,
+            "modifydate": "2019-05-13T03:23:02.849Z"
+        },
+        {
+            "abilityid": 0,
+            "abilityname": "风险管理",
+            "proportion": 0,
+            "description": "风险管理是识别和分析项目风险及采取应对措施的活动。 包括将积极因素所产生的影响最大化和使消极因素产生的影响最小化两方面内容",
+            "sort": 0,
+            "createuser": 0,
+            "createdate": "2019-05-13T03:23:02.849Z",
+            "modifyuser": 0,
+            "modifydate": "2019-05-13T03:23:02.849Z"
+        },
+        {
+            "abilityid": 0,
+            "abilityname": "激励下属",
+            "proportion": 0,
+            "description": "领导者如何激励下属,职场是一个神奇的地方，在这里我们可以获得更多的机会，展示更多的才能，获得更多的劳动报酬",
+            "sort": 0,
+            "createuser": 0,
+            "createdate": "2019-05-13T03:23:02.849Z",
+            "modifyuser": 0,
+            "modifydate": "2019-05-13T03:23:02.849Z"
+        },
+        {
+            "abilityid": 0,
+            "abilityname": "战略策划",
+            "proportion": 0,
+            "description": "战略策划常常被人们认为是一个神秘的过程，需要进行复杂的系统分析，还要雇用一些昂贵的职业咨询人员",
+            "sort": 0,
+            "createuser": 0,
+            "createdate": "2019-05-13T03:23:02.849Z",
+            "modifyuser": 0,
+            "modifydate": "2019-05-13T03:23:02.849Z"
+        }
+    ],
+    "createuser": 0,
+    "createdate": "2019-05-13T03:23:02.849Z",
+    "modifyuser": 0,
+    "modifydate": "2019-05-13T03:23:02.849Z"
+}

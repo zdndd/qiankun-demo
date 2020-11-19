@@ -1,0 +1,31 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": [
+        {
+            "empcode": "knx001",
+            "empname": "knx001",
+            "positionid": "JD0001"
+        },
+        {
+            "empcode": "knx002",
+            "empname": "knx002",
+            "positionid": "JD0002"
+        },
+        {
+            "empcode": "knx003",
+            "empname": "knx003",
+            "positionid": "JD0003"
+        },
+        {
+            "empcode": "knx004",
+            "empname": "knx004",
+            "positionid": "JD0004"
+        },
+        {
+            "empcode": "knx005",
+            "empname": "knx005",
+            "positionid": "JD0005"
+        }
+    ]
+}

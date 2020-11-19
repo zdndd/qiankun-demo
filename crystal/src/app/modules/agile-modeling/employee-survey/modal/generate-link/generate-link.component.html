@@ -1,0 +1,53 @@
+<div class="save-form">
+    <div class="form-item">
+        <label>{{ 'Questionnaire title' | translate }}</label>
+        <input
+            maxlength="50"
+            style="width: 100%;"
+            nz-input
+            placeholder="{{ 'Please Input' | translate: { field: 'Questionnaire title' | translate } }}"
+            [(ngModel)]="title"
+        />
+    </div>
+    <div class="form-item">
+        <label>{{ 'Questionnaire describing' | translate }}</label>
+        <textarea
+            rows="4"
+            style="width: 100%;"
+            placeholder="{{ 'Please Input' | translate: { field: 'Description' | translate } }}"
+            nz-input
+            maxlength="200"
+            [(ngModel)]="description"
+        ></textarea>
+    </div>
+    <div class="controls">
+        <button (click)="updateSurvey()" nz-button>{{ 'Update Questionnaire' | translate }}</button>
+    </div>
+</div>
+<div class="links">
+    <div class="tips">
+        {{ 'link' | translate }}
+        <a
+            class="help"
+            nzTitle="{{ 'The link title' | translate }}"
+            nzPlacement="right"
+            nz-tooltip
+            [nzOverlayStyle]="tooltipStyle"
+            ><i class="icon-ic_info"> </i
+        ></a>
+    </div>
+    <div class="linkurl">
+        <input readonly #linkInput nz-input required placeholder="" [(ngModel)]="linkValue" />
+        <a (click)="copyUrl()">
+            <span class="icon-ic_xm_copy icon"></span>
+            <span class="text">{{ 'Copy link' | translate }}</span>
+        </a>
+        <a (click)="downqrcode()">
+            <span class="icon-ic_erweima icon">
+                <span class="path1"></span>
+                <span class="path2"></span>
+            </span>
+            <span class="text">{{ 'Download QR code' | translate }}</span>
+        </a>
+    </div>
+</div>

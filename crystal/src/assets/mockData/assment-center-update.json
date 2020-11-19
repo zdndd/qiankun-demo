@@ -1,0 +1,28 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": {
+    "planid": 0,
+    "name": "高度",
+    "startdate": "2019-12-4 10:32:01",
+    "enddate": "2020-1-8 10:32:01",
+    "description": "string",
+    "remark": "string",
+    "plandimensions": [
+      {
+        "tooltype": 1,
+        "qualitytype": 1,
+        "assessmentrelationships": [
+          {
+            "relationtype": 1,
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "tooltype": 0,
+        "qualitytype": 2
+      }
+    ]
+  }
+}

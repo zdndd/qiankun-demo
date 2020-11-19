@@ -1,0 +1,59 @@
+:host ::ng-deep {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+
+    .operator-btns {
+        text-align: right;
+        position: absolute;
+        top: -44px;
+        right: 0px;
+        button {
+            & + button {
+                margin-left: 8px;
+            }
+        }
+    }
+    .echarts-wrap{
+        position: relative;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        .empty-data {
+            right: 0px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+            z-index: 999; // transform: translate3d(-50%,-50%,0);
+            background: white;
+          }
+    }
+    .color1{
+        width: 14px;
+        height: 14px;
+        border-radius: 1.8px;
+        background-color: #828fe1;
+        display: inline-block;
+    }
+    .color2{
+        width: 14px;
+        height: 14px;
+        border-radius: 1.8px;
+        background-color: #fdb9a2;
+        display: inline-block;
+    }
+    .ant-table-bordered .ant-table-thead > tr:not(:last-child) > th{
+        width: 5%;
+    }
+
+}

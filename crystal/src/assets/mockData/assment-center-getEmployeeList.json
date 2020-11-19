@@ -1,0 +1,171 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": {
+      "data": [
+        {
+          "id": 0,
+          "empcode": "Emp0001",
+          "empname": "阿姨",
+          "positionname": "CEO",
+          "orgname": "KNX1",
+          "positiongrade": "DC03"
+        },
+        {
+          "id": 0,
+          "empcode": "102",
+          "empname": "忻光",
+          "positionname": "ISC VIP",
+          "orgname": "ISC部门",
+          "positiongrade": "DC02"
+        },
+        {
+          "id": 0,
+          "empcode": "202",
+          "empname": "樱桃",
+          "positionname": "薪酬干事",
+          "orgname": "薪酬组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0006",
+          "empname": "玛丽",
+          "positionname": "薪酬干事",
+          "orgname": "薪酬组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0007",
+          "empname": "海利",
+          "positionname": "研发经理",
+          "orgname": "开发组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0008",
+          "empname": "奥丽莎",
+          "positionname": "测试Leader",
+          "orgname": "测试组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0009",
+          "empname": "肯尼迪1111",
+          "positionname": "CEO",
+          "orgname": "KNX1",
+          "positiongrade": "DC03"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0010",
+          "empname": "蕾蕾",
+          "positionname": "CEO",
+          "orgname": "KNX1",
+          "positiongrade": "DC03"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0011",
+          "empname": "oliselei11",
+          "positionname": "薪酬干事",
+          "orgname": "薪酬组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0014",
+          "empname": "职务test03",
+          "positionname": "人事VIP",
+          "orgname": "人事部门",
+          "positiongrade": "DC02"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0015",
+          "empname": "职务test003_1",
+          "positionname": "人事VIP",
+          "orgname": "人事部门",
+          "positiongrade": "DC02"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0017",
+          "empname": "雷琴",
+          "positionname": "CEO",
+          "orgname": "KNX1",
+          "positiongrade": "DC03"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0018",
+          "empname": "海辉",
+          "positionname": "部门CEO",
+          "orgname": "上海青浦11111",
+          "positiongrade": ""
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0020",
+          "empname": "测试经理",
+          "positionname": "测试Leader",
+          "orgname": "测试组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0021",
+          "empname": "测试工程师6",
+          "positionname": "测试员",
+          "orgname": "测试组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0106",
+          "empname": "周晾壮",
+          "positionname": "测试员",
+          "orgname": "测试组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0115",
+          "empname": "池傍谦",
+          "positionname": "招聘干事",
+          "orgname": "招聘组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0116",
+          "empname": "王献永",
+          "positionname": "测试员",
+          "orgname": "测试组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0119",
+          "empname": "林汐倌",
+          "positionname": "产品人员2",
+          "orgname": "产品组",
+          "positiongrade": "DC01"
+        },
+        {
+          "id": 0,
+          "empcode": "Emp0120",
+          "empname": "钱申轮",
+          "positionname": "薪酬干事",
+          "orgname": "薪酬组",
+          "positiongrade": "DC01"
+        }
+      ],
+      "pageindex": 1,
+      "pagesize": 20,
+      "totalcount": 20
+    }
+  }

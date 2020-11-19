@@ -1,0 +1,63 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": {
+    "totalcount": 100,
+    "assessmentcount": 0,
+    "list": [
+      {
+        "id": 1,
+        "percent": 0,
+        "name": "string",
+        "startdate": "2019-12-02T09:09:05.955Z",
+        "enddate": "2019-12-02T09:09:05.955Z",
+        "description": "string",
+        "remark": "string",
+        "createdate": "2019-12-02T09:09:05.955Z",
+        "createuser": "string",
+        "status": 4,
+        "answercount": 0,
+        "plandimensions": [
+          {
+            "tooltype": 0,
+            "qualitytype": 1,
+            "assessmentcount": 0,
+            "assessmentrelationships": [
+              {
+                "relationtype": 0,
+                "weight": 0,
+                "qualitytype": 1
+              }
+            ]
+          }
+        ]
+      },{
+        "id": 2,
+        "percent": 20,
+        "name": "string2",
+        "startdate": "2019-12-02T09:09:05.955Z",
+        "enddate": "2019-12-02T09:09:05.955Z",
+        "description": "string",
+        "remark": "string",
+        "createdate": "2019-12-02T09:09:05.955Z",
+        "createuser": "string",
+        "status": 1,
+        "answercount": 0,
+        "plandimensions": [
+          {
+            "tooltype": 0,
+            "qualitytype": 3,
+            "assessmentcount": 0,
+            "assessmentrelationships": [
+              {
+                "relationtype": 0,
+                "weight": 0,
+                "qualitytype": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

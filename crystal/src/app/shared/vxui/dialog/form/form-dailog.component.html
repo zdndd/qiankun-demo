@@ -1,0 +1,11 @@
+<div class="content">
+    <form-view [paddingTop]="12" [paddingBottom]="52" [height]="dialogHeight" #formView [config]="formData" [showHeader]="false"></form-view>
+</div>
+<div class="button-row">
+    <button (click)="okHandler()"  nz-button [nzLoading]="saving">
+        <ng-container *ngIf="!saving">{{ 'Ok' | translate}}</ng-container>
+        <ng-container *ngIf="saving">{{ 'Saving' | translate}}</ng-container>
+    </button>
+    &nbsp;
+    <button (click)="cancelHandler()" nz-button ><span>{{ 'Cancel' | translate}}</span></button>
+</div>

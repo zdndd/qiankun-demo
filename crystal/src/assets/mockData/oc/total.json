@@ -1,0 +1,439 @@
+{
+    "id": 47,
+    "qualitytype": 3,
+    "dictionaryname": "肯家素质字典-潜力篇-自定义",
+    "dictionarytype": 2,
+    "maxlevelindex": 4,
+    "abilitydictionary": [
+        {
+            "id": 893,
+            "abilityname": "成长与创新取向",
+            "parent_id": -1,
+            "defaultdescription": "看重的是自我在工作中的成长",
+            "rowindex": "",
+            "targetscore": null,
+            "children": [
+                {
+                    "id": 894,
+                    "abilityname": "持续发展",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": [
+                        {
+                            "id": 895,
+                            "abilityname": "持续发展1",
+                            "parent_id": 894,
+                            "defaultdescription": "干净\n持续\n发展",
+                            "rowindex": "",
+                            "targetscore": null,
+                            "children": [
+                                {
+                                    "id": 976,
+                                    "abilityname": "fz",
+                                    "parent_id": 895,
+                                    "defaultdescription": null,
+                                    "rowindex": "",
+                                    "targetscore": null,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 896,
+                    "abilityname": "内容/形式新颖",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 897,
+                    "abilityname": "个人抱负",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 898,
+                    "abilityname": "获得进步",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 899,
+                    "abilityname": "挑战性",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 900,
+                    "abilityname": "潜能",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 901,
+                    "abilityname": "创造力",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 902,
+                    "abilityname": "实践的机会",
+                    "parent_id": 893,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 903,
+            "abilityname": "人际和谐取向",
+            "parent_id": -1,
+            "defaultdescription": "看重的是工作中人和人之间的关系；",
+            "rowindex": "",
+            "targetscore": null,
+            "children": [
+                {
+                    "id": 904,
+                    "abilityname": "关系和睦",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 905,
+                    "abilityname": "上级关系",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 906,
+                    "abilityname": "扩展人脉",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 907,
+                    "abilityname": "结识同事",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 908,
+                    "abilityname": "同事配合",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 909,
+                    "abilityname": "团队合作",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 910,
+                    "abilityname": "相互信任",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 911,
+                    "abilityname": "相互帮助",
+                    "parent_id": 903,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 912,
+            "abilityname": "组织稳定取向",
+            "parent_id": -1,
+            "defaultdescription": "看重的是外在的环境设置、经济报酬等因素；",
+            "rowindex": "",
+            "targetscore": null,
+            "children": [
+                {
+                    "id": 913,
+                    "abilityname": "薪资水平",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 914,
+                    "abilityname": "薪酬制度",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 915,
+                    "abilityname": "晋升机会",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 916,
+                    "abilityname": "工作环境",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 917,
+                    "abilityname": "激励制度",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 918,
+                    "abilityname": "福利保障",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 919,
+                    "abilityname": "管理制度",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 920,
+                    "abilityname": "设施齐全",
+                    "parent_id": 912,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 921,
+            "abilityname": "社会认可取向",
+            "parent_id": -1,
+            "defaultdescription": "看重的是他人及社会对个人的肯定和认可；",
+            "rowindex": "",
+            "targetscore": null,
+            "children": [
+                {
+                    "id": 922,
+                    "abilityname": "个人口碑",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 923,
+                    "abilityname": "得到尊重",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 924,
+                    "abilityname": "意义感",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 925,
+                    "abilityname": "工作高尚",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 926,
+                    "abilityname": "受到钦佩",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 927,
+                    "abilityname": "社会声望",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 928,
+                    "abilityname": "社会地位",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 929,
+                    "abilityname": "得到肯定",
+                    "parent_id": 921,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 930,
+            "abilityname": "工作与生活的平衡取向",
+            "parent_id": -1,
+            "defaultdescription": "看重的是工作和生活之间的平衡及协调关系",
+            "rowindex": "",
+            "targetscore": null,
+            "children": [
+                {
+                    "id": 931,
+                    "abilityname": "固定的假期",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 932,
+                    "abilityname": "发展个人兴趣",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 933,
+                    "abilityname": "规律的生活安排",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 934,
+                    "abilityname": "照顾家庭",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 935,
+                    "abilityname": "生活重心平衡",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 936,
+                    "abilityname": "长期发展",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 937,
+                    "abilityname": "比重均衡",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                },
+                {
+                    "id": 938,
+                    "abilityname": "可支配的时间",
+                    "parent_id": 930,
+                    "defaultdescription": "",
+                    "rowindex": "",
+                    "targetscore": null,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

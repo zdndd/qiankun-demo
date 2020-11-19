@@ -1,0 +1,58 @@
+{
+    "maximumdata": { "maximum": 10, "currentmaximum": 7 },
+    "data": [
+        {
+            "id": 10,
+            "createusername": "Rock",
+            "courseObject": "学生人群",
+            "courseEffect": "课程效果惊人",
+            "coursename": "从入门到精通——新员工Excel",
+            "courseStep": -1,
+            "coverstyle": 0,
+            "mousestyle": 0,
+            "crateDate": "2019-12-01",
+            "adminList": [],
+            "description": "通过本次培训，让员工 ,  掌握excel图表生成 ,从而缩短xx的时间,提升工作效率。",
+            "firstenter": true
+        },
+        {
+            "id": 11,
+            "createusername": "Rock",
+            "courseObject": "学生人群",
+            "courseEffect": "课程效果惊人",
+            "coursename": "从入门到精通——新员工Excel",
+            "coverstyle": 1,
+            "mousestyle": 1,
+            "crateDate": "2019-12-01",
+            "adminList": [],
+            "description": "通过本次培训，让员工 ,  掌握excel图表生成 ,从而缩短xx的时间,提升工作效率。",
+            "firstenter": true
+        },
+        {
+            "id": 12,
+            "createusername": "Rock",
+            "courseObject": "学生人群",
+            "courseEffect": "课程效果惊人",
+            "coursename": "从入门到精通——新员工Excel",
+            "coverstyle": 2,
+            "mousestyle": 2,
+            "crateDate": "2019-12-01",
+            "adminList": [],
+            "description": "通过本次培训，让员工 ,  掌握excel图表生成 ,从而缩短xx的时间,提升工作效率。",
+            "firstenter": true
+        },
+        {
+            "id": 13,
+            "createusername": "Rock",
+            "courseObject": "学生人群",
+            "courseEffect": "课程效果惊人",
+            "coursename": "从入门到精通——新员工Excel",
+            "coverstyle": 3,
+            "mousestyle": 3,
+            "crateDate": "2019-12-01",
+            "adminList": [],
+            "description": "通过本次培训，让员工 ,  掌握excel图表生成 ,从而缩短xx的时间,提升工作效率。",
+            "firstenter": true
+        }
+    ]
+}

@@ -1,0 +1,573 @@
+{
+    "columns": [
+        {
+            "id": 0,
+            "abilityname": "能力1"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力2"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力3"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力4"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力5"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力6"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力7"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力8"
+        },
+        {
+            "id": 0,
+            "abilityname": "能力9"
+        }
+    ],
+    "rows": [
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": -1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "15",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "16",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": -1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        },
+        {
+            "datasource": [
+                {
+                    "lstcellinfos": {
+                        "value": "1",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 1
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                },
+                {
+                    "lstcellinfos": {
+                        "value": "2",
+                        "celltype": 0
+                    }
+                }
+            ],
+            "lstweightvalue": "100"
+        }
+    ]
+}

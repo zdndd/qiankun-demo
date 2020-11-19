@@ -1,0 +1,205 @@
+<div class="operator-btns">
+    <button nz-button (click)="addRowHandler()" nzType="default">
+        <i nz-icon nzType="plus"></i>{{ 'Add Ability' | translate }}
+    </button>
+    <button nz-button (click)="addColumnHandler()" nzType="default">
+        <i nz-icon nzType="plus"></i>{{ 'Add Column' | translate }}
+    </button>
+    <!-- <button nz-button (click)="exportHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导出' | translate }}
+    </button> -->
+    <!-- <button nz-button (click)="importHandler()" nzType="default">
+        <i nz-icon nzType="export"></i>{{ '导入' | translate }}
+    </button> -->
+</div>
+<div
+    class="table-wrapper"
+    [ngClass]="{ 'preview-mode': currTabId != 'all', 'all-mode': currTabId == 'all' }"
+    cdk-overlay-origin
+    #trigger="cdkOverlayOrigin"
+>
+    <div class="loading" *ngIf="pageState == 1"><nz-spin nzTip="Loading..."></nz-spin>`</div>
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+    <div
+        class="table-inner"
+        #tableContainer
+        [class.exist-data]="(pageState == 3 || pageState == 1) && !firstLoad"
+    >
+        <div class="fixed left" #fixedColumnLeft>
+            <div
+                class="col-box"
+                *ngFor="let column of fixedColumns; let i = index"
+                [class.sn]="i == 0"
+                [style.min-width]="column.width"
+            >
+                <div class="header">{{ column.title }}</div>
+                <div class="scroll-container">
+                    <div
+                        class="cell"
+                        *ngFor="let row of column.rows; let rowindex = index"
+                        [class.customer]="row.trend == 'customer'"
+                        [class.hover]="row.hover"
+                        (mouseover)="mouseoverCell($event, row, rowindex)"
+                        (mouseout)="mouseoutCell($event, row)"
+                    >
+                        <ng-container *ngIf="!row.trend || i != 0">
+                            {{ row.title }}
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            cdkDropList
+            cdkDropListOrientation="horizontal"
+            cdk-scrollable
+            class="col-list"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <ng-container *ngFor="let column of notFixedColumns; let j = index">
+                <div
+                    class="col-box"
+                    cdkDrag
+                    [style.min-width]="column.width"
+                    [class.customer]="column.rule"
+                    *ngIf="column.visible"
+                >
+                    <div cdkDragHandle class="header" nz-tooltip [nzTitle]="column.columnname" >
+                        {{ column.columnname }}
+                        <span (click)="deleteColumn(column)">
+                            <i class="icon-ic_del"></i>
+                        </span>
+                    </div>
+                    <div class="scroll-container">
+                        <div
+                            *ngFor="let row of column.rows; let i = index"
+                            class="cell"
+                            (mouseover)="mouseoverCell($event, row, i)"
+                            (mouseout)="mouseoutCell($event, row)"
+                            [class.customer]="row.trend == 'customer'"
+                            [class.increase]="row.trend == 'increase'"
+                            [class.reduce]="row.trend == 'reduce'"
+                            [class.hover]="row.hover"
+                            (click)="cellClick(row, column, $event)"
+                        >
+                            <ng-container *ngIf="typeId == 2">
+                                <ng-container *ngIf="row.fixed">{{ row.title }}</ng-container>
+                                <label
+                                    *ngIf="!row.fixed && row.columnName != 'blank'"
+                                    [(ngModel)]="row.checked"
+                                    (ngModelChange)="checkboxChange(row, column, $event)"
+                                    nz-checkbox
+                                ></label>
+                            </ng-container>
+                            <ng-container *ngIf="typeId != 2">
+                                <ng-container>{{ row.title }}</ng-container>
+                                <div *ngIf="row.edit">
+                                    <input maxlength="2" (blur)="onBlurInp(j,i,row.title)" nz-input [(ngModel)]="row.title"/>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <div class="fixed right" #fixedColumnRight *ngIf="rightFixedColumns.length > 0">
+            <div
+                class="col-box"
+                *ngFor="let column of rightFixedColumns; let i = index"
+                [class.sn]="i == 0"
+                [style.min-width]="column.width"
+            >
+                <div class="header" (click)="toggleSort(column)">
+                    {{ column.columnname }}
+                    <div class="column-sorter">
+                        <div class="column-sorter-inner">
+                            <i
+                                [class.on]="currSort == 'asc'"
+                                [class.off]="currSort != 'asc'"
+                                nz-icon
+                                nzType="caret-up"
+                                nzTheme="outline"
+                            ></i>
+                            <i
+                                class="off"
+                                [class.on]="currSort == 'desc'"
+                                [class.off]="currSort != 'desc'"
+                                nz-icon
+                                nzType="caret-down"
+                                nzTheme="outline"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-container">
+                    <div
+                        class="cell"
+                        *ngFor="let row of column.rows; let rowindex = index"
+                        [class.customer]="row.trend == 'customer'"
+                        [class.hover]="row.hover"
+                        (mouseover)="mouseoverCell($event, row, rowindex)"
+                        (mouseout)="mouseoutCell($event, row)"
+                    >
+                        <ng-container *ngIf="!row.trend || i != 0">
+                            {{ row.title }}
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-bar" #scrollbar pretty-scroll>
+        <div class="inner"></div>
+    </div>
+</div>
+
+<ng-template #importTips>
+    <span [innerHTML]="'Import Tip' | translate"></span>
+</ng-template>
+
+<ng-template cdk-portal #operatorPickerTemplate="cdkPortal">
+    <div class="column-operator-picker" *ngIf="currOperColumn">
+        <div class="header" (click)="closeOperatorPicker()">
+            {{ currOperColumn.title }}
+            <span>
+                <i nz-icon nzType="caret-up" theme="outline"></i>
+            </span>
+        </div>
+        <ul>
+            <li
+                *ngIf="currOperColumn.rule && currOperColumn.isstandard == false"
+                class="edit"
+                (click)="editColumn($event)"
+            >
+                <span class="icon-ic_WJ_edit"> </span>
+                {{ 'Edit column' | translate }}
+            </li>
+            <li class="remove" (click)="deleteColumn($event)">
+                <span class="icon-ic_del"> </span>
+                {{ 'Delete column' | translate }}
+            </li>
+        </ul>
+    </div>
+</ng-template>
+
+<ng-template cdk-portal #rowRemoveTemplate="cdkPortal">
+    <div
+        class="row-remove-overlay"
+        (click)="deleteRow($event)"
+        (mouseenter)="removeBtnMouseEnter($event)"
+        (mouseleave)="removeBtnMouseLeave($event)"
+    >
+        <span>
+            <i class="icon-ic_del"></i>
+        </span>
+    </div>
+</ng-template>
+
+<ng-template cdk-portal #overloayLoadingTemplate="cdkPortal">
+    <div class="overlay-loading">
+        <div><nz-spin nzTip="{{ 'Importing' | translate }}"></nz-spin>`</div>
+    </div>
+</ng-template>

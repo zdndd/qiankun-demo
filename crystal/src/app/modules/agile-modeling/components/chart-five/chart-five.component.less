@@ -1,0 +1,66 @@
+::ng-deep {
+    .abilitylist5 {
+        width: 584px;
+        height: 459px;
+        overflow: hidden;
+    }
+    .abilitylist5-box {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &.cdk-drag-preview {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            line-height: 30px;
+            height: 30px !important;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+            0 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+        .cdk-drag-dragging{
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .abilitylist5-wrap {
+        cursor: move;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        margin: 0;
+        font-size: 22px;
+        color: #f6f7fb;
+    }
+    .abilitylist5-wrap:nth-child(1) {
+        transform: translate3d(220px, 5px, 0) !important;
+    }
+    .abilitylist5-wrap:nth-child(2) {
+        transform: translate3d(435px, 127px, 0) !important;
+    }
+    .abilitylist5-wrap:nth-child(3) {
+        transform: translate3d(340px, 422px, 0) !important;
+    }
+    .abilitylist5-wrap:nth-child(4) {
+        transform: translate3d(75px, 422px, 0) !important;
+    }
+    .abilitylist5-wrap:nth-child(5) {
+        transform: translate3d(-1px, 127px, 0) !important;
+    }
+}
+:host ::ng-deep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .agileChart {
+        width: 584px;
+        height: 459px;
+        background: url(/assets/img/chart-5.png) no-repeat;
+        background-size: 584px 459px;
+        //margin-top: 69px;
+    }
+}

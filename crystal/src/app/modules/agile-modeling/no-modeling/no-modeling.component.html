@@ -1,0 +1,11 @@
+<div class="main">
+    <ul>
+        <ng-container *ngFor="let item of list">
+            <li [ngClass]="item.className" [class.complete]="item.conclusionstate" (click)="onClick(item.typeid)">
+                <div class="txt">{{item.title}}</div>
+                <span class="bullet"></span>
+            </li>
+        </ng-container>
+    </ul>
+    <div class="create-btn"><div class="txt" (click)="onCreate()">建立模型</div></div>
+</div>

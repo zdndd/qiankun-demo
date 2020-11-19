@@ -1,0 +1,13 @@
+<div class="sidebar">
+    <a
+        *ngIf="isShowAgile"
+        routerLink="/agile-modeling/"
+        nzTitle="{{ 'TAM' | translate }}"
+        nzPlacement="right"
+        nz-tooltip
+        routerLinkActive="active"
+    >
+        <i class="icon-ic_model"> </i>
+        <span>{{ 'KAM' | translate }}</span>
+    </a>
+</div>

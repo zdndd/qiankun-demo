@@ -1,0 +1,149 @@
+:host ::ng-deep {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    .operator-btns {
+        text-align: right;
+        position: absolute;
+        top: -44px;
+        right: 0px;
+        button {
+            & + button {
+                margin-left: 8px;
+            }
+        }
+    }
+    .conclusion-wrapper {
+        padding: 22px 20px 0px;
+        background-color: #fff;
+        position: absolute;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .loading {
+            right: 0px;
+            position: absolute;
+            width: 100%;
+            box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8,
+                1px 0 0 0 #e8e8e8 inset, 0 1px 0 0 #e8e8e8 inset;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+            z-index: 999; // transform: translate3d(-50%,-50%,0);
+        }
+        .empty-data {
+            right: 0px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+            z-index: 999; // transform: translate3d(-50%,-50%,0);
+        }
+
+        ul {
+            padding: 0;
+        }
+        ul,
+        li {
+            list-style-type: none;
+        }
+
+        .title {
+            color: #626262;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .conclusion-content {
+            //display: flex;
+            //flex-direction: column;
+            //height: 100%;
+            .conclusion-body {
+                flex-grow: 1;
+                overflow: hidden;
+                .conclusion-main {
+                    height: 100%;
+                }
+            }
+        }
+        .ring-box {
+            min-width: 700px;
+            width: 900px;
+        }
+        .conclusion-descrip {
+            min-width: 500px;
+            .descrip-title {
+                cursor: pointer;
+                i {
+                    margin-left: 10px;
+                    display: inline-block;
+                    color: #fbc66a;
+                    font-size: 16px;
+                }
+            }
+
+            div.text {
+                display: block;
+                width: 100%;
+                //overflow: auto;
+                word-wrap: break-word;
+                font-size: 14px;
+                color: #838383;
+                border-radius: 1px;
+                margin-bottom: 36px;
+                //max-height: 90%;
+                //border: 1px solid  rgba(202,206,218,9);
+                //white-space: pre-wrap;
+            }
+        }
+
+        .editor-div {
+            padding-top: 0px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        > div {
+            .inline_editor {
+                //width: 300px;
+                //height: 400px;
+                //overflow: auto;
+            }
+           .cke_chrome{
+             border-left: 1px solid transparent;
+             border-right: 1px solid transparent;
+             border-bottom: 1px solid transparent;
+           }
+        }
+        .btn-footer {
+            padding: 14px 0;
+            text-align: right;
+            button {
+                box-sizing: border-box;
+                width: 70px;
+                height: 36px;
+                border-radius: 4px;
+                border: solid 1px #6d8be5;
+                text-align: center;
+                color: #6d8be5;
+                &:nth-child(1) {
+                    color: #fff;
+                    margin-right: 12px;
+                    background-image: linear-gradient(to right, #6272d9, #6e8be5);
+                }
+            }
+        }
+    }
+}

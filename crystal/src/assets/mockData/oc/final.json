@@ -1,0 +1,83 @@
+[
+    {
+        "id": "111",
+        "abilityName": "eieiei",
+        "parentId": 0,
+        "children": [
+            {
+                "id": "aaa",
+                "abilityName": "aaa",
+                "parentId": "111",
+                "children": []
+            },
+            {
+                "id": "bbb",
+                "abilityName": "bbb",
+                "parentId": "111",
+                "defaultDescription": "我是描述啊",
+                "children": []
+            },
+            {
+                "id": "ccc",
+                "abilityName": "ccc",
+                "parentId": "111",
+                "defaultDescription": "我是描述啊",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "aaa",
+        "abilityName": "aaa",
+        "parentId": "111",
+        "children": [
+            {
+                "id": "888",
+                "abilityName": "888",
+                "parentId": "aaa",
+                "children": []
+            },
+            {
+                "id": "999",
+                "abilityName": "999",
+                "parentId": "aaa",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "888",
+        "abilityName": "888",
+        "parentId": "aaa",
+        "children": [
+            {
+                "id": "coco",
+                "abilityName": "coco",
+                "parentId": "888",
+                "children": []
+            }
+        ]
+    },
+    {
+        "id": "coco",
+        "abilityName": "coco",
+        "parentId": "888",
+        "children": [
+            {
+                "id": "coco01",
+                "abilityName": "coco01",
+                "parentId": "coco"
+            },
+            {
+                "id": "coco02",
+                "abilityName": "coco02",
+                "parentId": "coco"
+            },
+            {
+                "id": "coco02",
+                "abilityName": "coco03",
+                "parentId": "coco"
+            }
+        ]
+    }
+]

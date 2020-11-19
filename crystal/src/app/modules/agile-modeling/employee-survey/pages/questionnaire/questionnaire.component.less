@@ -1,0 +1,66 @@
+:host ::ng-deep {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    .operator-btns {
+        text-align: right;
+        position: absolute;
+        top: -44px;
+        right: 0px;
+        button {
+            & + button {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .table-content {
+        flex: 1;
+        padding: 0px;
+        position: relative;
+        nz-table {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            td {
+                padding: 0px !important;
+            }
+        }
+    }
+
+    .ant-select-selection {
+        border-radius: 0px !important;
+        border-width: 0px !important;
+    }
+    .ant-select-selection__placeholder {
+        text-align: center;
+    }
+
+    .ant-select-selection__rendered {
+        text-align: center;
+    }
+
+    .ant-select-selection-selected-value {
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: #626262;
+        padding-right: 0!important;
+    }
+
+    .ant-select-selection {
+        background: none;
+    }
+
+    .ant-select-arrow {
+        right: 20px;
+    }
+    .ant-select-open{
+        background-color: #f5f6fe;
+    }
+}
+

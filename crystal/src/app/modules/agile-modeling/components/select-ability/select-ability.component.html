@@ -1,0 +1,43 @@
+<div class="card-container">
+    <!--line-->
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+    <nz-tabset *ngIf="pageState == 3" [nzTabPosition]="'top'" [nzType]="'card'" (nzSelectChange)="makeScrollbar()">
+        <nz-tab *ngFor="let tab of tabs" [nzTitle]="tab.abilityname">
+            <nz-checkbox-wrapper *ngIf="status !== 3" style="width: 100%;height: 100%;">
+                <div class="content" *ngFor="let child of tab.children">
+                    <div class="flex-h flex-align-center">
+                        <label nz-checkbox [nzDisabled] = "child.disabled" [(nzChecked)]="child.ischecked" (nzCheckedChange)="checkedChange($event,child.id)" nzValue="{{child.id}}"
+                        ><span class="child-title">{{child.abilityname}}</span></label
+                        >
+                        <div *ngIf="status === 1" class="inp-percentage" >
+                            <vx-input-number [maxLength]="4" [decimalNumber]="2" [allowMinus]="true" [(ngModel)]="child.proportion" [isFloat]="true"
+                                             placeholder="请输入占比"></vx-input-number>
+                        </div>
+                        <span *ngIf="status === 1">&nbsp;%</span>
+                    </div>
+                    <div class="child-description" [innerHTML]="child.description | safeHtml"></div>
+                    <ul *ngIf="status === 0 && child['lstpagetabinfo']" class="flex-h flex-justify-center ulStar">
+                        <li *ngFor="let starlist of child['lstpagetabinfo']" class="flex-h flex-align-center">
+                            <span>{{starlist.name}}</span>
+                            <span [className]="starlist.classname"></span>
+                        </li>
+                    </ul>
+                </div>
+            </nz-checkbox-wrapper>
+
+            <nz-radio-group *ngIf="status === 3" [(ngModel)]="radioId" style="width: 100%;height: 100%;">
+                <div class="content" *ngFor="let child of tab.children">
+                    <div class="flex-h flex-align-center">
+                        <label nz-radio [nzDisabled] = "child.disabled" (nzCheckedChange)="checkedChange($event,child.id)" nzValue="{{child.id}}"
+                        ><span class="child-title">{{child.abilityname}}</span></label
+                        >
+                    </div>
+                    <p class="child-description">{{child.description}}</p>
+                </div>
+            </nz-radio-group>
+        </nz-tab>
+    </nz-tabset>
+</div>

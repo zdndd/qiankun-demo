@@ -1,0 +1,60 @@
+::ng-deep {
+    .abilitylist4 {
+        width: 417px;
+        height: 420px;
+        overflow: hidden;
+    }
+    .abilitylist4-box {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &.cdk-drag-preview {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            line-height: 30px;
+            height: 30px !important;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
+    .abilitylist4-wrap {
+        cursor: move;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        margin: 0;
+        font-size: 22px;
+    }
+    .abilitylist4-wrap:nth-child(1) {
+        color: #ffffff;
+        transform: translate3d(50px, 70px, 0) !important;
+    }
+    .abilitylist4-wrap:nth-child(2) {
+        color: #9a7933;
+        transform: translate3d(205px, 167px, 0) !important;
+    }
+    .abilitylist4-wrap:nth-child(3) {
+        color: #ffffff;
+        transform: translate3d(215px, 320px, 0) !important;
+    }
+    .abilitylist4-wrap:nth-child(4) {
+        color: #ffffff;
+        transform: translate3d(50px, 225px, 0) !important;
+    }
+}
+:host ::ng-deep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .agileChart {
+        width: 417px;
+        height: 420px;
+        background: url(/assets/img/chart-4.png) no-repeat;
+        background-size: 417px 420px;
+        //margin-top: 65px;
+    }
+}

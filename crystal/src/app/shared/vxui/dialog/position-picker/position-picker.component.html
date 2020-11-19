@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="layout-left-tree">
+    <div class="tree-title">{{ 'Selecting An Organizational Unit Node' | translate }}</div>
+    <div class="tree-content">
+      <nz-tree [nzData]="nodes" (nzExpandChange)="treeExpandChangeHandler($event)" nzShowLine="true" (nzClick)="nzEvent($event)">
+      </nz-tree>
+    </div>
+  </div>
+
+
+  <div class="layout-right">
+    <vx-tableview [title]="''" [serverUrl]="serverUrl" [queryData]="searchData" [buttons]="buttons" [showHeader]="true" [pageable]="true" [pageSize]="10"
+       (operationLinkClick)="operationLinkClickHandler($event)" [columns]="columns">
+       <div class="header-left">
+           <input placeholder="{{ 'Enter A Job Name Query' | translate }}" [formControl]="searchControl" type="text">
+        </div>
+    </vx-tableview>
+  </div>
+
+</div>

@@ -1,0 +1,48 @@
+:host ::ng-deep {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    .operator-btns {
+        text-align: right;
+        position: absolute;
+        top: -44px;
+        right: 0px;
+        button {
+            & + button {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .table-content {
+        flex: 1;
+        padding: 0px;
+        position: relative;
+        nz-table {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            .ant-table-row{
+                .column-th{
+                    & div{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap
+                    }
+                }
+            }
+            .ant-table-fixed{
+                .first-column{
+                    width: 150px;
+                }
+                .second-column{
+                    width: 90px;
+                }
+            }
+        }
+    }
+}

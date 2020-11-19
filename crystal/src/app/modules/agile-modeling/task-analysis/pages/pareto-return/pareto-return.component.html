@@ -1,0 +1,12 @@
+<!-- <div class="operator-btns">
+    <button nz-button nzType="default"><i nz-icon nzType="export"></i>导出</button>
+</div> -->
+<div class="echarts-wrap">
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+    <div style="height:100%;">
+        <chart-pareto  [chartParams]=chartParams></chart-pareto>
+    </div>
+</div>

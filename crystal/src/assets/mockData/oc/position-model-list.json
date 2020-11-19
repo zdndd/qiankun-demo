@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "competencymodelid": 1,
+            "id": 0,
+            "positionid": "P-1",
+            "positionname": "产品经理",
+            "positionsequence": "G6(即副经理、助理经理)",
+            "rank": "高级",
+            "department": "ISC",
+            "competencymodelname": "经理岗位模型",
+            "currentmodelname": "经理岗位模型",
+            "organizationalname": "测试组"
+        },
+        {
+            "competencymodelid": 2,
+            "id": 1,
+            "positionid": "P-2",
+            "positionname": "主管",
+            "positionsequence": "G8(即正副经理、主任级)",
+            "rank": "主管级",
+            "department": "CEC",
+            "competencymodelname": "主管岗位模型",
+            "currentmodelname": "主管岗位模型",
+            "organizationalname": "测试组"
+        },
+        {
+            "competencymodelid": 3,
+            "id": 2,
+            "positionid": "P-3",
+            "positionname": "HR经理",
+            "positionsequence": "G7(即副经理、助理经理)",
+            "rank": "高级",
+            "department": "HR",
+            "competencymodelname": null,
+            "currentmodelname": null,
+            "organizationalname": "测试组"
+        },
+        {
+            "competencymodelid": 4,
+            "id": 3,
+            "positionid": "P-4",
+            "positionname": "猎头经理",
+            "positionsequence": "G5(即副经理、助理经理)",
+            "rank": "中级",
+            "department": "猎头",
+            "competencymodelname": null,
+            "currentmodelname": null,
+            "organizationalname": "测试组"
+        }
+    ]
+}

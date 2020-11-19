@@ -1,0 +1,17 @@
+{
+  "errorcode": 0,
+  "message": null,
+  "data": {
+    "id": 10,
+    "customerid": "customerone",
+    "customername": "测试企业客户",
+    "administrator": "admin",
+    "linkman": "vivian",
+    "cellphone": "13998765432",
+    "email": "vivian@knx.com.cn",
+    "consultant": "jackson",
+    "begindate": "2020-03-09T00:00:00",
+    "enddate": "2021-03-09T00:00:00",
+    "adminuserid": 55
+  }
+}

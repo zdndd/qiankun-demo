@@ -1,0 +1,8 @@
+[
+    { "name": "经历", "ison": true, "charttype": 8 },
+    { "name": "绩效", "ison": true, "charttype": 9 },
+    { "name": "人才九宫格（部门)", "ison": true, "charttype": 4 },
+    { "name": "能力", "ison": true, "charttype": 10 },
+    { "name": "动力分析（部门）", "ison": true, "charttype": 6 },
+    { "name": "潜力", "ison": true, "charttype": 12 }
+]

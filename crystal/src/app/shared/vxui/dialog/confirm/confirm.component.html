@@ -1,0 +1,10 @@
+<div class="content">
+    <p class="message">
+        {{ message }}
+    </p>
+  </div>
+  <div class="footer">
+    <button (click)="okHandler()" nz-button nzType="primary">{{ 'Ok'| translate }}</button>
+    &nbsp;
+    <button (click)="cancelHandler()" nz-button nzType="default">{{ 'Cancel' | translate}}</button>
+  </div>

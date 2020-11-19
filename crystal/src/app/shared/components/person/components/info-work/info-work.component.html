@@ -1,0 +1,31 @@
+<div class="education" [ngClass]="{ 'education-green': color === '#59b9a2' }" *ngIf="pageState == 1; else other">
+    <nz-timeline nzMode="alternate">
+        <nz-timeline-item
+            *ngFor="let item of workArr; index as i"
+            [nzDot]="dotTemplate"
+            [ngClass]="{ gray: item.isoldexperience }"
+        >
+            <div *ngIf="!item.isoldexperience && i == showYear" class="title">
+                {{ item.startdate | date: 'yyyy' }}年入职
+            </div>
+            <div class="main">
+                <div class="content" [ngClass]="{ even: i % 2 == 0, odd: i % 2 != 0 }">
+                    {{ item.departmentname }}
+                    <ng-template *ngIf="item.departmentname"> - </ng-template>
+
+                    {{ item.positionname }}
+                    <span class="company">{{ item.company }}</span>
+                    <span>{{ item.startdate | date: 'yyyy.MM.dd' }}</span>
+                </div>
+            </div>
+        </nz-timeline-item>
+    </nz-timeline>
+    <ng-template #dotTemplate>
+        <div class="dot">
+            <div></div>
+        </div>
+    </ng-template>
+</div>
+<ng-template #other>
+    <state-icon [state]="pageState"></state-icon>
+</ng-template>

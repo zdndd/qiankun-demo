@@ -1,0 +1,69 @@
+{
+    "data": {
+        "alltime": 105,
+        "listOfData": [
+            {
+                "name": "模块1",
+                "title": "技能a",
+                "module1": "1",
+                "module2": "1",
+                "module3": "3",
+                "rowSpan": 2
+            },
+            {
+                "name": "模块1",
+                "title": "技能ab",
+                "module1": "1",
+                "module2": "1",
+                "module3": "3",
+                "rowSpan": 0
+            },
+            {
+                "name": "模块2",
+                "title": "技能ac",
+                "module1": "1",
+                "module2": "1",
+                "module3": "3",
+                "rowSpan": 3
+            },
+            {
+                "name": "模块2",
+                "title": "技能ad",
+                "module1": "1",
+                "module2": "1",
+                "module3": "3",
+                "rowSpan": 0
+            },
+            {
+                "name": "模块2",
+                "title": "技能ae",
+                "module1": "1",
+                "module2": "1",
+                "module3": "3",
+                "rowSpan": 0
+            },
+            {
+                "name": "模块2",
+                "title": "技能ae",
+                "module1": "1",
+                "module2": "1",
+                "module3": "3",
+                "rowSpan": 1
+            }
+        ],
+        "echartsData": [
+            {
+                "value": 90,
+                "name": "模块1"
+            },
+            {
+                "value": 120,
+                "name": "模块2"
+            },
+            {
+                "value": 50,
+                "name": "未分配"
+            }
+        ]
+    }
+}

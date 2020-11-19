@@ -1,0 +1,28 @@
+{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": {
+        "data": [
+            {
+                "key": "emp0001",
+                "title": "阿姨"
+            },
+            {
+                "key": "emp0002",
+                "title": "樱桃"
+            },
+            {
+                "key": "emp0003",
+                "title": "海利"
+            },
+            {
+                "key": "emp0004",
+                "title": "蕾蕾"
+            },
+            {
+                "key": "emp0005",
+                "title": "海辉"
+            }
+        ]
+    }
+}

@@ -1,0 +1,166 @@
+:host ::ng-deep {
+    display: block;
+    width: 100%;
+    height: 100%;
+    // overflow-y: hidden;
+
+
+    .layout-table{
+        width: 100%;
+        height: 100%;
+
+        // display: flex;
+        // display: -ms-flexbox;
+
+        // flex-direction: column;
+        // -ms-flex-direction: column;
+
+        position: relative;
+        &.has-header{
+            padding-top: 46px;
+        }
+
+        .layout-table-header{
+            position: absolute;
+            height: 46px;
+            width: 100%;
+            left: 0px;
+            top:0px;
+        }
+
+        .layout-table-content{
+            // flex: 1;
+            // -ms-flex: 1;
+            height: 100%;
+            width: 100%;
+            padding-top: 33px;
+            padding-bottom: 8px;
+            // position: relative;
+            // display: flex;
+            // flex-direction: column;
+
+            .tbl-header{
+                height: 33px;
+                position: absolute;
+                width: 100%;
+                box-sizing: border-box;
+                left: 0px;
+                top:0px;
+                zoom: 1;
+            }
+
+            .tbl-content{
+                overflow: auto;
+                width: 100%;
+                height: 100%;
+                // flex:1;
+
+                span{
+                    font-size: 12px !important;
+                }
+            }
+
+            .tbl-footer{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                height: 8px;
+            }
+        }
+    }
+
+    .tbl-header,.tbl-content{
+        position: relative;
+        .tbl-freeze-1{
+            float: left;
+        }
+        .tbl-freeze-2{
+            float: right;
+        }
+        .tbl-no-fixed{
+            position: absolute;
+            left:0px;
+            right:0px;
+        }
+    }
+
+    
+
+
+    
+	
+	// .tbl .tbl-footer{ 
+	// 	height: 20px;
+	// }
+	
+	// .tbl .tbl-footer .tbl-no-fixed {
+	// 	height: 20px;
+	// }
+
+    .emptycell{
+        position: relative;
+        height: 200px !important;
+        padding: 0px !important;
+
+        .tbl-empty{
+            height: 120px;
+            padding-top: 105px;
+        }
+    }
+
+    .loadingcell{
+        height: 100px !important;
+        padding-top: 0px !important;
+        
+    }
+
+    .tbl-spin{
+        height: 100px !important;
+        padding-top: 30px !important;
+        text-align: center;
+    }
+
+    .has-dropdown{
+        position: relative;
+        display: flex;
+        display: -ms-flexbox;
+        >span{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .btn-group{
+            position: static !important;
+            // margin-left: auto;
+            // z-index: 150;
+            // left: auto;
+        }
+    }
+
+
+
+    .tbl.tbl-nodata .tbl-header>table>tbody>tr, .tbl.tbl-nodata .tbl-header .tbl-no-fixed>table>tbody>tr {
+        border-bottom: 1px solid #dcdce0;
+    }
+
+    .link{
+        color: #6090df;
+        // text-decoration: underline;
+        cursor: pointer;
+        font-size: 12px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    .links{
+        padding: 0px 0px 0px 10px !important;
+        .btn-mini{
+            line-height: 10px;
+        }
+    }
+
+   
+    
+}

@@ -1,0 +1,20 @@
+{
+    "errorcode": 0,
+    "message": "string",
+    "data": [
+        {
+            "succanalysisid": "5d54dd9e-ca1c-4136-8ac8-d31a67e99759",
+            "empcode": "knx001",
+            "empname": "小王",
+            "positionid": "pid01",
+            "financialimpact": -1,
+            "processimpact": -1,
+            "moraleimpact": -1,
+            "brandimpact": -1,
+            "competitivetreatment": -1,
+            "relationshipharmony": -1,
+            "developmentpossibilities": -1,
+            "environmentalobjectivity": -1
+        }
+    ]
+}

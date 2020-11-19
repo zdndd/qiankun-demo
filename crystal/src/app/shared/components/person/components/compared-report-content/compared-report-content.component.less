@@ -1,0 +1,38 @@
+:host {
+    width: 100%;
+    background-color: #fff;
+    padding: 4.7% 4.2%;
+    border-radius: 3px;
+    display: inline-block;
+    .title {
+        background: url(/assets/img/ic-all@2x.png) left center no-repeat;
+        padding: 0 0 0 32px;
+        background-size: 18px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        i {
+            display: inline-block;
+            font-size: 20px;
+        }
+        .total-title {
+            font-size: 18px;
+            color: #253238;
+        }
+        &.green {
+            background: url(/assets/img/ic-all-green@2x.png) left center no-repeat;
+            background-size: 18px;
+        }
+    }
+    .line {
+        flex-grow: 1;
+        border-bottom: 1px dashed #d2d2d3;
+        height: 1px;
+        overflow: hidden;
+        margin-left: 1rem;
+    }
+    .content {
+        min-height: 200px;
+        // border: 1px solid #eee;
+    }
+}

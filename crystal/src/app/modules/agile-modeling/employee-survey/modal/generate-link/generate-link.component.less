@@ -1,0 +1,90 @@
+:host ::ng-deep {
+    display: block;
+    width: 100%;
+    position: relative;
+    .save-form {
+        background-color: #f6f7fb;
+        padding: 20px 30px;
+        margin-top: 7px;
+        .form-item {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #878385;
+            margin-left: 14px;
+            margin-bottom: 8px;
+        }
+
+        .controls {
+            text-align: right;
+            button {
+                color: #fff;
+                width: 100px;
+                height: 36px;
+                border-radius: 2.8px;
+                border: solid 0.7px #6d8be5;
+                background-image: linear-gradient(to right, #6272d9, #6e8be5);
+            }
+        }
+    }
+
+    .links {
+        padding: 30px;
+        .tips {
+            margin-left: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            margin-bottom: 15px;
+            text-align: left;
+            color: #252525;
+        }
+
+        .linkurl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                .icon {
+                    font-size: 18px;
+                    margin-right: 8px;
+                    vertical-align: middle;
+                    span {
+                        color: #6d8be5 !important;
+                    }
+                }
+                .text{
+                    vertical-align: middle;
+                }
+                & + a {
+                    margin-left: 24px;
+                }
+            }
+            input {
+                flex: 1;
+                margin-right: 24px;
+            }
+        }
+        
+        .della{
+            max-width: none !important;
+            background: #6272d9;
+            .ant-tooltip{
+                max-width: none !important;
+                background: #6272d9;
+            }
+        }
+    }
+
+}

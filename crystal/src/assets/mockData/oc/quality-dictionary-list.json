@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "qualityTypeName": "能力",
+            "qualitytype": 1,
+            "dictionaryname": "肯家素质字典-能力篇",
+            "dictionarytype": 1
+        },
+        {
+            "id": 2,
+            "qualityTypeName": "能力",
+            "qualitytype": 1,
+            "dictionaryname": "肯家素质字典-耐力篇",
+            "dictionarytype": 2
+        },
+        {
+            "id": 3,
+            "qualityTypeName": "能力",
+            "qualitytype": 1,
+            "dictionaryname": "肯家素质字典-潜力篇",
+            "dictionarytype": 3
+        }
+    ],
+    "pageindex": 1,
+    "pagesize": 20,
+    "totalcount": 8
+}

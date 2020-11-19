@@ -1,0 +1,58 @@
+<div class="table-wrap">
+    <div class="table-content">
+        <nz-table #basicTable [nzData]="listOfData" class="theme_default" pretty-table nzBordered
+            [nzShowPagination]="false" [nzPageSize]="pagesize"
+            (nzCurrentPageDataChange)="currentPageDataChange($event)">
+            <thead>
+                <tr>
+                    <ng-container *ngFor="let item of headerList">
+                        <th *ngIf="item.field == 'checkbox';else otherTh" [nzWidth]="item.nzWidth" nzShowCheckbox
+                            [(nzChecked)]="isAllDisplayDataChecked" [nzIndeterminate]="isIndeterminate"
+                            (nzCheckedChange)="checkAll($event)" [nzAlign]="item.nzAlign">
+                            {{item.headerName}}
+                        </th>
+                        <ng-template #otherTh>
+                            <th [nzWidth]="item.nzWidth" [nzAlign]="item.nzAlign">
+                                {{item.headerName}}
+                            </th>
+                        </ng-template>
+                    </ng-container>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of basicTable.data">
+                    <ng-container *ngFor="let item of headerList; index as i ">
+                        <ng-container *ngIf="headerList[i].cellTemplate; else other">
+                            <td [nzAlign]="item.nzAlign">
+                                <ng-container *ngTemplateOutlet="headerList[i].cellTemplate; context:listContext(data)">
+                                </ng-container>
+                            </td>
+
+                        </ng-container>
+                        <ng-template #other>
+                            <ng-container [ngSwitch]="headerList[i].field">
+                                <td *ngSwitchCase="'checkbox'" nzShowCheckbox [(nzChecked)]="mapOfCheckedId[data.id]"
+                                    [nzDisabled]="data.disabled" (nzCheckedChange)="refreshStatus()"
+                                    [nzAlign]="item.nzAlign">
+                                </td>
+                                <td *ngSwitchDefault [nzAlign]="item.nzAlign">
+                                    <div title='{{ data[headerList[i].field] }}'>{{ data[headerList[i].field] }}</div>
+                                </td>
+                            </ng-container>
+                        </ng-template>
+                    </ng-container>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+    <div class="sv-panel-footer">
+        <sv-pagination [nzPageSize]="pagesize" [nzPageIndex]="pageindex" (nzPageIndexChange)="pageIndexChange($event)"
+            [nzTotal]="totalcount" [nzShowTotal]="totalTemplate">
+        </sv-pagination>
+        <ng-template #totalTemplate let-total>
+            <!-- {{ 'Page Total' | translate: { field: totalcount/pagesize| number:'1.0-0', total: totalcount } }} -->
+            {{ 'Page Total' | translate: { field: math.ceil(totalcount/pagesize), total: totalcount } }}
+        </ng-template>
+    </div>
+</div>

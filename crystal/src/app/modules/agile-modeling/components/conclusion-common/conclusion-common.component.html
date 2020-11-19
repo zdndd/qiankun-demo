@@ -1,0 +1,55 @@
+<div class="conclusion-wrapper">
+    <div class="loading" *ngIf="pageState == 1"><nz-spin nzTip="Loading..."></nz-spin>`</div>
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+    <div class="flex-v new-flex-1 conclusion-content" *ngIf="pageState == 3">
+        <conclusion-inner-top
+            [tabid]="conclusionData.tabid"
+            [modelid]="conclusionData.modelid"
+            [autotabid]="conclusionData.autotabid"
+            [(list)]="conclusionData.conclusionList"
+            (submit)="onSubmit($event)"
+        ></conclusion-inner-top>
+        <!--<div class="conclusion-body">-->
+        <div class="flex-h new-flex-1 flex-justify-between conclusion-main">
+            <div class="flex-v ring-box">
+                <h3 class="title">{{ 'Accounted for' | translate }}</h3>
+                <div class="new-flex-1">
+                    <chart-doughnut [(chartList)]="chartList"></chart-doughnut>
+                </div>
+            </div>
+            <div class="flex-v new-flex-1 conclusion-descrip">
+                <h3 class="title descrip-title">
+                    <span (click)="setuseEditor()"
+                        >{{ 'Conclusion Description' | translate }}<i class="icon-ic_xm_edit note-edit"></i
+                    ></span>
+                </h3>
+                <div class="flex-v new-flex-1" style="position: relative;">
+                    <div class="flex-v new-flex-1 editor-div">
+                        <div
+                            [hidden]="useEditor"
+                            pretty-scroll
+                            [innerHTML]="description | safeHtml"
+                            class="new-flex-1 text"
+                        ></div>
+                        <!--new-flex-1-->
+                        <inline-editor
+                            [hidden]="!useEditor"
+                            className="inline_editor"
+                            #questionTitle
+                            [(ngModel)]="noteValue"
+                        ></inline-editor>
+                    </div>
+                </div>
+                <div class="btn-footer" *ngIf="useEditor">
+                    <button nz-button nzType="primary" (click)="saveDescription()">{{ 'Save' | translate }}</button>
+                    <button nz-button nzType="default" (click)="cancel()">{{ 'Cancel' | translate }}</button>
+                </div>
+            </div>
+        </div>
+
+        <!--</div>-->
+    </div>
+</div>

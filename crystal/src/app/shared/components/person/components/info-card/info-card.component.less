@@ -1,0 +1,36 @@
+:host {
+    // clear: both;
+    .status-container {
+        min-height: 220px;
+    }
+    .line {
+        width: 50%;
+        float: left;
+        .label {
+            width: 30%;
+            color: #a2a7b9;
+            display: inline-block;
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .text {
+            width: 70%;
+            color: #253238;
+            display: inline-block;
+            text-align: left;
+        }
+        &:nth-last-child(2),
+        &:nth-last-child(3),
+        &:last-child {
+            clear: both;
+            width: 100%;
+            .label {
+                width: 15%;
+            }
+            .text {
+                width: 85%;
+            }
+        }
+    }
+}

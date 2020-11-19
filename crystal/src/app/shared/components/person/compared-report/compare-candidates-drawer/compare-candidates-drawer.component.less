@@ -1,0 +1,200 @@
+:host ::ng-deep {
+    width: 100%;
+    height: 100%;
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 15px 12px 15px 24px;
+        .header {
+            height: 25px;
+            width: 100%;
+            .title {
+                font-size: 18px;
+                color: #253238;
+            }
+            .btn-group {
+                float: right;
+                .ant-btn {
+                    &:hover {
+                        background-color: #6e8ae5;
+                        color: #ffffff;
+                    }
+                    width: 64px;
+                    height: 24px;
+                    border-radius: 14px;
+                    background-color: #f1f4fd;
+                    margin: 0px 5px;
+                    font-size: 12px;
+                    color: #6e8ae5;
+                    border-color: transparent;
+                }
+            }
+        }
+        .tab {
+            width: 100%;
+            height: 24px;
+            margin-top: 20px;
+            // .ant-btn {
+            //     border-color: #7e8be0;
+            // }
+            .ant-radio-button-wrapper {
+                border-color: #7e8be0;
+                border-radius: 0px !important;
+                padding: 0px 16px;
+                font-size: 12px;
+                color: #7e8be0;
+            }
+            .ant-radio-button-wrapper-checked {
+                color: #ffffff;
+            }
+            .ant-radio-button-wrapper:first-child {
+                border-right: 1px solid #7e8be0;
+            }
+            // .btn-2 {
+            //     border-right: 0px;
+            //     border-left: 0px;
+            // }
+            // .ant-btn-sm {
+            //     &:hover {
+            //         background-color: #7e8be0;
+            //         color: #ffffff;
+            //     }
+            //     padding: 0px 16px;
+            //     font-size: 12px;
+            //     border-radius: 0px;
+            //     color: #7e8be0;
+            // }
+        }
+
+        .per-card {
+            width: 100%;
+            height: calc(~' 100% - 80px ');
+            ul {
+                height: calc(~' 100% - 80px ');
+                width: calc(~' 100% - 12px ');
+                padding: 0px;
+                li {
+                    margin-top: 16px;
+                    list-style-type: none;
+                    height: 76px;
+                    border-radius: 2.8px;
+                    box-shadow: 0 0 8px 0 rgba(96, 113, 223, 0.12);
+                    background-color: #ffffff;
+
+                    .color-blue {
+                        background-color: #7e8be0;
+                    }
+                    .color-green {
+                        background-color: #59b9a2;
+                    }
+                    .par-card-info-disabled {
+                        cursor: auto !important;
+                    }
+                    .par-card-info {
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        height: 100%;
+
+                        .tag-sort-yellow {
+                            width: 74px;
+                            height: 36px;
+                            position: absolute;
+                            right: 1px;
+                            background-image: url(/assets/img/tag-sort-yellow.svg);
+                            background-size: 74px 36px;
+                            background-repeat: no-repeat;
+                        }
+                        .tag-sort-pink {
+                            width: 74px;
+                            height: 36px;
+                            position: absolute;
+                            right: 1px;
+                            background-image: url(/assets/img/tag-sort-pink.svg);
+                            background-size: 74px 36px;
+                            background-repeat: no-repeat;
+                        }
+                        .tag-color-yellow {
+                            width: 68px;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            display: flex;
+                            color: #87601b;
+
+                            div {
+                                font-size: 10px;
+                                transform: scale(0.8);
+                                &:nth-child(1) {
+                                    width: 34px;
+                                    text-align: right;
+                                }
+                                &:nth-child(2) {
+                                    flex: 1;
+                                    font-size: 16px;
+
+                                    -webkit-text-stroke: 2px #87601b;
+                                }
+                                &:nth-child(3) {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                        .tag-color-pink {
+                            width: 68px;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            display: block;
+                            color: #ffffff;
+                            display: flex;
+                            div {
+                                font-size: 10px;
+                                transform: scale(0.8);
+                                &:nth-child(1) {
+                                    width: 34px;
+                                    text-align: right;
+                                }
+                                &:nth-child(2) {
+                                    flex: 1;
+                                    font-size: 16px;
+                                    -webkit-text-stroke: 2px #ffffff;
+                                }
+                                &:nth-child(3) {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                        .left-head {
+                            width: 76px;
+                            .avator {
+                                margin: 16px 0px;
+                                .ant-avatar {
+                                    width: 44/16rem;
+                                    height: 44/16rem;
+                                    border-radius: 44/16rem;
+                                    overflow: hidden;
+                                    margin: 0px 16px;
+                                }
+                            }
+                        }
+                        .right-basic-info {
+                            flex: 1;
+                            padding: 15px 0px;
+                            .info-detail {
+                                font-size: 12px;
+                                .name {
+                                    font-size: 16px;
+                                }
+                                span {
+                                    padding-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+<div class="detail" pretty-scroll>
+    <div>
+        <div class="header-wrapper">
+            <div class="title limt-1">{{ moduleName }}</div>
+            <div class="action-btns">
+                <button
+                    nz-button
+                    (click)="updatetModal()"
+                    nzType="default"
+                    nz-tooltip
+                    nzTooltipTitle="{{ 'The conclusion will be updated to standard conclusion' | translate }}"
+                >
+                    <i class="icon-ic_renovate"></i>&nbsp;
+                    {{ 'Update Conclusion' | translate }}
+                </button>
+                <button (click)="showSelectModal()" nz-button>
+                    <span> <i class="icon-ic_setting"></i>{{ 'Select Ability' | translate }}</span>
+                </button>
+                <button (click)="exportPdf()" *ngIf="!isEmpty" nz-button>
+                    <span><i class="icon-ic_export"></i>{{ 'Export Report' | translate }}</span>
+                </button>
+                <a (click)="goBack()"><span class="icon-ic_back"> </span></a>
+            </div>
+        </div>
+        <!--[class.empty]="isEmpty"-->
+        <div class="detail-main" [ngClass]="lang">
+            <div class="detail-type">
+                <nz-spin [nzSpinning]="tagsLoading === 1">
+                    <ul class="list-ul">
+                        <ng-container *ngFor="let item of tags; index as i">
+                            <li (mouseenter)="cloudStop(i)" (mouseleave)="cloudStart(i)">
+                                <div
+                                    class="bullet"
+                                    [class.bullet-r]="i % 2"
+                                    [class.bullet-l]="i % 2 === 0"
+                                    (click)="onBulletClick(tagsMap[i].path)"
+                                >
+                                    {{ tagsMap[i].title }}
+                                </div>
+                                <canvas width="280" height="280" id="cloud{{ i }}">
+                                    <ul>
+                                        <ng-container *ngFor="let tag of item; index as j">
+                                            <li>
+                                                <a
+                                                    (click)="onClickWord($event)"
+                                                    [attr.data-weight]="18 > 28 - 3 * j ? 18 : 28 - 3 * j"
+                                                >
+                                                    {{ tag }}
+                                                </a>
+                                            </li>
+                                        </ng-container>
+                                    </ul>
+                                </canvas>
+                            </li>
+                        </ng-container>
+                    </ul>
+                </nz-spin>
+            </div>
+            <div class="detail-chart flex-v flex-justify-center flex-align-center">
+                <chart-content [data]="abilityData" (update)="onUpdate($event)" mode="replace"></chart-content>
+            </div>
+        </div>
+    </div>
+    <!--*ngIf="!isEmpty"-->
+    <div class="detail-table">
+        <div class="flex-h flex-align-center flex-justify-between top">
+            <h3>
+                {{ 'Conclusion' | translate }}
+                <i (click)="setuseEditor()" class="icon-ic_xm_edit note-edit" nzType="edit" nzTheme="outline"></i>
+            </h3>
+            <!--<div *ngIf="useEditor" class="btn-box">-->
+            <!--<button nz-button nzType="primary" (click)="saveDescrip()">{{ 'Save' | translate}}</button>-->
+            <!--<button nz-button nzType="default" (click)="cancel()">{{ 'Cancel' | translate}}</button>-->
+            <!--</div>-->
+        </div>
+
+        <!--[nzLoading]="loading === 1"-->
+        <nz-table
+            #basicTable
+            class="theme_simple"
+            [nzData]="abilityData"
+            [nzBordered]="true"
+            [nzShowPagination]="false"
+        >
+            <thead>
+                <tr>
+                    <th nzWidth="100px">{{ 'ability' | translate }}</th>
+                    <th nzWidth="100px">{{ 'Dimensionality' | translate }}</th>
+                    <th>{{ 'Description' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of abilityData; index as i">
+                    <td>{{ data.abilityname }}</td>
+                    <td>{{ data.dimensionname }}</td>
+                    <td
+                        class="description-td"
+                        [class.selected]="data.abilityid === selectedDataId"
+                        (click)="changeInput(data.abilityid, i, $event)"
+                    >
+                        <div class="text-area" *ngIf="!data.showInput" [innerHTML]="data.description | safeHtml"></div>
+
+                        <textarea
+                            class="description-area"
+                            maxlength="2000"
+                            (blur)="blue(data.abilityid, data.description, i)"
+                            *ngIf="data.showInput"
+                            nz-input
+                            [(ngModel)]="data.description"
+                            [nzAutosize]="'true'"
+                        ></textarea>
+                        <!--<input class="description-area"-->
+                        <!--maxlength="250"-->
+                        <!--(blur)="blue(data.abilityid, data.description, i)"-->
+                        <!--*ngIf="data.showInput" nz-input [(ngModel)]="data.description" type="text" />-->
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+        <div
+            *ngIf="!useEditor"
+            (click)="setuseEditor()"
+            pretty-scroll
+            [innerHTML]="data.description | safeHtml"
+            class="text"
+        ></div>
+        <div *ngIf="useEditor" class="editor-div">
+            <inline-editor className="inline_editor" #questionTitle [(ngModel)]="noteValue"></inline-editor>
+            <div *ngIf="useEditor" class="btn-box">
+                <button nz-button nzType="primary" (click)="saveDescrip()">
+                    {{ 'Save' | translate }}
+                </button>
+                <button nz-button nzType="default" (click)="cancel()">
+                    {{ 'Cancel' | translate }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="wrap">
+    <report-person-card
+        [personalInfo]="personalInfo"
+        [backgroundColor]="'#7e8be0'"
+        [showRefresh]="true"
+        (personalReportRefresh)="refresh()"
+    >
+    </report-person-card>
+    <div class="carousel-container">
+        <nz-carousel [nzEffect]="effect" #carousel>
+            <div nz-carousel-content pretty-scroll>
+                <ng-container *ngIf="isRefresh">
+                    <ng-container *ngFor="let item of basicData; index as i">
+                        <ng-container *ngIf="item.charttype == 1 && personalInfoBoo; else other">
+                            <personal-report-content
+                                [class]="'noImg'"
+                                [empCode]="empCode"
+                                [personalInfo]="personalInfo"
+                                [item]="item"
+                            >
+                                <div class="total-title">
+                                    {{ item.name }}
+                                </div>
+                            </personal-report-content>
+                        </ng-container>
+                        <ng-template #other>
+                            <personal-report-content [class]="'noImg'" [empCode]="empCode" [item]="item">
+                                <div class="total-title">
+                                    {{ item.name }}
+                                </div>
+                            </personal-report-content>
+                        </ng-template>
+                    </ng-container>
+                </ng-container>
+            </div>
+            <div nz-carousel-content pretty-scroll>
+                <ng-container *ngIf="isRefresh">
+                    <ng-container *ngFor="let item of pandianData; index as i">
+                        <personal-report-content [class]="'noImg'" [empCode]="empCode" [item]="item">
+                            <div class="total-title">
+                                {{ item.name }}
+                            </div>
+                        </personal-report-content>
+                    </ng-container>
+                </ng-container>
+            </div>
+            <div nz-carousel-content pretty-scroll>
+                <ng-container *ngIf="isRefresh">
+                    <ng-container *ngFor="let item of cepinData; index as i">
+                        <personal-report-content [class]="'noImg'" [empCode]="empCode" [item]="item">
+                            <div class="total-title">
+                                {{ item.name }}
+                            </div>
+                        </personal-report-content>
+                    </ng-container>
+                </ng-container>
+            </div>
+        </nz-carousel>
+    </div>
+
+    <div class="prev" (click)="carousel.pre()">
+        <i class="icon-ic_arrow_left"></i>
+    </div>
+    <div class="next" (click)="carousel.next()"><i class="icon-ic_arrow_close"></i></div>
+</div>

@@ -1,0 +1,43 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": {
+    "id": "0",
+    "tabid": "0",
+    "modelid": "0",
+    "description": "string",
+    "lstabilityproportion": [
+      {
+        "abilityid": "1",
+        "abilityname": "战略策划1",
+        "proportion": 10,
+        "description": "string",
+        "sort": 0
+      },{
+        "abilityid": "2",
+        "abilityname": "战略策划2",
+        "proportion": 20,
+        "description": "string",
+        "sort": 1
+      },{
+        "abilityid": "3",
+        "abilityname": "战略策划3",
+        "proportion": 20,
+        "description": "string",
+        "sort": 2
+      },{
+        "abilityid": "4",
+        "abilityname": "战略策划4",
+        "proportion": 10,
+        "description": "string",
+        "sort": 3
+      },{
+        "abilityid": "5",
+        "abilityname": "战略策划5",
+        "proportion": 40,
+        "description": "string",
+        "sort": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<div class="container base-dialog-form">
+    <div nz-row>
+        <div
+            nz-col
+            nzSpan="24"
+            class="form-item"
+            [class.has-error]="nameField.invalid && nameField.touched && nameField.dirty"
+        >
+            <div class="form-item">
+                <label>{{ 'name' | translate }}</label>
+                <div class="form-item-content">
+                    <input
+                        nz-input
+                        required
+                        #nameField="ngModel"
+                        maxlength="50"
+                        placeholder="{{ 'Please Input' | translate: { field: 'modelName' | translate } }}"
+                        [(ngModel)]="projectName"
+                        style="width: 100%;"
+                    />
+                    <small
+                        class="form-text error"
+                        *ngIf="nameField.invalid && nameField.dirty && nameField.touched && nameField.errors?.required"
+                    >
+                        {{ 'Require Tip' | translate: { field: 'modelName' | translate } }}
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div nz-col nzSpan="24" class="row" style="margin-top: 20px;">
+            <sv-transfer [dataSource]="list" [height]="350"></sv-transfer>
+        </div>
+        <div nz-col nzSpan="24">
+            <div class="form-item desc">
+                <label>{{ 'Description' | translate }}</label>
+                <textarea
+                    [nzAutosize]="false"
+                    nz-input
+                    [(ngModel)]="remark"
+                    maxlength="500"
+                    placeholder="{{ 'Please Input' | translate: { field: 'Description' | translate } }}"
+                ></textarea>
+            </div>
+        </div>
+    </div>
+</div>

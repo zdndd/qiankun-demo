@@ -1,0 +1,6 @@
+<h3 class="title">{{ 'Selected Ability' | translate }}</h3>
+<ul class="menu-top clearfloat">
+    <li *ngFor="let item of list; index as i" [ngStyle]="{ background: colors[i] }">
+        <span>{{ item.abilityname }}{{ item.proportion }}%</span><i (click)="deleteOne(item.abilityid)"></i>
+    </li>
+</ul>

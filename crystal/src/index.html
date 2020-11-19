@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>水晶球</title>
+        <base href="/" />
+        <link type="text/css" href="assets/libs/croppie.css?v=15" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>window['__Zone_disable_IE_check'] = true;</script>
+        <script type="text/javascript" src="assets/libs/echarts.min.js"></script>
+        <script type="text/javascript" src="assets/libs/croppie.min.js"></script>
+        <script type="text/javascript" src="assets/libs/exif.js"></script>
+        <script type="text/javascript" src="assets/libs/jquery.min.js"></script>
+        <script src="assets/libs/jquery.tablednd.js"></script>
+        <script src="assets/libs/tagcanvas.min.js"></script>
+        <script src="assets/libs/turn.min.js"></script>
+
+        <script src="assets/ed/ckeditor.js"></script>
+
+        <script type="text/javascript">
+            //check ie
+            console.log(navigator.appName);
+            if (navigator.appName === 'Microsoft Internet Explorer') {
+                var ua = navigator.userAgent,
+                    re = new RegExp('MSIE ([0-9]{1,}[.0-9]{0,})');
+                if (re.exec(ua) !== null) {
+                    rv = parseFloat(RegExp.$1);
+                    if (rv <= 10) {
+                        window.location.href = '/unsupport.html';
+                    }
+                }
+            }
+        </script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <style type="text/css">
+            .preloader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background: #828fe1;
+                z-index: 9999;
+                transition: opacity 0.65s;
+            }
+
+            .preloader-hidden-add {
+                opacity: 1;
+                display: block;
+            }
+
+            .preloader-hidden-add-active {
+                opacity: 0;
+            }
+
+            .preloader-hidden {
+                display: none;
+            }
+
+            .cs-loader {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .cs-loader-inner {
+                transform: translateY(-50%);
+                top: 50%;
+                position: absolute;
+                width: 100%;
+                color: #fff;
+                text-align: center;
+            }
+
+            .cs-loader-inner label {
+                font-size: 20px;
+                opacity: 0;
+                display: inline-block;
+            }
+
+            @keyframes lol {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-300px);
+                }
+
+                33% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                66% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: translateX(300px);
+                }
+            }
+
+            .cs-loader-inner label:nth-child(6) {
+                animation: lol 3s infinite ease-in-out;
+            }
+
+            .cs-loader-inner label:nth-child(5) {
+                animation: lol 3s 0.1s infinite ease-in-out;
+            }
+
+            .cs-loader-inner label:nth-child(4) {
+                animation: lol 3s 0.2s infinite ease-in-out;
+            }
+
+            .cs-loader-inner label:nth-child(3) {
+                animation: lol 3s 0.3s infinite ease-in-out;
+            }
+
+            .cs-loader-inner label:nth-child(2) {
+                animation: lol 3s 0.4s infinite ease-in-out;
+            }
+
+            .cs-loader-inner label:nth-child(1) {
+                animation: lol 3s 0.5s infinite ease-in-out;
+            }
+        </style>
+    </head>
+
+    <body>
+        <app-root></app-root>
+        <div class="preloader">
+            <div class="cs-loader">
+                <div class="cs-loader-inner">
+                    <label> ●</label> <label> ●</label> <label> ●</label> <label> ●</label>
+                    <label> ●</label> <label> ●</label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

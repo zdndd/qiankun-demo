@@ -1,0 +1,159 @@
+{
+    "errorcode": 0,
+    "message": "string",
+    "data": {
+      "users": [
+        {
+          
+          "usercode": "0",
+          "username": "张三",
+          "organizationalname": "在其它语言中也有类似的内建数据类型，但是由于 JavaScript的广泛应用，而 JSON 作 为 JavaScript原生的数据类型，具备更加广泛的支持。",
+          "positionname": "JSON (JavaScript Object Notation) 缩写，JSON 是一种数据格式，具有简洁、可读性高、支持广泛的特点。JSON 有以下基本数据类型",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "1",
+          "username": "张三三",
+          "organizationalname": "fe",
+          "positionname": "isc",
+          "ischecked": false
+        },
+        {
+         
+          "usercode": "2",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "3",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": true
+        },
+        {
+          
+          "usercode": "4",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "5",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "6",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": false
+        },
+        {
+         
+          "usercode": "7",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": true
+        },
+        {
+          
+          "usercode": "8",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "9",
+          "username": "string",
+          "organizationalname": "string",
+          "positionname": "string",
+          "ischecked": true
+        },
+        {
+          
+          "usercode": "10",
+          "username": "张三",
+          "organizationalname": "在其它语言中也有类似的内建数据类型，但是由于 JavaScript的广泛应用，而 JSON 作 为 JavaScript原生的数据类型，具备更加广泛的支持。",
+          "positionname": "JSON (JavaScript Object Notation) 缩写，JSON 是一种数据格式，具有简洁、可读性高、支持广泛的特点。JSON 有以下基本数据类型",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "11",
+          "username": "张三",
+          "organizationalname": "在其它语言中也有类似的内建数据类型，但是由于 JavaScript的广泛应用，而 JSON 作 为 JavaScript原生的数据类型，具备更加广泛的支持。",
+          "positionname": "JSON (JavaScript Object Notation) 缩写，JSON 是一种数据格式，具有简洁、可读性高、支持广泛的特点。JSON 有以下基本数据类型",
+          "ischecked": false
+        },
+        {
+          
+          "usercode": "122",
+          "username": "张三",
+          "organizationalname": "在其它语言中也有类似的内建数据类型，但是由于 JavaScript的广泛应用，而 JSON 作 为 JavaScript原生的数据类型，具备更加广泛的支持。",
+          "positionname": "JSON (JavaScript Object Notation) 缩写，JSON 是一种数据格式，具有简洁、可读性高、支持广泛的特点。JSON 有以下基本数据类型",
+          "ischecked": false
+        }
+        
+      ],
+      "userinfocloumns": [
+        {
+          "name": "工号",
+          "ischecked": true
+        },
+        {
+          "name": "姓名",
+          "ischecked": true
+        },
+        {
+          "name": "性别",
+          "ischecked": true
+        },
+        {
+          "name": "你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好",
+          "ischecked": true
+        },
+        {
+          "name": "邮箱",
+          "ischecked": true
+        },
+        {
+          "name": "人员信息",
+          "ischecked": true
+        },
+        {
+          "name": "自定义",
+          "ischecked": true
+        }
+      ],
+      "evalprogrammes": [
+        {
+          "name": "绩效方案1",
+          "ischecked": false
+        },
+        {
+          "name": "绩效方案2",
+          "ischecked": false
+        },
+        {
+          "name": "绩效方案3",
+          "ischecked": false
+        }
+
+      ]
+    }
+  }
+  

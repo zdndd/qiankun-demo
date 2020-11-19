@@ -1,0 +1,105 @@
+:host ::ng-deep {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+  .ant-input{
+    height: 34px !important;
+  }
+    .operator-btns {
+        text-align: right;
+        padding-bottom: 10px;
+        position: absolute;
+        top: -44px;
+        right: 0px;
+    }
+
+    .ability-column {
+        position: relative;
+        &:hover {
+            span.remove {
+                display: block;
+            }
+        }
+        span.remove {
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            display: none;
+            i {
+                color: #f04d78;
+            }
+        }
+    }
+
+    .operator-btns {
+        text-align: right;
+        padding-bottom: 10px;
+        button {
+            & + button {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .ant-cascader-picker {
+        border-radius: 0px !important;
+        border-width: 0px !important;
+    }
+
+    .ant-cascader-input {
+        border-radius: 0px !important;
+        border-width: 0px !important;
+    }
+
+    .table-content {
+        flex: 1;
+        padding: 0px;
+        position: relative;
+        nz-table {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+
+            .ant-table-thead tr th {
+                background-color: #fff !important;
+                color: #626262 !important;
+            }
+
+            .ant-table-tbody {
+                td {
+                    background-color: #fff;
+                    &:last-child{
+                        font-weight: bold;
+                        font-family: Arial;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            td {
+                padding: 0px !important;
+                height: 36px !important;
+                &.cell0 {
+                    cursor: pointer;
+                }
+                &.cell2 {
+                    background-color: #c6cadc !important;
+                    color: #ffffff !important;
+                }
+                &.cell1 {
+                    background-color: #edf0ff !important;
+                    color: #89898a !important;
+                }
+            }
+        }
+    }
+
+    .ant-table table{
+        width: max-content !important;  
+    }
+}

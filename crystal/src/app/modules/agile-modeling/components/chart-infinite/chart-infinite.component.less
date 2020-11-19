@@ -1,0 +1,75 @@
+::ng-deep {
+    /* MS supports */
+  .ps {
+    overflow-y: hidden !important;
+    overflow: hidden !important;
+  }
+    @supports (-ms-overflow-style: none) {
+        .ps {
+            overflow-y: hidden !important;
+            overflow: hidden !important;
+        }
+    }
+    .abilitylist {
+        width: 660px;
+        height: 364px;
+        overflow: hidden;
+        position: relative;
+    }
+    .abilitylist7-box {
+        & .cdk-drag-preview {
+            display: table;
+        }
+        & .cdk-drag-placeholder {
+            opacity: 0;
+        }
+    }
+    .abilitylist-infinite-table {
+        background-color: #fff;
+        box-shadow: 0 0 17px 0 rgba(96, 113, 223, 0.12);
+        .ant-table-header {
+            overflow: hidden !important;
+            margin: 0 !important;
+        }
+        .text-area {
+            white-space: pre-wrap;
+        }
+        .ant-table-thead {
+            > tr > th {
+                background-color: #edf0ff;
+                color: #6373da;
+                font-weight: 500;
+                padding: 8px 12px !important;
+                & + th {
+                    border-left: 1px solid #c9cdd9;
+                }
+            }
+        }
+        .ant-table-tbody {
+            > tr {
+                &:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+                > td {
+                    padding: 8px 12px !important;
+                    color: #89898a;
+                    & + td {
+                        border-left: 1px solid #c9cdd9;
+                    }
+                }
+            }
+        }
+    }
+}
+:host ::ng-deep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    .agileChart {
+        width: 660px;
+        //height: 580px;
+        overflow: hidden;
+        padding-top: 51px;
+    }
+}

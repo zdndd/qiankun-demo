@@ -1,0 +1,156 @@
+
+<div class="layout-table" [ngClass]="{'has-header':showHeader}">
+        <div class="layout-table-header" *ngIf="showHeader">
+            <span class="span-9">
+                <a class="btn btn-default btn-mini" (click)="buttonClickHandler(i)" *ngFor="let button of buttons;let i=index">{{button}}</a>
+                <ng-content select=".header-left">
+                </ng-content>
+			</span>
+            <span class="span-6">
+				{{title}}
+			</span>
+            <span class="span-9">
+				<vx-pagination *ngIf="pageable" [pageIndex]="currentPage" (nzPageIndexChange)="onPageIndexChange($event)" [pageSize]="pageSize" [total]="_totalCount" ></vx-pagination>
+            </span>
+        </div>
+        <div [ngClass]="{'tbl-hover':_rows.length>0,'tbl-striped':_rows.length>0,'tbl-nodata':_rows.length==0}" class="layout-table-content tbl tbl-multi ">
+            <div class="tbl-header">
+                <table class="tbl-freeze-1" [ngStyle]="{'width':_fixedLeftWidth+'px'}">
+                    <tbody>
+                        <tr>
+                            <td *ngFor="let fieldItem of _fixedLeftCoumns" [ngStyle]="{'width':fieldItem.width+'px'}">
+                                <a  (click)="doSorting($event,fieldItem,'')" [ngClass]="{'ascending':sortData['value']=='ascending' && sortData['key']==fieldItem.field,'descending':sortData['value']=='descending' && sortData['key']==fieldItem.field}" *ngIf="fieldItem.sortable"><span>{{fieldItem.label}}</span>
+                                    <div class="sort-arrow">
+                                        <i class="arrow-up" (click)="doSorting($event,fieldItem,'ascending')"></i>
+                                        <i class="arrow-down" (click)="doSorting($event,fieldItem,'descending')"></i>
+                                </div></a>
+                                <span *ngIf="!fieldItem.sortable">{{fieldItem.label}}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="tbl-no-fixed" [ngStyle]="{'marginLeft':_fixedLeftWidth+'px','marginRight':_fixedRightWidth+'px'}">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td *ngFor="let fieldItem of _noFixedCoumns" [ngStyle]="{'width':fieldItem.width+'px'}">
+                                    <a  (click)="doSorting($event,fieldItem,'')" [ngClass]="{'ascending':sortData['value']=='ascending' && sortData['key']==fieldItem.field,'descending':sortData['value']=='descending' && sortData['key']==fieldItem.field}" *ngIf="fieldItem.sortable"><span>{{fieldItem.label}}</span>
+                                        <div class="sort-arrow">
+                                            <i class="arrow-up" (click)="doSorting($event,fieldItem,'ascending')"></i>
+                                            <i class="arrow-down" (click)="doSorting($event,fieldItem,'descending')"></i>
+                                    </div></a>
+                                    <span *ngIf="!fieldItem.sortable">{{fieldItem.label}}</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <table class="tbl-freeze-2" [ngStyle]="{'width':_fixedRightWidth+'px'}">
+                    <tbody>
+                        <tr>
+                            <td *ngFor="let fieldItem of _fixedRightCoumns">
+                           <span>{{fieldItem.label}}</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl-content">
+                    <div class="tbl-spin" *ngIf="_rows.length==0 && loading">
+                        <nz-spin nzTip="{{ 'Loading' | translate}}"></nz-spin>
+                    </div>
+                    <div class="tbl-empty" *ngIf="_rows.length==0 && !loading"><p class="tbl-empty-text">{{ 'Without Any Data' | translate}}</p></div>
+                    
+                    <table class="tbl-freeze-1" *ngIf="_rows.length>0" [ngStyle]="{'width':_fixedLeftWidth+'px'}">
+                            <tbody>
+                                <!-- <tr *ngIf="_rows.length==0">
+                                    <td *ngIf="!loading" class="emptycell" [attr.colspan]="_fixedLeftWidth.length">
+                                    </td>
+                                    <td *ngIf="loading" class="loadingcell" [attr.colspan]="_fixedLeftWidth.length">
+                                    </td>
+                                </tr> -->
+                                <tr *ngFor="let row of _rows;let rowIndex=index">
+                                    <td *ngFor="let fieldItem of _fixedLeftCoumns;let colIndex=index" [ngStyle]="{'width':fieldItem.width+'px'}" [ngClass]="{'has-dropdown':fieldItem.dropdowns}">
+                                        <span title="{{row[fieldItem.valueIndex]}}" *ngIf="fieldItem.valueIndex">
+                                                {{row[fieldItem.valueIndex]}}
+                                        </span>
+                                        <span title="{{row[colIndex+offset]}}" *ngIf="!fieldItem.valueIndex">
+                                                {{row[colIndex+offset]}}
+                                        </span>
+                                        <div *ngIf="fieldItem.dropdowns" (click)="showPopUp($event,template,fieldItem,rowIndex)" class="btn-group drop-icon-down">
+                                            <i class="vx-icon-caozuo"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <div class="tbl-no-fixed" *ngIf="_rows.length>0" [ngStyle]="{'marginLeft':_fixedLeftWidth+'px','marginRight':_fixedRightWidth+'px'}">
+                            <table>
+                                <tbody>
+                                    <!-- <tr *ngIf="_rows.length==0">
+                                        <td *ngIf="!loading" class="emptycell" [attr.colspan]="_noFixedCoumns.length">
+                                            <div class="tbl-empty">
+                                                <p class="tbl-empty-text">暂无数据</p>
+                                            </div>
+                                        </td>
+                                        <td *ngIf="loading" class="loadingcell" [attr.colspan]="_noFixedCoumns.length">
+                                            <div>
+                                                <nz-spin nzTip='数据加载中...'></nz-spin>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    
+                                    
+                                    <tr *ngFor="let row of _rows;let rowIndex=index">
+                                        <td *ngFor="let fieldItem of _noFixedCoumns;let colIndex=index" [ngStyle]="{'width':fieldItem.width+'px'}" [ngClass]="{'has-dropdown':fieldItem.dropdowns}">
+                                            <span [innerHTML]="row[colIndex+_fixedLeftCoumns.length+offset] | safeHtml" *ngIf="!fieldItem.linkabel" title="{{row[colIndex+_fixedLeftCoumns.length+offset] | removeHtml}}">
+                                            </span>
+                                            <ng-container *ngIf="fieldItem.linkabel">
+                                                <span (click)="lickActionHandler(fieldItem,row)" class="link">{{row[colIndex+_fixedLeftCoumns.length+offset]}}</span>
+                                            </ng-container>
+                                            <div *ngIf="fieldItem.dropdowns" (click)="showPopUp($event,template,fieldItem.dropdowns,rowIndex)" class="btn-group drop-icon-down">
+                                                <i class="vx-icon-caozuo"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <table class="tbl-freeze-2" *ngIf="_rows.length>0" [ngStyle]="{'width':_fixedRightWidth+'px'}">
+                            <tbody>
+                                <!-- <tr *ngIf="_rows.length==0 && !loading">
+                                        <td class="emptycell"  [attr.colspan]="_fixedRightWidth.length">
+                                        
+                                        </td>
+                                </tr> -->
+                                <tr *ngFor="let row of _rows;let rowIndex = index">
+                                    <td *ngFor="let fieldItem of _fixedRightCoumns;let colIndex=index" [class.links]="fieldItem.links">
+                                            <ng-container *ngIf="!fieldItem.links">
+                                                {{row[colIndex+_fixedLeftCoumns.length+_noFixedCoumns.length+offset]}}
+                                                <div *ngIf="fieldItem.dropdowns" (click)="showPopUp($event,template,fieldItem,rowIndex)" class="btn-group drop-icon-down">
+                                                        <i class="vx-icon-caozuo"></i>
+                                                    </div>
+                                            </ng-container>
+                                            <ng-container *ngIf="fieldItem.links">
+                                               <a class="btn btn-primary btn-round btn-mini" (click)="linkClickHandler(rowIndex,link)" style="font-size:12px;" *ngFor="let link of fieldItem.links">
+                                                   {{link.label}}
+                                               </a>
+                                            </ng-container>
+                                   </td>
+                                </tr>
+                            </tbody>
+                    </table>
+            </div>
+            <div class="tbl-footer">
+                <div class="tbl-no-fixed" [ngStyle]="{'left':_fixedLeftWidth+'px'}">
+                    <div class="tbl-dummy-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<ng-template #template>
+    <ul style="max-width:200px;" nz-menu nzInDropDown (nzClick)="closePopUp($event)">
+        <li nz-menu-item *ngFor="let item of dropdownMenus">{{item.label}}</li>
+    </ul>
+</ng-template>

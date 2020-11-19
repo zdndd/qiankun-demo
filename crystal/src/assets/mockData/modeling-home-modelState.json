@@ -1,0 +1,19 @@
+﻿[
+    {
+        "typeid": 0,
+        "typename": "领导访谈",
+        "conclusionstate": true
+    },{
+        "typeid": 1,
+        "typename": "能力比较",
+        "conclusionstate": false
+    },{
+        "typeid": 2,
+        "typename": "员工调研",
+        "conclusionstate": false
+    },{
+        "typeid": 3,
+        "typename": "任务分析",
+        "conclusionstate": true
+    }
+]

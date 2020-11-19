@@ -1,0 +1,30 @@
+{
+  "errorcode": 0,
+  "message": "string",
+  "data": {
+    "emplist": {
+      "totalcount": 0,
+      "totalpages": 0,
+      "list": [
+        {
+          "status": 0,
+          "answerstatus1": 0,
+          "answerstatus2": 0,
+          "answerstatus3": 1,
+          "answerstatus4": 0,
+          "id": 0,
+          "empcode": "string",
+          "empname": "string",
+          "positionid": "string",
+          "orgid": "string",
+          "positionname": "string",
+          "orgname": "string",
+          "emial": "string"
+        }
+      ]
+    },
+    "showcolumn": [
+      1,2,3,4
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+:host ::ng-deep {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    min-height: 450px;
+    label {
+        display: inline-block;
+        color: #878385;
+        margin-right: 15px; // padding: 0px 13px 10px 13px;
+    }
+    .gutter-right {
+        padding: 0px;
+        margin-top: 10px;
+        label {
+            padding: 0px;
+        }
+    }
+    .gutter-left {
+        padding: 0px;
+        margin-top: 5px;
+        label {
+            padding: 0px;
+        }
+    }
+    .data-table {
+        margin-top: 21px;
+        position: relative;
+        border: 1px solid #cdcfd6;
+        border-radius: 5px;
+        > table {
+            td {
+                padding: 0px;
+                text-align: center;
+            }
+        }
+        table {
+            width: 100%;
+            tr {
+                td {
+                    width: 80%;
+                    height: 41px;
+                    padding: 0px 0px;
+                    line-height: 41px;
+                    text-align: center;
+                    border-right: 1px solid #cdcfd6;
+                    border-bottom: 1px solid #cdcfd6;
+                    &:first-child {
+                        width: 10%;
+                    }
+                    &:last-child {
+                        border-right-width: 0px;
+                        width: 10%;
+                        padding: 0px;
+                        input {
+                            border-radius: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .scroll-container {
+            max-height: 400px;
+            overflow: auto;
+            position: relative;
+            table {
+                tr {
+                    td {
+                        &:first-child {
+                            background: #f6f7fb;
+                        }
+                    }
+                    &:last-child {
+                        td {
+                            border-bottom-width: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

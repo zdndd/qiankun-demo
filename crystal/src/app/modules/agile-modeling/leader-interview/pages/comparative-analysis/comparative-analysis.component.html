@@ -1,0 +1,30 @@
+<div class="operator-btns">
+    <div class="options-wrap">
+        <nz-select style="width: 120px;" [(ngModel)]="xAxis">
+            <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value">
+            </nz-option>
+        </nz-select>
+    </div>
+    <div class="options-wrap">
+        <nz-select style="width: 120px;" [(ngModel)]="yAxis">
+            <nz-option *ngFor="let option of listOfOption" [nzDisabled]='xAxis == option.value' [nzLabel]="option.label"
+                [nzValue]="option.value">
+            </nz-option>
+        </nz-select>
+    </div>
+    <div class="options-wrap"><button nz-button nzType="default" (click)="changeEcharts()"><i nz-icon
+                type="sync"></i>生成</button></div>
+
+
+
+    <!-- <button nz-button nzType="default"><i nz-icon nzType="export"></i>导出</button> -->
+</div>
+<div class="echarts-wrap">
+    <div class="empty-data" *ngIf="pageState == 2">
+        <img *ngIf="imgChange === 'zh'" src="assets/img/image-empty.png" />
+        <img *ngIf="imgChange === 'en'" src="assets/img/image-empty-en.png" />
+    </div>
+    <div style="height:100%;">
+        <chart-scatter [chartParams]=chartParams></chart-scatter>
+    </div>
+</div>

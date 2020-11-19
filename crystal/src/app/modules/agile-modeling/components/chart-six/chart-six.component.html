@@ -1,0 +1,10 @@
+<div class="agileChart">
+    <div cdkDropListGroup class="abilitylist6">
+
+        <div cdkDropList [cdkDropListEnterPredicate]="dropListEnterPredicate" (cdkDropListDropped)="dropListDropped()" class="abilitylist6-wrap"></div>
+
+        <div cdkDropList [cdkDropListEnterPredicate]="dropListEnterPredicate" (cdkDropListDropped)="dropListDropped()" *ngFor="let item of data" class="abilitylist6-wrap">
+            <div cdkDrag (cdkDragMoved)="dragMoved($event);" class="abilitylist6-box" title="{{ item.abilityname }}">{{ item.abilityname }}</div>
+        </div>
+    </div>
+</div>

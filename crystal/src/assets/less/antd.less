@@ -1,0 +1,232 @@
+.ant-btn {
+    border: 1px solid #6090df;
+    color: @primary;
+    &.ant-btn-primary {
+        background-color: @primary;
+        border-color: @primary;
+        color: #fff;
+        &:hover {
+            background-color: #9abcf3;
+            color: #fff;
+            border-color: #9abcf3;
+        }
+    }
+}
+
+// fix 消息框会被 topbar 遮住的问题
+.ant-message {
+    top: 50px;
+}
+
+/**
+ant design style override
+**/
+
+.ant-modal {
+    .ant-modal-title {
+        margin: 0;
+        text-align: left;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #777d93;
+        padding: 0px 14px;
+        > div {
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -12px;
+                left: 0px;
+                height: 1px;
+                width: 100%;
+                border-bottom: 1px dashed #c4c8d5;
+            }
+        }
+    }
+    .ant-modal-header {
+        padding: 13px 0px;
+        border-radius: 4px 4px 0 0;
+        background: #fff;
+        color: rgba(0, 0, 0, 0.65);
+        border-bottom: 0px solid #e8e8e8;
+    }
+    .ant-modal-close-x {
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .ant-modal-body {
+        padding: 15px;
+    }
+    .ant-modal-footer {
+        text-align: right;
+        border-top-width: 0px;
+        padding: 10px 16px;
+        .ant-btn {
+            height: 36px;
+            &.ant-btn-primary {
+                background-image: linear-gradient(to right, #6272d9, #6e8be5);
+            }
+        }
+    }
+}
+
+.ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ant-tree li {
+    text-align: left;
+    .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background-color: transparent;
+        color: #6090df;
+    }
+    .ant-tree-node-content-wrapper:hover {
+        background-color: transparent;
+        color: #6090df;
+    }
+}
+
+.cdk-overlay-container {
+    min-width: 1200px;
+}
+.ant-input-number {
+    height: 28px;
+    .ant-input-number-input {
+        height: 28px;
+    }
+}
+
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+    border-right-width: 0px;
+}
+
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-vertical-left .ant-menu-item,
+.ant-menu-vertical-right .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nz-dropdown-context {
+    display: block;
+}
+
+.ant-dropdown-menu {
+    padding: 6px;
+    &.drop-down-menu{
+        padding: 0;
+        text-align: center;
+        .ant-dropdown-menu-item{
+            &:hover{
+                background-color: #f1f4fd;
+                a{
+                    font-weight: 500;
+                }
+            }
+            a{
+                padding: 9px 16px;
+                font-size: 13px;
+                color: #445870;
+                margin: 0;
+            }
+            .ant-upload{
+                a{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+    font-size: 10px;
+    padding: 0px;
+    &:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+/**
+select
+**/
+
+.ant-select {
+    .ant-select-arrow {
+        width: 10px;
+        height: 10px;
+        &:before {
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            transition: transform 0.3s;
+            content: '';
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #626262;
+            position: absolute;
+            top: 5px;
+            right: 0px;
+        }
+        i {
+            display: none;
+        }
+    }
+    &.ant-select-open {
+        .ant-select-arrow {
+            width: 10px;
+            height: 10px;
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .ant-select-selection {
+        height: 36px;
+        border-radius: 3.6px;
+        background-color: #f6f7fb;
+        .ant-select-selection__rendered {
+            line-height: 36px;
+        }
+    }
+}
+
+.ant-input {
+    height: 36px;
+}
+
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    .ant-modal {
+        top: 0;
+        padding-bottom: 0px;
+    }
+}
+
+.ant-cascader-menu {
+    min-width: 150px;
+}
+
+.ant-cascader-menu-item-expand .ant-cascader-menu-item-expand-icon,
+.ant-cascader-menu-item-expand .ant-cascader-menu-item-loading-icon {
+    display: none;
+    color: #fff !important;
+}
+
+// 个人报告中抽屉头部样式
+.person-report .ant-drawer-header {
+    background-color: #e5e9ff;
+}

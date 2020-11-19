@@ -1,0 +1,138 @@
+<div class="source-area">
+    <div class="title" *ngIf="title">{{ title }}</div>
+    <div class="inner">
+        <div class="head">
+            <nz-select
+                *ngIf="type1Select"
+                style="flex: 1;"
+                (ngModelChange)="handleType1SelectChange($event)"
+                [(ngModel)]="type1Value"
+                nzPlaceHolder="Choose"
+            >
+                <nz-option *ngFor="let item of type1Select" [nzValue]="item.value" [nzLabel]="item.label"></nz-option>
+            </nz-select>
+            <nz-select
+                *ngIf="type2Select"
+                (ngModelChange)="handleType2SelectChange($event)"
+                [(ngModel)]="type2Value"
+                style="width: 74px;"
+                nzPlaceHolder=""
+            >
+                <nz-option nzValue="row" nzLabel="{{ 'row' | translate }}"></nz-option>
+                <nz-option nzValue="column" nzLabel="{{ 'column' | translate }}"></nz-option>
+            </nz-select>
+            <ng-container *ngIf="!type1Select && !type2Select">
+                <nz-input-group [nzPrefix]="suffixIconSearch">
+                    <input
+                        type="text"
+                        nz-input
+                        [(ngModel)]="filter"
+                        (ngModelChange)="handleFilter($event)"
+                        placeholder="{{ 'Enter the keyword to search' | translate }}"
+                    />
+                </nz-input-group>
+                <ng-template #suffixIconSearch>
+                    <span class="icon-ic_search"></span>
+                </ng-template>
+            </ng-container>
+        </div>
+        <div class="box" pretty-scroll>
+            <ul>
+                <li *ngFor="let item of leftDataSource">
+                    <label
+                        [nzDisabled]="isDisabled"
+                        nz-checkbox
+                        (ngModelChange)="onLeftSelectChange()"
+                        [(ngModel)]="item.checked"
+                        *ngIf="!item._hidden"
+                        >{{ item.title }}</label
+                    >
+                </li>
+            </ul>
+        </div>
+        <div class="selected-all" *ngIf="showCheckAll">
+            <label nz-checkbox [(ngModel)]="checkAll" (ngModelChange)="onHandleSelectAll($event)">{{
+                'Select all' | translate
+            }}</label>
+        </div>
+    </div>
+</div>
+<div class="middle">
+    <div *ngFor="let item of rightGroupKeys">
+        <button [disabled]="leftBtnDisabled" (click)="moveToRight(item)" nz-button nzType="default">
+            <span class="icon-ic_put"></span>
+        </button>
+        <button [disabled]="rightBtnDisabled[item]" (click)="moveToLeft(item)" nz-button nzType="default">
+            <span class="icon-ic_put"></span>
+        </button>
+    </div>
+</div>
+<div class="target-area">
+    <div class="target-block" *ngFor="let groupName of rightGroupKeys">
+        <div class="head clearfloat">
+            <!--<ng-container *ngIf="rightGroupNames[groupName]">{{rightGroupNames[groupName]}}</ng-container>-->
+            <!--*ngIf="!rightGroupNames[groupName]"-->
+            <!--<ng-container>-->
+
+            <ng-container *ngIf="isRadio; else tmpMultCheck">
+                <div class="fl">{{ 'Only 1 person can be selected' | translate }}</div>
+            </ng-container>
+            <ng-template #tmpMultCheck>
+                <ng-container *ngIf="!showSelectLength; else other">
+                    <div
+                        class="fl"
+                        [innerHTML]="
+                            getTitle({ title: rightGroupNames[groupName], length: rightGroupsData[groupName].length })
+                        "
+                    ></div>
+                </ng-container>
+                <ng-template #other>
+                    <div
+                        class="fl"
+                        [innerHTML]="
+                            getTitleAndSlength({
+                                title: rightGroupNames[groupName],
+                                length: rightGroupsData[groupName].length
+                            })
+                        "
+                    ></div>
+                </ng-template>
+            </ng-template>
+
+            <!--</ng-container>-->
+            <a (click)="emptyGroup(groupName)">{{ 'Empty' | translate }}</a>
+        </div>
+        <div class="box" pretty-scroll [class.show-weight]="showWeight">
+            <ul class="label-list" [class.showWeight]="showWeight">
+                <ng-container *ngFor="let groupData of rightGroupsData[groupName]">
+                    <li *ngIf="groupData.key != groupName">
+                        <label
+                            nz-checkbox
+                            (ngModelChange)="onRightSelectChange(groupName)"
+                            [(ngModel)]="groupData.checked"
+                            >{{ groupData.title }}</label
+                        >
+                    </li>
+                </ng-container>
+            </ul>
+            <ul class="input-list" *ngIf="showWeight">
+                <ng-container *ngFor="let groupData of rightGroupsData[groupName]">
+                    <li *ngIf="groupData.key != groupName">
+                        <vx-input-number
+                            [maxLength]="8"
+                            [allowMinus]="false"
+                            [(ngModel)]="groupData.weight"
+                            [isFloat]="true"
+                        >
+                        </vx-input-number>
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+        <!-- 当穿梭框需要必填提示时 -->
+        <div *ngIf="isRequiredTip && groupName == 'projectReviewer'" class="error-tip">
+            <small [innerHTML]="getTitle({ title: rightGroupNames[groupName] })"></small>
+            <small>{{ 'Not empty' | translate }}</small>
+        </div>
+    </div>
+</div>

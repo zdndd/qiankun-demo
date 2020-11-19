@@ -1,0 +1,137 @@
+:host ::ng-deep {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .container {
+        height: 450px;
+        padding: 0px 10px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .form-left {
+            width: 100%;
+            height: 116px;
+            .operate {
+                float: right;
+                .advancedSearch {
+                    color: #6e8ae5;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .form-item {
+            margin-bottom: 16px;
+            .ant-select {
+                width: 90%;
+                .ant-select-selection {
+                    background-color: #fff;
+                }
+            }
+        }
+        .sv-panel-body {
+            flex: 1;
+            width: 100%;
+            border: solid 1px #dddddd;
+            .theme_default {
+                &.advanced-search {
+                    .ant-table-thead tr th {
+                        padding: 0px 10px !important;
+                    }
+                }
+            }
+            tr {
+                &:hover {
+                    .td-operation {
+                        span {
+                            opacity: 1;
+                        }
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+                td {
+                    color: #818182;
+                    word-break: break-all;
+                    word-wrap: break-word;
+                    padding: 0px 13px;
+                }
+                td {
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .sv-panel-footer {
+            height: 33px;
+            border: solid 1px #dddddd;
+            border-top: 0;
+            .select-way {
+                float: left;
+                ul {
+                    padding-left: 10px;
+                    margin-bottom: 0;
+                    li {
+                        list-style: none;
+                        float: left;
+                        line-height: 30px;
+                        height: 30px;
+                        label {
+                            padding: 0 3px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .ant-pagination {
+                margin-top: 0 !important;
+                .ant-pagination-prev,
+                .ant-pagination-item,
+                .ant-pagination-next {
+                    line-height: 30px;
+                    border-top: 0;
+                    border-bottom: 0;
+                }
+                .ant-pagination-total-text {
+                    border-top: 0;
+                    border-bottom: 0;
+                    border-right: 0;
+                }
+            }
+        }
+        .empty-data {
+            right: 0px;
+            position: absolute;
+            width: 100%;
+            height: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            top: 90px;
+            z-index: 999; // transform: translate3d(-50%,-50%,0);
+            .empty-data-img {
+                img {
+                    width: 500px;
+                    height: 340px;
+                }
+            }
+            nz-spin {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 200px;
+                height: 100px;
+                text-align: center;
+            }
+        }
+    }
+}

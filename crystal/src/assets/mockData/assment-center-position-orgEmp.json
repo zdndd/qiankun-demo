@@ -1,0 +1,15 @@
+{
+	"errorcode": 0,
+	"message": null,
+	"data": [{
+		"positionname": "职位合并后",
+		"positionid": "zw_hebinghou",
+		"organizationalid": "zz_hebinghou",
+		"selectable": false
+	}, {
+		"positionname": "职位-合并前",
+		"positionid": "zw_hebingqian",
+		"organizationalid": "zz_hebinghou",
+		"selectable": false
+	}]
+}

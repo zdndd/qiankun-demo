@@ -1,0 +1,14 @@
+<ng-container *ngIf="pageIndex === 1; else selectAbility">
+    <app-ability-weight [tagsData]="tagsData" #abilityWeight></app-ability-weight>
+</ng-container>
+
+<ng-template #selectAbility>
+    <choice-function
+        [standardConfig]="standardConfig"
+        [dictionaryDetails]="dictionaryDetails"
+        [tree]="tree"
+        [maxlevelindex]="maxlevelindex"
+        [isCheckbox]="isCheckbox"
+        [isShowProportion]="isShowProportion"
+    ></choice-function>
+</ng-template>

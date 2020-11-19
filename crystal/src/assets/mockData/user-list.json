@@ -1,0 +1,89 @@
+﻿{
+    "errorcode": 0,
+    "message": "获取成功",
+    "data": {
+        "totalcount": 6,
+        "pageindex": 1,
+        "pagesize": 20,
+        "datasource": [
+            {
+                "username": "ez",
+                "headimg": null,
+                "isadmin": false,
+                "state": 1,
+                "customerid": "12580",
+                "userid": 2033,
+                "rownumber": 1,
+                "rolename": "普通用户",
+                "begindate": "2020-03-31T00:00:00",
+                "enddate": "2021-05-30T00:00:00",
+                "userstatus": 1
+            },
+            {
+                "username": "Emile",
+                "headimg": null,
+                "isadmin": false,
+                "state": 1,
+                "customerid": "12580",
+                "userid": 2032,
+                "rownumber": 2,
+                "rolename": "管理员",
+                "begindate": "2020-03-31T00:00:00",
+                "enddate": "2021-05-30T00:00:00",
+                "userstatus": 0
+            },
+            {
+                "username": "emp0511",
+                "headimg": null,
+                "isadmin": false,
+                "state": 1,
+                "customerid": "12580",
+                "userid": 1019,
+                "rownumber": 3,
+                "rolename": "普通用户",
+                "begindate": "2020-03-31T00:00:00",
+                "enddate": "2021-05-30T00:00:00",
+                "userstatus": 2
+            },
+            {
+                "username": "ayklm",
+                "headimg": null,
+                "isadmin": false,
+                "state": 1,
+                "customerid": "12580",
+                "userid": 1017,
+                "rownumber": 4,
+                "rolename": "管理员",
+                "begindate": null,
+                "enddate": null,
+                "userstatus": 0
+            },
+            {
+                "username": "jonny",
+                "headimg": null,
+                "isadmin": false,
+                "state": 1,
+                "customerid": "12580",
+                "userid": 10,
+                "rownumber": 5,
+                "rolename": "普通用户",
+                "begindate": null,
+                "enddate": null,
+                "userstatus": 0
+            },
+            {
+                "username": "admin",
+                "headimg": null,
+                "isadmin": true,
+                "state": 1,
+                "customerid": "12580",
+                "userid": 9,
+                "rownumber": 6,
+                "rolename": "系统管理员",
+                "begindate": null,
+                "enddate": null,
+                "userstatus": 0
+            }
+        ]
+    }
+}

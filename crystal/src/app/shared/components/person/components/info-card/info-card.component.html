@@ -1,0 +1,58 @@
+<ng-container *ngIf="pageState === 1; else other">
+    <div class="line">
+        <div class="label">{{ 'global.fields.emp-name' | translate }}：</div>
+        <div class="text">{{ _personalInfo.empname }}</div>
+    </div>
+    <div class="line">
+        <div class="label">{{ 'global.fields.emp-name-en' | translate }}：</div>
+        <div class="text">{{ _personalInfo.enname }}</div>
+    </div>
+    <div class="line">
+        <div class="label">{{ 'global.fields.nation' | translate }}：</div>
+        <div class="text">{{ _personalInfo.nation }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.gender' | translate }}：</div>
+        <div class="text">{{ _personalInfo.gender }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.political' | translate }}：</div>
+        <div class="text">{{ _personalInfo.political }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.birthday' | translate }}：</div>
+        <div class="text">{{ _personalInfo.birthday }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.marriage' | translate }}：</div>
+        <div class="text">{{ _personalInfo.ismarried }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.phone' | translate }}：</div>
+        <div class="text">{{ _personalInfo.mobilenumber }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.hometown' | translate }}：</div>
+        <div class="text">{{ _personalInfo.hukoulocation }}</div>
+    </div>
+    <div class="line">
+        <div class="label">{{ 'global.fields.email' | translate }}：</div>
+        <div class="text">{{ _personalInfo.empemail }}</div>
+    </div>
+
+    <div class="line">
+        <div class="label">{{ 'global.fields.address' | translate }}：</div>
+        <div class="text">{{ _personalInfo.address }}</div>
+    </div>
+</ng-container>
+<ng-template #other>
+    <div class="status-container">
+        <state-icon [state]="pageState"></state-icon>
+    </div>
+</ng-template>
