@@ -1,0 +1,98 @@
+<div class="log"><img src="assets/img/logo.png" /></div>
+<div class="content-auto">
+    <div class="content">
+        <div class="content-left"></div>
+        <div class="content-right">
+            <form [formGroup]="loginForm" (ngSubmit)="loginHandler()">
+                <div class="title">{{ 'Login Title' | translate }}</div>
+                <div class="text">
+                    <div class="inputcontrol paddingbottom">
+                        <ul>
+                            <li><img src="assets/img/icon-cmpid.png" /></li>
+                            <li>
+                                <input
+                                    maxlength="50"
+                                    [formControlName]="'customerid'"
+                                    type="text"
+                                    autocomplete="off"
+                                    placeholder="{{ 'Please Input' | translate: { field: 'Customer Id' | translate } }}"
+                                />
+                            </li>
+                        </ul>
+                        <label
+                            *ngIf="
+                                loginForm.get('customerid').touched && loginForm.get('customerid').hasError('required')
+                            "
+                            for="customerid"
+                            class="inputLabel"
+                        >
+                            {{ 'Require Tip' | translate: { field: 'Customer Id' | translate } }}
+                        </label>
+                    </div>
+
+                    <div class="inputcontrol paddingbottom">
+                        <ul>
+                            <li><i class="icon-ic_numberP"></i></li>
+                            <li>
+                                <input
+                                    maxlength="50"
+                                    [formControlName]="'username'"
+                                    type="text"
+                                    autocomplete="off"
+                                    placeholder="{{ 'Please Input' | translate: { field: 'Login ID' | translate } }}"
+                                />
+                            </li>
+                        </ul>
+                        <label
+                            *ngIf="loginForm.get('username').touched && loginForm.get('username').hasError('required')"
+                            for="txtUserName"
+                            class="inputLabel"
+                        >
+                            {{ 'Require Tip' | translate: { field: 'Login ID' | translate } }}
+                        </label>
+                        <label *ngIf="serverErrorMsg"> {{ serverErrorMsg }} </label>
+                    </div>
+                    <div class="inputcontrol">
+                        <ul>
+                            <li><i class="icon-ic_pw"></i></li>
+                            <li>
+                                <input
+                                    maxlength="50"
+                                    [formControlName]="'password'"
+                                    type="password"
+                                    autocomplete="new-password"
+                                    placeholder="{{
+                                        'Please Input' | translate: { field: 'Login Password' | translate }
+                                    }}"
+                                />
+                            </li>
+                        </ul>
+                        <label
+                            for="txtPassword"
+                            class="inputLabel"
+                            *ngIf="loginForm.get('password').touched && loginForm.get('password').hasError('required')"
+                        >
+                            {{ 'Require Tip' | translate: { field: 'Login Password' | translate } }}
+                        </label>
+                        <label
+                            for="txtPassword"
+                            class="inputLabel"
+                            *ngIf="loginForm.get('password').touched && loginForm.get('password').hasError('maxlength')"
+                        >
+                            {{
+                                'Input Max Length Tip'
+                                    | translate: { field: 'Login Password' | translate, maxlength: 5 }
+                            }}
+                        </label>
+                    </div>
+                    <div class="login-btns">
+                        <button type="submit" nz-button class="btn-login" nzType="primary" [nzLoading]="logining">
+                            <ng-container *ngIf="!logining">{{ 'Login' | translate }}</ng-container>
+                            <ng-container *ngIf="logining">{{ 'Log in' | translate }}</ng-container>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

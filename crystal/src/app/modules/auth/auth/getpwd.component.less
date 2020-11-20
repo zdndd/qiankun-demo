@@ -1,0 +1,146 @@
+:host ::ng-deep {
+    display: block;
+    .wrapper {
+        width: 100%;
+        padding-top: 25px;
+        margin: -100px 0 0 0;
+        position: absolute;
+        left: 0;
+        top: 30%;
+        height: 400px;
+    }
+
+    
+
+    .pager {
+        .pagera {
+            width: 100%;
+            margin-bottom: -1px;
+        }
+        border: 1px solid transparent;
+        margin: 0px auto 20px auto;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        a {
+            border: 1px solid transparent;
+            border-radius: 10px 10px 0px 0px;
+            color: rgb(12, 11, 11);
+            font-size: 16px;
+            text-decoration: none;
+            line-height: 30px;
+            display: inline-block;
+            padding: 10px 30px;
+            &:hover{
+                color: rgb(119, 195, 240);
+
+            }
+
+            &.selected {
+                border: 1px solid #ccc;
+                border-bottom-color: #f7f7f7;
+                color: rgb(119, 195, 240);
+            }
+        }
+    }
+   
+
+    .tabs-wrapper{
+        width: 100%;
+        overflow: hidden;
+        .tabs {
+            width: 100%;
+            display: flex;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            margin-left: 0%;
+            will-change: margin-left;
+            transition: margin-left .3s cubic-bezier(.645, .045, .355, 1);
+            .tabDiv {
+                width: 100%;
+                flex-shrink: 0;
+                -ms-flex-negative:0;
+                .tabDivContent {
+                    width: 400px;
+                    margin: 0px auto;
+                    .title{
+                        text-align: center;
+                        label{
+                            color: red;
+                            font-weight: normal
+                        }
+                    }
+                    .htitle {
+                        display: none;
+                    }
+                    .tabLable {
+                        width: 80px;
+                        font-size: 14px;
+                        display: inline-block;
+                    }
+                    .tabInput {
+                        width: 300px;
+                        height: 40px;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        // border: 1px solid #999;
+                    }
+                    .tabbutton {
+                        height: 30px;
+                        width: 80px;
+                        background-color: cornflowerblue;
+                        margin-left: 80px;
+                        border: 1px solid transparent;
+                        border-radius: 5px;
+                        color: white;
+                    }
+                    .tabsend {
+                        height: 40px;
+                        width: 100px;
+                        background-color: cornflowerblue;
+                        border: 1px solid transparent;
+                        border-radius: 5px;
+                        color: white;
+                        margin-left: 10px;
+                        &:disabled{
+                            background-color: rgb(204, 204, 204) !important;
+                           
+                        }
+                    }
+                   
+
+                    img {
+                        display: block;
+                        margin: 0 25px 0 0;
+                        float: left;
+                    }
+                     h3 {
+                        font-size: 30px;
+                        line-height: 20px;
+                        margin: 60px 0 20px 0;
+                    }
+                    .rowdiv {
+                        margin-bottom: 25px;
+                        position: relative;
+                        .tips {
+                            margin-left: 80px;
+                            height: 20px;
+                            width: 300px;
+                            color: red;
+                            position: absolute;
+                            left:0px;
+                            bottom:-20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    
+    
+}

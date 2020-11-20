@@ -15,7 +15,7 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist",
             "index": "src/index.html",
@@ -37,12 +37,8 @@
               "node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css",
               "src/theme.less",
               "src/styles.less"
-            ],
-            "customWebpackConfig": {
-              "path": "./extra-webpack.config.js",
-              "libraryName": "headhunter",
-              "libraryTarget": "umd"
-            }
+            ]
+            
           },
           "configurations": {
             "production": {
@@ -116,7 +112,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "headhunter:build"
           },

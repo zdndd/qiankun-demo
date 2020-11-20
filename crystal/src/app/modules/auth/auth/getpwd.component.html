@@ -1,0 +1,282 @@
+<div class="wrapper">
+  <div class="pager">
+    <div class="pagera" style="display: block;">
+      <a (click)="selectTab(0)" [ngClass]="{ selected: tabIndex == 0 }">
+        {{ 'Get Password By SMS' | translate }}</a
+      >
+      <a (click)="selectTab(1)" [ngClass]="{ selected: tabIndex == 1 }">
+        {{ 'Get Password By Email' | translate }}</a
+      >
+    </div>
+  </div>
+
+  <div class="tabs-wrapper">
+    <div class="tabs" [ngStyle]="{ marginLeft: tabIndex * -100 + '%' }">
+      <div class="tabDiv">
+        <form class="tabDivContent" [formGroup]="smsForm" (ngSubmit)="getPwdBySms()">
+          <div class="title">
+            <label>{{ 'Get Password By SMS Tip' | translate }}</label>
+          </div>
+          <h3 class="htitle">{{ 'Get Password By SMS' | translate }}</h3>
+          <div class="rowdiv">
+            <label class="tabLable"
+            ><strong>{{ 'Phone' | translate }}</strong></label
+            >
+            <input
+              type="text"
+              [formControlName]="'mobile'"
+              placeholder="{{ 'Please Input' | translate: { field: 'Phone' | translate } }}"
+              class="tabInput"
+            />
+            <div
+              *ngIf="smsForm.get('mobile').touched && smsForm.get('mobile').hasError('required')"
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'Phone' | translate } }}
+            </div>
+            <div
+              *ngIf="
+                smsForm.get('mobile').touched &&
+                !smsForm.get('mobile').hasError('required') &&
+                smsForm.get('mobile').hasError('mobile')
+              "
+              class="tips"
+            >
+              {{ 'Phone number format is not correct' | translate }}
+            </div>
+            <div *ngIf="smsServerMsg" class="tips">{{ smsServerMsg }}</div>
+          </div>
+          <div class="rowdiv">
+            <label class="tabLable"
+            ><strong>{{ 'Verify Code' | translate }}</strong></label
+            >
+            <input
+              type="text"
+              maxlength="4"
+              [formControlName]="'phoneCode'"
+              placeholder="{{ 'Please Input' | translate: { field: 'Verify Code' | translate } }}"
+              class="tabInput"
+              style="width: 188px;"
+            />
+            <button
+              type="button"
+              nz-button
+              class="tabsend"
+              [disabled]="smsCodeCd"
+              (click)="sendSmsCode()"
+              [nzLoading]="smsCodeSending"
+            >
+              <ng-container *ngIf="!smsCodeSending && !smsCodeCd">{{
+                'Send' | translate
+                }}</ng-container>
+              <ng-container *ngIf="smsCodeSending && !smsCodeCd">
+                {{ 'Sending' | translate }}</ng-container
+              >
+              <ng-container *ngIf="smsCodeCd"
+              >{{ 'Retry Send' | translate }} ({{ smsCodeTime }})</ng-container
+              >
+            </button>
+            <div
+              *ngIf="
+                smsForm.get('phoneCode').touched && smsForm.get('phoneCode').hasError('required')
+              "
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'Verify Code' | translate } }}
+            </div>
+            <div
+              *ngIf="
+                smsForm.get('phoneCode').touched && smsForm.get('phoneCode').hasError('minlength')
+              "
+              class="tips"
+            >
+              {{'Verification code length hint'| translate: { field: 4} }}
+            </div>
+          </div>
+          <div class="rowdiv">
+            <label class="tabLable"><strong>{{"Password"|translate}}</strong></label>
+            <input
+              type="password"
+              [formControlName]="'password'"
+              placeholder="{{'Password Input Tip'| translate}}"
+              class="tabInput"
+            />
+            <div
+              *ngIf="
+                smsForm.get('password').touched && smsForm.get('password').hasError('required')
+              "
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'Password' | translate } }}
+            </div>
+            <div
+              *ngIf="
+                smsForm.get('password').touched && smsForm.get('password').hasError('minlength')
+              "
+              class="tips"
+            >
+              {{'Password Input Tip'| translate}}
+            </div>
+          </div>
+          <div class="rowdiv">
+            <label class="tabLable"><strong>{{'Confirm password'| translate}}</strong></label>
+            <input
+              type="password"
+              [formControlName]="'confirmPassword'"
+              placeholder="{{ 'Please Input' | translate: { field: 'Confirm password' | translate } }}"
+              class="tabInput"
+            />
+            <div
+              *ngIf="
+                smsForm.get('confirmPassword').touched &&
+                smsForm.get('confirmPassword').hasError('required')
+              "
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'confirmPassword' | translate } }}
+            </div>
+            <div *ngIf="smsForm.hasError('equal')" class="tips">{{'Inconsistent password input twice'| translate}}</div>
+          </div>
+
+          <div class="rowdiv">
+            <input
+              type="button"
+              value="{{ 'Cancel' | translate }}"
+              (click)="cancelClick()"
+              class="tabbutton"
+            />
+            <input type="submit" value="{{ 'Ok' | translate }}" class="tabbutton" />
+          </div>
+        </form>
+      </div>
+
+      <div class="tabDiv">
+        <form class="tabDivContent" [formGroup]="emailForm" (ngSubmit)="getPwdByEmail()">
+          <div class="title"><label>{{'Get Password By Email Tip'| translate}} </label></div>
+          <h3 class="htitle">{{'Get Password By Email'| translate}}</h3>
+          <div class="rowdiv">
+            <label class="tabLable"><strong>{{'Mail'| translate}}</strong></label>
+            <input
+              type="text"
+              [formControlName]="'email'"
+              placeholder=" {{ 'Please Input' | translate: { field: 'Mail' | translate } }}"
+              class="tabInput"
+            />
+            <div
+              *ngIf="emailForm.get('email').touched && emailForm.get('email').hasError('required')"
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'Mail' | translate } }}
+            </div>
+            <div
+              *ngIf="
+                emailForm.get('email').touched &&
+                !emailForm.get('email').hasError('required') &&
+                emailForm.get('email').hasError('email')
+              "
+              class="tips"
+            >
+              {{'E-mail format is incorrect'| translate}}
+            </div>
+            <div *ngIf="emailServerMsg" class="tips">{{ emailServerMsg }}</div>
+          </div>
+          <div class="rowdiv">
+            <label class="tabLable"><strong>{{'Verify Code'| translate}}</strong></label>
+            <input
+              type="text"
+              maxlength="4"
+              [formControlName]="'emailCode'"
+              placeholder="{{ 'Please Input' | translate: { field: 'Verify Code' | translate } }}"
+              class="tabInput"
+              style="width: 188px;"
+            />
+            <button
+              type="button"
+              nz-button
+              class="tabsend"
+              [disabled]="emailCodeCd"
+              (click)="sendEmailCode()"
+              [nzLoading]="emailCodeSending"
+            >
+              <ng-container *ngIf="!emailCodeSending && !emailCodeCd">{{'Send'| translate}}</ng-container>
+              <ng-container *ngIf="emailCodeSending && !emailCodeCd">{{'Sending'| translate}}</ng-container>
+              <ng-container *ngIf="emailCodeCd">{{'Retry Send'| translate}} ({{ emailCodeTime }})</ng-container>
+            </button>
+            <div
+              *ngIf="
+                emailForm.get('emailCode').touched &&
+                emailForm.get('emailCode').hasError('required')
+              "
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'Verify Code' | translate } }}
+            </div>
+            <div
+              *ngIf="
+                emailForm.get('emailCode').touched &&
+                emailForm.get('emailCode').hasError('minlength')
+              "
+              class="tips"
+            >
+              {{'Verification code length hint'| translate: { field: 4} }}
+            </div>
+          </div>
+          <div class="rowdiv">
+            <label class="tabLable"><strong>{{"Password"|translate}}</strong></label>
+            <input
+              type="password"
+              [formControlName]="'password'"
+              placeholder="{{ 'Please Input' | translate: { field: 'Password' | translate } }}"
+              class="tabInput"
+            />
+            <div
+              *ngIf="
+                emailForm.get('password').touched && emailForm.get('password').hasError('required')
+              "
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'Password' | translate } }}
+            </div>
+            <div
+              *ngIf="
+                emailForm.get('password').touched && emailForm.get('password').hasError('minlength')
+              "
+              class="tips"
+            >
+              {{'Password Input Tip'| translate}}
+            </div>
+          </div>
+          <div class="rowdiv">
+            <label class="tabLable"><strong>{{'Confirm password'| translate}}</strong></label>
+            <input
+              type="password"
+              [formControlName]="'confirmPassword'"
+              placeholder="{{ 'Please Input' | translate: { field: 'Confirm password' | translate } }}"
+              class="tabInput"
+            />
+            <div
+              *ngIf="
+                emailForm.get('confirmPassword').touched &&
+                emailForm.get('confirmPassword').hasError('required')
+              "
+              class="tips"
+            >
+              {{ 'Require Tip' | translate: { field: 'confirmPassword' | translate } }}
+            </div>
+            <div *ngIf="emailForm.hasError('equal')" class="tips">{{'Inconsistent password input twice'| translate}}</div>
+          </div>
+
+          <div class="rowdiv">
+            <input
+              type="button"
+              class="tabbutton"
+              (click)="cancelClick()"
+              value="{{ 'Cancel' | translate }}"
+            />
+            <input type="submit" class="tabbutton" value="{{ 'Ok' | translate }}" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
