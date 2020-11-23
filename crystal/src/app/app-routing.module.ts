@@ -6,16 +6,6 @@ const routes: Routes = [
     {
         path: 'crystal',
         component: TopbarComponent,
-        children: [
-            {
-                path: 'agile-modeling',
-                loadChildren: './modules/agile-modeling/agile-modeling.module#AgileModelingModule',
-            },
-            {
-                path: 'demo',
-                loadChildren: './modules/demo/demo.module#DemoModule',
-            },
-        ],
     },
     { path: 'auth', loadChildren: './modules/auth/auth.module#AuthModule' },
 ];

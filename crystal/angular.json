@@ -15,7 +15,7 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist",
             "index": "src/index.html",
@@ -37,7 +37,12 @@
               "node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css",
               "src/theme.less",
               "src/styles.less"
-            ]
+            ],
+            "customWebpackConfig": {
+              "path": "./extra-webpack.config.js",
+              "libraryName": "angular-cli",
+              "libraryTarget": "umd"
+            }
             
           },
           "configurations": {

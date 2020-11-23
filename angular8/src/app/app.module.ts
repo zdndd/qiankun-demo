@@ -6,9 +6,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { LayoutModule } from "./layout/layout.module";
 import { AppComponent } from "./app.component";
 import { EmptyRouteComponent } from "./empty-route/empty-route.component";
+import { DemoComponent } from "./modules/demo/demo.component";
 
 @NgModule({
-  declarations: [AppComponent, EmptyRouteComponent],
+  declarations: [AppComponent, EmptyRouteComponent, DemoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

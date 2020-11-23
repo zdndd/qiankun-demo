@@ -2,9 +2,9 @@
   "name": "vxhcm10",
   "version": "0.0.0",
   "scripts": {
-    "serve:qiankun": "ng serve --disable-host-check --port 4201 --base-href /angular10 --live-reload false",
+    "serve:qiankun": "ng serve --disable-host-check --port 4211 --base-href /angular10 --live-reload false",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run serve:qiankun",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
