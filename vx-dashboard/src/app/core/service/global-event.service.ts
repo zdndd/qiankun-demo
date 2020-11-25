@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalEvent {
   emit(eventname: string, ...args: any) {
-    console.log('dashboard emit');
+    console.log('----主 emit------', eventname);
     const event = new CustomEvent(eventname, {
       detail: args,
     });
@@ -13,8 +13,8 @@ export class GlobalEvent {
   }
 
   on(eventname: string, fn, win?): any {
+    console.log('----主 on------', eventname);
     let _win: any = win ? win : window;
-    // Object.assign(this,)
     _win.addEventListener(eventname, (e: any) => fn.apply(this, e.detail));
   }
 }

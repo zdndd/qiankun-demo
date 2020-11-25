@@ -28,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.qiankunService.appUnmount$))
       .subscribe((event: NavigationEvent) => {
         if (event instanceof NavigationStart) {
-          console.log('vxhcm 10', event);
+          // console.log('vxhcm 10', event);
         }
       });
   }

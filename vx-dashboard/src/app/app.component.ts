@@ -12,5 +12,8 @@ export class AppComponent implements AfterViewInit {
   constructor(public globalEvent: GlobalEvent) {}
   ngAfterViewInit() {
     start(); // 开启微应用
+    this.globalEvent.emit('app', {
+      detail: '我是小航',
+    });
   }
 }
