@@ -1,9 +1,17 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { KNXDataService } from '../../../../core/knxdata.service';
 import { AbilityWeightComponent } from '../ability-weight/ability-weight.component';
-import { addChecked, ItemConfig } from '../../../occupational-competency/oc-config';
-import { addTemplateId } from '@utils/convert';
 import _ from 'lodash';
+
+const enum EnumsConclusionType {
+    LeaderInterview = 1, //领导访谈
+    AbilityComparison = 7, //能力比较
+    TaskAnalysis = 16, // 任务分析
+    EmployeeSurvey = 10, //员工调研
+    AbilityModel = 20, //能力建模
+    CreateModel = 21, //模型建立
+}
+
 @Component({
     selector: 'app-select-ability-final-conclusion',
     templateUrl: './select-ability-final-conclusion.component.html',
@@ -18,7 +26,7 @@ export class SelectAbilityFinalConclusionComponent implements OnInit {
     @Input() isDisabled;
     @Input() standardConfig;
     @Input() dictionaryDetails;
-    @Input() tree: ItemConfig[];
+    @Input() tree: any[];
     @Input() maxlevelindex;
     @Input() isCheckbox = true;
     @Input() isShowProportion = true; //是否显示占比输入框
@@ -32,7 +40,7 @@ export class SelectAbilityFinalConclusionComponent implements OnInit {
         const params = {
             modelId: modelId,
         };
-        this.dataService.getModelConclusionWeight(params).subscribe(res => {
+        this.dataService.getModelConclusionWeight(params).subscribe((res) => {
             if (res) {
                 this.tagsData = res;
             }
@@ -54,9 +62,9 @@ export class SelectAbilityFinalConclusionComponent implements OnInit {
                 tabweightdtos: rtnData,
             };
             this.pageState = 1;
-            this.dataService.setModelConclusionWeight(param).subscribe(res => {
+            this.dataService.setModelConclusionWeight(param).subscribe((res) => {
                 const params = { ModelId: this.modelId, TabId: EnumsConclusionType.CreateModel };
-                this.dataService.getModelConclusion(params).subscribe(res => {
+                this.dataService.getModelConclusion(params).subscribe((res) => {
                     if (res) {
                         const lstabilityproportion = res.lstabilityproportion;
                         this.refreshConclusion(lstabilityproportion);
@@ -78,12 +86,12 @@ export class SelectAbilityFinalConclusionComponent implements OnInit {
     refreshConclusion(lstAbilityProportion) {
         const treeData = this.tree;
 
-        let forFn = function(treeData, lstAbilityProportion) {
-            _.forEach(treeData, element => {
+        let forFn = function (treeData, lstAbilityProportion) {
+            _.forEach(treeData, (element) => {
                 const id = element.id; //treeId
                 element.checked = false;
                 element.proportion = '';
-                _.forEach(lstAbilityProportion, e => {
+                _.forEach(lstAbilityProportion, (e) => {
                     e.id = e.abilityid ? e.abilityid : e.id;
                     if (id === e.id) {
                         element.checked = true;

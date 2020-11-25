@@ -2,9 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { NzModalService, NzMessageService } from 'ng-zorro-antd';
 import { TranslateService } from '@ngx-translate/core';
-import { AddDictionaryModelComponent } from '../modules/occupational-competency/oc-component/add-dictionary-model/add-dictionary-model.component';
-import { ModalContentComponent } from '../modules/occupational-competency/oc-component/modal-content/modal-content.component';
-import { ItemConfig } from '../modules/occupational-competency/oc-config';
 
 import _ from 'lodash';
 
@@ -85,7 +82,7 @@ export class DictionaryModalService {
                 nzWrapClassName: 'vertical-center-modal',
                 nzZIndex: 1001,
                 nzBodyStyle: { height: '200px' },
-                nzContent: component ? component : AddDictionaryModelComponent,
+                nzContent: component ? component : 'AddDictionaryModelComponent',
                 nzFooter: [
                     {
                         label: this.translateService.instant('Ok'),
@@ -145,7 +142,7 @@ export class DictionaryModalService {
         return new Promise((resolve, reject) => {
             const modal = this.modalService.create({
                 nzTitle: this.modalTitle(status, qualityName, position),
-                nzContent: component ? component : ModalContentComponent,
+                nzContent: component ? component : 'ModalContentComponent',
                 nzMaskClosable: false,
                 nzClosable: false,
                 nzComponentParams: {
@@ -225,7 +222,7 @@ export class DictionaryModalService {
                             }
                             if (componentInstance.ablityValid()) {
                                 //status 0的时候要带上维度
-                                const newItem: ItemConfig = status
+                                const newItem: any = status
                                     ? componentInstance.newList().children[0]
                                     : componentInstance.newList();
 
@@ -247,7 +244,7 @@ export class DictionaryModalService {
         });
     }
 
-    filterDescription(obj: ItemConfig) {
+    filterDescription(obj: any) {
         if (obj.defaultdescription) {
             const arr = obj.defaultdescription.split(/\n/);
             const emptyindex = _.findIndex(arr, function (o) {

@@ -20,8 +20,6 @@ import { ModelFormComponent } from './model/components/model-form/model-form.com
 import { DictionaryListComponent } from './dictionary-list/dictionary-list.component';
 import { EditDictionaryModelComponent } from './components/edit-dictionary-model/edit-dictionary-model.component';
 import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
-import { OcComponentModule } from '../../occupational-competency/oc-component/oc-component.module';
-import { PageGuard } from '@app/core/agile-modeling.guard';
 
 const routes: Routes = [
     {
@@ -31,13 +29,13 @@ const routes: Routes = [
             {
                 path: 'dictionary-list',
                 component: DictionaryListComponent,
-                canActivate: [PageGuard],
+
                 data: { pageid: 100201 },
             },
             {
                 path: 'model',
                 component: ModelComponent,
-                canActivate: [PageGuard],
+
                 data: { pageid: 100202 },
             },
             { path: '**', redirectTo: 'model' },
@@ -46,7 +44,7 @@ const routes: Routes = [
     {
         path: 'ability-dictionary-detail/:id',
         component: DictionaryDetailComponent,
-        canActivate: [PageGuard],
+
         data: { pageid: 100201 },
     },
     {
@@ -59,7 +57,6 @@ const routes: Routes = [
 @NgModule({
     imports: [
         SharedModule,
-        OcComponentModule,
         PortalModule,
         ScrollDispatchModule,
         OverlayModule,

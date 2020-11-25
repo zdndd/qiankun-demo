@@ -4,9 +4,9 @@ import { NzModalService } from 'ng-zorro-antd';
 import { TranslateService } from '@ngx-translate/core';
 import { SelectAbilityComponent } from '../select-ability/select-ability.component';
 import { abilityParam, choiceFunctionParam } from 'src/app/constants/app.constants';
-import { ChoiceFunctionComponent } from '../../../occupational-competency/oc-component/choice-function/choice-function.component';
+
 import { SelectAbilityFinalConclusionComponent } from '../select-ability-final-conclusion/select-ability-final-conclusion.component';
-import { addChecked, ItemConfig } from '../../../occupational-competency/oc-config';
+
 import { addTemplateId } from '@utils/convert';
 import { KNXDataService } from '../../../../core/knxdata.service';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -23,7 +23,7 @@ export class CmpService {
         private messageService: NzMessageService,
     ) {}
 
-    total: ItemConfig[];
+    total: any[];
     status;
     conclusionList = [];
     //已选中的是否禁用
@@ -49,7 +49,7 @@ export class CmpService {
                 {
                     label: this.translateService.instant('Ok'),
                     type: 'primary',
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         if (abilityData.chooseType === 1 || abilityData.chooseType === 0) {
                             componentInstance.getResult();
                             const reaultArr = componentInstance.reaultArr;
@@ -77,13 +77,13 @@ export class CmpService {
                 {
                     label: this.translateService.instant('Cancel'),
                     type: 'default',
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         modal.destroy();
                     },
                 },
             ],
-            nzOnOk: data => {},
-            nzOnCancel: data => {},
+            nzOnOk: (data) => {},
+            nzOnCancel: (data) => {},
             nzComponentParams: {
                 conclusionList: abilityData.conclusionList,
                 status: abilityData.chooseType,
@@ -177,13 +177,13 @@ export class CmpService {
                 {
                     label: this.translateService.instant('Cancel'),
                     type: 'default',
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         modal.destroy();
                     },
                 },
             ],
-            nzOnOk: data => {},
-            nzOnCancel: data => {},
+            nzOnOk: (data) => {},
+            nzOnCancel: (data) => {},
             nzComponentParams: {
                 modelId: modelid,
                 conclusionList: abilityData.conclusionList,
@@ -211,13 +211,12 @@ export class CmpService {
         this.isDisabled = abilityData.isDisabled;
         const modelid = Number(abilityData.modelid);
 
-        this.dataService.getAbilityModel({ ModelId: modelid }).subscribe(res => {
+        this.dataService.getAbilityModel({ ModelId: modelid }).subscribe((res) => {
             const qualityDictionaryId = res.qualitydictionaryid;
 
             if (qualityDictionaryId > 0) {
-                this.dataService.GetAbilityList({ modelid }).subscribe(res => {
+                this.dataService.GetAbilityList({ modelid }).subscribe((res) => {
                     if (res) {
-                        addChecked(res.abilitydictionary);
                         addTemplateId(res.abilitydictionary, '');
                         this.checkData(res.abilitydictionary);
                         const param: choiceFunctionParam = {
@@ -309,7 +308,7 @@ export class CmpService {
                             return false;
                         }
                     },
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         if (componentInstance.getCheckListData().length <= 0) {
                             this.messageService.warning(this.translateService.instant('Please select at least one'));
                         } else {
@@ -341,7 +340,7 @@ export class CmpService {
                 {
                     label: this.translateService.instant('Cancel'),
                     type: 'default',
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         modal.destroy();
                     },
                 },
@@ -370,44 +369,17 @@ export class CmpService {
             nzZIndex: 1001,
             nzBodyStyle: { height: '510px' },
             nzOkLoading: false,
-            nzContent: ChoiceFunctionComponent,
+            nzContent: 'ChoiceFunctionComponent',
             nzFooter: [
                 {
                     label: this.translateService.instant('Ok'),
                     type: 'primary',
-                    onClick: componentInstance => {
-                        if (componentInstance.getCheckListData().length <= 0) {
-                            this.messageService.warning(this.translateService.instant('Please select at least one'));
-                        } else {
-                            if (params.chooseType === 1 || params.chooseType === 0) {
-                                this.generalPercentage();
-                                const reaultArr = this.reaultArr;
-
-                                if (reaultArr.length > 0) {
-                                    if (this.isPass) {
-                                        //通过效验
-                                        cb(reaultArr);
-                                        modal.destroy();
-                                    }
-                                }
-                            } else if (params.chooseType === 3) {
-                                const radioId = componentInstance.radioId;
-                                const abilityIds = [];
-                                abilityIds.push(radioId);
-                                cb(abilityIds);
-                                modal.destroy();
-                            } else {
-                                const abilityIds = componentInstance.getCheckListData();
-                                cb(abilityIds);
-                                modal.destroy();
-                            }
-                        }
-                    },
+                    onClick: (componentInstance) => {},
                 },
                 {
                     label: this.translateService.instant('Cancel'),
                     type: 'default',
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         modal.destroy();
                     },
                 },
@@ -500,7 +472,7 @@ export class CmpService {
                 {
                     label: this.translateService.instant('Cancel'),
                     type: 'default',
-                    onClick: componentInstance => {
+                    onClick: (componentInstance) => {
                         modal.destroy();
                     },
                 },
@@ -532,8 +504,8 @@ export class CmpService {
         const reaultArr = [];
         this.isPass = true;
 
-        let forFn = function(tabs) {
-            _.forEach(tabs, element => {
+        let forFn = function (tabs) {
+            _.forEach(tabs, (element) => {
                 //const description = element.description;
                 const id = element.id;
                 const check = element.checked;
@@ -551,7 +523,7 @@ export class CmpService {
                         let despList = '';
 
                         if (descriptionList) {
-                            descriptionList.forEach(item => {
+                            descriptionList.forEach((item) => {
                                 despList += item.description + '\n';
                             });
                         }
@@ -594,14 +566,14 @@ export class CmpService {
     }
 
     checkState(data, status, conclusionList, isDisabled) {
-        let forFn = function(data, status, conclusionList, isDisabled) {
-            _.forEach(data, element => {
+        let forFn = function (data, status, conclusionList, isDisabled) {
+            _.forEach(data, (element) => {
                 element.visible = true;
                 element.checked = false;
                 element.disabled = false;
                 const id = element.id;
                 element.proportion = status === 0 ? 0 : null;
-                _.forEach(conclusionList, e => {
+                _.forEach(conclusionList, (e) => {
                     e.id = e.abilityid ? e.abilityid : e.id;
                     if (status === 3) {
                         e.id = parseInt(e.id);

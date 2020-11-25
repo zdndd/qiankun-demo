@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
-    "build:single-spa": "ng build --prod --deploy-url http://localhost:4200/",
-    "serve:single-spa": "ng serve --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --baseHref=crystal --live-reload false"
+    "build:single-spa": "ng build --prod --deploy-url http://localhost:4288/",
+    "serve:single-spa": "ng serve --disable-host-check --port 4288 --deploy-url http://localhost:4288/ --baseHref=crystal --live-reload false"
   },
   "private": true,
   "dependencies": {

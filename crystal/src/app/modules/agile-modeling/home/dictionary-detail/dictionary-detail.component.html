@@ -9,11 +9,11 @@
     <!-- <button nz-button nztype="default" class="ant-btn ant-btn-default  add-course-class">
       <span><i class="icon-ic_export"></i>{{'导入' | translate}} </span>
   </button> -->
-    <button nz-button nztype="default" class="ant-btn ant-btn-default  add-course-class" (click)="addDimension(0)">
+    <button nz-button nztype="default" class="ant-btn ant-btn-default add-course-class" (click)="addDimension(0)">
         <span><i class="icon-ic_add"></i>{{ 'Add Dimension' | translate }}</span>
     </button>
 
-    <button nz-button nztype="default" class="ant-btn ant-btn-default  add-course-class" (click)="saveDimension()">
+    <button nz-button nztype="default" class="ant-btn ant-btn-default add-course-class" (click)="saveDimension()">
         <span><i class="icon-ic_save"></i>{{ 'Save' | translate }} </span>
     </button>
     <div class="action-btns">
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="dimension-content">
-        <tree-list
+        <!-- <tree-list
             [standardConfigId]="currentStandardConfig.id"
             [title]="currentStandardConfig.name"
             [total]="total[currentIndex]"
@@ -56,6 +56,6 @@
             [isModelUsed]="isModelUsed"
             (editElement)="editElement($event)"
         >
-        </tree-list>
+        </tree-list> -->
     </div>
 </div>

@@ -19,6 +19,15 @@ import { ScrollBarHelper } from '../../../../utils/scrollbar-helper';
 import { ActivatedRoute } from '@angular/router';
 import { DataState, ValueObjParam } from '../../../../constants/app.constants';
 
+const enum EnumsConclusionType {
+    LeaderInterview = 1, //领导访谈
+    AbilityComparison = 7, //能力比较
+    TaskAnalysis = 16, // 任务分析
+    EmployeeSurvey = 10, //员工调研
+    AbilityModel = 20, //能力建模
+    CreateModel = 21, //模型建立
+}
+
 @Component({
     selector: 'select-ability',
     preserveWhitespaces: false,
@@ -51,7 +60,7 @@ export class SelectAbilityComponent implements OnInit, AfterViewInit, OnDestroy 
         const status = this.status;
         const modelid = Number(this.modelid);
         if (status !== 0) {
-            this.dataService.GetAbilityList({ modelid }).subscribe(res => {
+            this.dataService.GetAbilityList({ modelid }).subscribe((res) => {
                 if (res && res.length > 0) {
                     this.pageState = DataState.EXIST_DATA;
                     this.getData(res);
@@ -61,7 +70,7 @@ export class SelectAbilityComponent implements OnInit, AfterViewInit, OnDestroy 
                 }
             });
         } else {
-            this.dataService.GetAbilityListDicSortInfo({ modelid }).subscribe(res => {
+            this.dataService.GetAbilityListDicSortInfo({ modelid }).subscribe((res) => {
                 if (res && res.length > 0) {
                     this.pageState = DataState.EXIST_DATA;
                     this.getData(res);

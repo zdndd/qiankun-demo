@@ -13,13 +13,12 @@ import { ChartScatterComponent } from '../components/chart-scatter/chart-scatter
 import { ChartParetoComponent } from '../components/chart-pareto/chart-pareto.component';
 import { SelectAbilityComponent } from './select-ability/select-ability.component';
 import { CmpService } from './service/component.service';
-import { OcComponentModule } from '../../occupational-competency/oc-component/oc-component.module';
 import { SelectAbilityFinalConclusionComponent } from './select-ability-final-conclusion/select-ability-final-conclusion.component';
 import { AbilityWeightComponent } from './ability-weight/ability-weight.component';
 import { DictionarySelectionTemplateComponent } from './dictionary-selection-template/dictionary-selection-template.component';
 
 @NgModule({
-    imports: [CommonModule, RouterModule, SharedModule, NgZorroAntdModule, OcComponentModule],
+    imports: [CommonModule, RouterModule, SharedModule, NgZorroAntdModule],
     declarations: [
         SelectAbilityComponent,
         ConclusionCommonComponent,

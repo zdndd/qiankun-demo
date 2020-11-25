@@ -3,29 +3,13 @@
 </ng-container>
 
 <div *ngIf="componentStatus == 1 && dictionaryList.length > 0">
-    <choice-dictionary
-        *ngIf="dictionaryList.length > 0; else empty"
-        [list]="dictionaryList"
-        [standardConfig]="standardConfig"
-        (emitId)="showFunction($event)"
-    ></choice-dictionary>
     <ng-template #empty>
-        <empty-loading [pageState]="2"></empty-loading>
+        <!-- <empty-loading [pageState]="2"></empty-loading> -->
     </ng-template>
 </div>
 
 <div *ngIf="componentStatus == 2">
-    <choice-function
-        *ngIf="tree.length > 0; else other"
-        [standardConfig]="standardConfig"
-        [dictionaryDetails]="dictionaryDetails"
-        [tree]="tree"
-        [maxlevelindex]="maxLevelIndex"
-        [isCheckbox]="isCheckbox"
-        [isShowProportion]="isShowProportion"
-        #choiceFunction
-    ></choice-function>
     <ng-template #other>
-        <empty-loading [pageState]="pageState"></empty-loading>
+        <!-- <empty-loading [pageState]="pageState"></empty-loading> -->
     </ng-template>
 </div>

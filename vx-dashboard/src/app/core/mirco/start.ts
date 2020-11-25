@@ -23,7 +23,7 @@ registerMicroApps(
     },
     {
       name: 'crystal',
-      entry: '//localhost:4200',
+      entry: '//localhost:4288',
       container: '#subapp-viewport',
       // loader,
       activeRule: '/crystal',

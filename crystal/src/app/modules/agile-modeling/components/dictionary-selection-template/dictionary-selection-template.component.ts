@@ -1,11 +1,10 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { NzModalRef } from 'ng-zorro-antd/modal';
 import { KNXDataService } from '../../../../core/knxdata.service';
-import { addChecked } from '../../../occupational-competency/oc-config';
 import { addTemplateId } from '@utils/convert';
 import { ValueObjParam } from '../../../../constants/app.constants';
 import { NzMessageService } from 'ng-zorro-antd/message';
-import { ChoiceFunctionComponent } from '../../../occupational-competency/oc-component/choice-function/choice-function.component';
+
 import { AbilityWeightComponent } from '../ability-weight/ability-weight.component';
 import { TranslateService } from '@ngx-translate/core';
 import _ from 'lodash';
@@ -15,7 +14,6 @@ import _ from 'lodash';
     styleUrls: ['./dictionary-selection-template.component.less'],
 })
 export class DictionarySelectionTemplateComponent implements OnInit {
-    @ViewChild('choiceFunction', { static: false }) choiceFunction: ChoiceFunctionComponent;
     @ViewChild('abilityWeight', { static: false }) abilityWeight: AbilityWeightComponent;
     //模型id
     @Input() modelId;
@@ -87,7 +85,7 @@ export class DictionarySelectionTemplateComponent implements OnInit {
                 tabweightdtos: rtnData,
             };
             this.pageState = 1;
-            this.dataService.setModelConclusionWeight(param).subscribe(res => {
+            this.dataService.setModelConclusionWeight(param).subscribe((res) => {
                 ++this.componentStatus;
             });
         } else {
@@ -102,7 +100,7 @@ export class DictionarySelectionTemplateComponent implements OnInit {
             modelId: this.modelId,
         };
         this.tagsData = [{}, {}, {}, {}];
-        this.dataService.getModelConclusionWeight(params).subscribe(res => {
+        this.dataService.getModelConclusionWeight(params).subscribe((res) => {
             if (res) {
                 this.tagsData = res;
             }
@@ -115,7 +113,7 @@ export class DictionarySelectionTemplateComponent implements OnInit {
             qualityType: this.standardConfig['id'],
         };
         this.dictionaryList = [];
-        this.dataService.getQualityDictionaryDataList(param).subscribe(res => {
+        this.dataService.getQualityDictionaryDataList(param).subscribe((res) => {
             this.dictionaryList = res.data;
         });
     }
@@ -129,12 +127,11 @@ export class DictionarySelectionTemplateComponent implements OnInit {
             .getQualityDictionaryDetailList({
                 qualityDictionaryId: qualityDictionaryId,
             })
-            .subscribe(res => {
+            .subscribe((res) => {
                 if (res.abilitydictionary) {
                     this.dictionaryDetails = res;
                     this.maxLevelIndex = res.maxlevelindex;
                     this.componentStatus = 2;
-                    addChecked(res.abilitydictionary);
                     addTemplateId(res.abilitydictionary, '');
                     this.checkData(res.abilitydictionary);
                     this.tree = res.abilitydictionary;
@@ -153,14 +150,14 @@ export class DictionarySelectionTemplateComponent implements OnInit {
     }
 
     checkState(data, status, conclusionList, isDisabled) {
-        let forFn = function(data, status, conclusionList, isDisabled) {
-            _.forEach(data, element => {
+        let forFn = function (data, status, conclusionList, isDisabled) {
+            _.forEach(data, (element) => {
                 element.visible = true;
                 element.checked = false;
                 element.disabled = false;
                 const id = element.id;
                 element.proportion = status === 0 ? 0 : null;
-                _.forEach(conclusionList, e => {
+                _.forEach(conclusionList, (e) => {
                     e.id = e.abilityid ? e.abilityid : e.id;
                     if (status === 3) {
                         e.id = parseInt(e.id);
@@ -193,8 +190,8 @@ export class DictionarySelectionTemplateComponent implements OnInit {
         const reaultArr = [];
         this.isPass = true;
 
-        let forFn = function(tabs) {
-            _.forEach(tabs, element => {
+        let forFn = function (tabs) {
+            _.forEach(tabs, (element) => {
                 const id = element.id;
                 const check = element.checked;
                 const proportion = element.proportion;
@@ -211,7 +208,7 @@ export class DictionarySelectionTemplateComponent implements OnInit {
                         let despList = '';
 
                         if (descriptionList) {
-                            descriptionList.forEach(item => {
+                            descriptionList.forEach((item) => {
                                 despList += item.description + '\n';
                             });
                         }
@@ -253,10 +250,10 @@ export class DictionarySelectionTemplateComponent implements OnInit {
     }
 
     getCheckListData() {
-        return this.choiceFunction.getCheckListData();
+        // return this.choiceFunction.getCheckListData();
     }
 
     getRadioId() {
-        return this.choiceFunction.radioId;
+        // return this.choiceFunction.radioId;
     }
 }
