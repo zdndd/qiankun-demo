@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import start from './core/mirco/start';
 import { GlobalEvent } from './core/service/global-event.service';
+import 'zone.js';
 
 @Component({
   selector: 'vx-root',
@@ -9,7 +10,7 @@ import { GlobalEvent } from './core/service/global-event.service';
 })
 export class AppComponent implements AfterViewInit {
   title = 'vx-dashboard';
-  constructor(public globalEvent: GlobalEvent) {}
+  constructor(public globalEvent: GlobalEvent) { }
   ngAfterViewInit() {
     start(); // 开启微应用
     this.globalEvent.emit('app', {

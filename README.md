@@ -2,11 +2,9 @@
 
 ## 项目启动
 
-``` bash
+```bash
 cd vx-dashboard
-npm start
+examples:start
 
-cd vxhcm10
-npm run serve:qiankun
 
 ```

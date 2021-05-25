@@ -7,7 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "examples:start": "npm-run-all --parallel start:*",
+    "start:main": "ng serve --port 4200",
+    "start:angular8": "cd ../angular8 && yarn serve:qiankun",
+    "start:crystal": "cd ../crystal && yarn serve:single-spa",
+    "start:vxhcm10": "cd ../vxhcm10 && yarn serve:qiankun"
   },
   "private": true,
   "dependencies": {
@@ -19,10 +24,11 @@
     "@angular/platform-browser": "~10.0.5",
     "@angular/platform-browser-dynamic": "~10.0.5",
     "@angular/router": "~10.0.5",
+    "npm-run-all": "^4.1.5",
     "qiankun": "^2.3.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "^0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.4",
